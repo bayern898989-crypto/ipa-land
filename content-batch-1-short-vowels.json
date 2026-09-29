@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 1 批 · 单元 1 · 短元音五兄弟",
+    "version": "0.3-可靠度标记+词库扩容",
+    "symbolSet": "48音标（国内教材 DJ 体系，词尾 y 标 /ɪ/）",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律=看到基本必读 / ⚠️两副面孔=要提防 / 主力 / 稀有",
+      "闯关对立对呼应拼写出口（同字母不同音优先）",
+      "稀有拼写多练：词库尽量穷尽常用词，关数不限于3关",
+      "记忆句覆盖全部拼写出口",
+      "对比辨音每组至少6对"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "æ",
+      "type": "短元音",
+      "nickname": "咧嘴的胖猫音",
+      "howTo": "嘴巴往两边咧开（像被挠痒的猫），嘴张大一点，舌头放平放低。像中文「啊」和「哎」的中间，短促有力。",
+      "ttsDemo": "at, at, cat",
+      "spellings": [
+        { "letters": "a", "freq": "独家代言 · ⚠️但 a 本身多面：重读短 a（无r、无魔法e、不在w后）才读 /æ/", "examples": ["cat", "hand", "apple"] }
+      ],
+      "spellingNote": "修订：basketball 教材英音读 /ˈbɑːskɪtbɔːl/（重读 /ɑː/），已搬去 /ɑː/ 课；laugh/aunt 也在 /ɑː/ 课安家。",
+      "levels": [
+        { "name": "三个字母的小短词", "tip": "最简单的「辅音+a+辅音」，a 全部读 /æ/", "words": [
+          { "w": "cat", "ipa": "kæt", "zh": "猫" },
+          { "w": "hat", "ipa": "hæt", "zh": "帽子" },
+          { "w": "bag", "ipa": "bæg", "zh": "书包" },
+          { "w": "map", "ipa": "mæp", "zh": "地图" },
+          { "w": "dad", "ipa": "dæd", "zh": "爸爸" },
+          { "w": "fat", "ipa": "fæt", "zh": "胖的" },
+          { "w": "sad", "ipa": "sæd", "zh": "难过的" }
+        ]},
+        { "name": "带辅音连缀的词", "tip": "前后多了辅音小尾巴，但 a 还是那个 a", "words": [
+          { "w": "flag", "ipa": "flæg", "zh": "旗子" },
+          { "w": "hand", "ipa": "hænd", "zh": "手" },
+          { "w": "black", "ipa": "blæk", "zh": "黑色" },
+          { "w": "plan", "ipa": "plæn", "zh": "计划" },
+          { "w": "stamp", "ipa": "stæmp", "zh": "邮票" },
+          { "w": "crash", "ipa": "kræʃ", "zh": "撞击" }
+        ]},
+        { "name": "多音节大词", "tip": "词变长了，找到重读的那个 /æ/ 就赢了", "words": [
+          { "w": "apple", "ipa": "ˈæpl", "zh": "苹果" },
+          { "w": "happy", "ipa": "ˈhæpɪ", "zh": "开心的" },
+          { "w": "rabbit", "ipa": "ˈræbɪt", "zh": "兔子" },
+          { "w": "family", "ipa": "ˈfæməlɪ", "zh": "家庭" },
+          { "w": "animal", "ipa": "ˈænɪml", "zh": "动物" },
+          { "w": "fantastic", "ipa": "fænˈtæstɪk", "zh": "棒极了" }
+        ]},
+        { "name": "课本高频词加餐", "tip": "学校里天天见的词，重读都是 /æ/", "words": [
+          { "w": "panda", "ipa": "ˈpændə", "zh": "熊猫" },
+          { "w": "taxi", "ipa": "ˈtæksɪ", "zh": "出租车" },
+          { "w": "jacket", "ipa": "ˈdʒækɪt", "zh": "夹克" },
+          { "w": "sandwich", "ipa": "ˈsænwɪdʒ", "zh": "三明治" },
+          { "w": "camera", "ipa": "ˈkæmərə", "zh": "相机" },
+          { "w": "Saturday", "ipa": "ˈsætədɪ", "zh": "星期六" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A fat cat in a hat sat on a rat's mat!",
+        "zh": "一只胖猫戴着帽子，一屁股坐在老鼠的垫子上！",
+        "pic": "🐈🎩🐀🧺",
+        "coverage": "唯一拼写 a ✓",
+        "wordIpa": [["A","ə"],["fat","fæt"],["cat","kæt"],["in","ɪn"],["a","ə"],["hat","hæt"],["sat","sæt"],["on","ɒn"],["a","ə"],["rat's","ræts"],["mat","mæt"]]
+      },
+      "contrast": {
+        "vsSymbol": "eɪ",
+        "note": "同一个字母 a：词尾偷偷加不发音的 e，就从咧嘴 /æ/ 变成字母名 /eɪ/",
+        "pairs": [["cat","cake"],["hat","hate"],["mad","made"],["tap","tape"],["plan","plane"],["rat","rate"]]
+      },
+      "gamePairs": {
+        "designNote": "全部是「同写 a、不同读音」的拼写呼应对：a vs a_e（魔法e），外加少量 a vs 其他元音字母",
+        "pairs": [["cat","cake"],["hat","hate"],["mad","made"],["tap","tape"],["plan","plane"],["rat","rate"],["bag","beg"],["sad","said"],["black","block"],["map","mop"],["fat","fit"],["hand","band"]],
+        "ipa": { "cat":"kæt","cake":"keɪk","hat":"hæt","hate":"heɪt","mad":"mæd","made":"meɪd","tap":"tæp","tape":"teɪp","plan":"plæn","plane":"pleɪn","rat":"ræt","rate":"reɪt","bag":"bæg","beg":"beg","sad":"sæd","said":"sed","black":"blæk","block":"blɒk","map":"mæp","mop":"mɒp","fat":"fæt","fit":"fɪt","hand":"hænd","band":"bænd" }
+      }
+    },
+    {
+      "symbol": "e",
+      "type": "短元音",
+      "nickname": "抿嘴的小床音",
+      "howTo": "嘴巴半开、往两边轻轻抿（比 /æ/ 张得小一半），舌头稍稍抬起。像中文「哎」但更短更收敛。念 bed 里的那个音。",
+      "ttsDemo": "egg, egg, bed",
+      "spellings": [
+        { "letters": "e", "freq": "主力 · 重读短 e 基本可靠", "examples": ["bed", "pen", "ten"] },
+        { "letters": "ea", "freq": "⚠️两副面孔 · 一大批读 /e/，另一批读 /iː/", "examples": ["head", "bread", "weather"] },
+        { "letters": "ai", "freq": "稀有", "examples": ["said", "again"] },
+        { "letters": "ie", "freq": "稀有", "examples": ["friend"] },
+        { "letters": "a", "freq": "稀有", "examples": ["many", "any"] }
+      ],
+      "levels": [
+        { "name": "e 主力短词", "tip": "「辅音+e+辅音」，先站稳主力拼写", "words": [
+          { "w": "bed", "ipa": "bed", "zh": "床" },
+          { "w": "red", "ipa": "red", "zh": "红色" },
+          { "w": "pen", "ipa": "pen", "zh": "钢笔" },
+          { "w": "ten", "ipa": "ten", "zh": "十" },
+          { "w": "leg", "ipa": "leg", "zh": "腿" },
+          { "w": "net", "ipa": "net", "zh": "网" }
+        ]},
+        { "name": "e 连缀词", "tip": "多了辅音伙伴，e 不变心", "words": [
+          { "w": "desk", "ipa": "desk", "zh": "书桌" },
+          { "w": "nest", "ipa": "nest", "zh": "鸟窝" },
+          { "w": "help", "ipa": "help", "zh": "帮助" },
+          { "w": "tent", "ipa": "tent", "zh": "帐篷" },
+          { "w": "dress", "ipa": "dres", "zh": "连衣裙" },
+          { "w": "smell", "ipa": "smel", "zh": "闻" }
+        ]},
+        { "name": "ea 伪装第一队", "tip": "看着像要读 /iː/，其实读 /e/", "words": [
+          { "w": "head", "ipa": "hed", "zh": "头" },
+          { "w": "bread", "ipa": "bred", "zh": "面包" },
+          { "w": "dead", "ipa": "ded", "zh": "死的" },
+          { "w": "ready", "ipa": "ˈredɪ", "zh": "准备好的" },
+          { "w": "heavy", "ipa": "ˈhevɪ", "zh": "重的" },
+          { "w": "healthy", "ipa": "ˈhelθɪ", "zh": "健康的" }
+        ]},
+        { "name": "ea 伪装第二队", "tip": "ea 读 /e/ 的常用词基本都在这两关了", "words": [
+          { "w": "weather", "ipa": "ˈweðə", "zh": "天气" },
+          { "w": "sweater", "ipa": "ˈswetə", "zh": "毛衣" },
+          { "w": "breakfast", "ipa": "ˈbrekfəst", "zh": "早餐" },
+          { "w": "feather", "ipa": "ˈfeðə", "zh": "羽毛" },
+          { "w": "instead", "ipa": "ɪnˈsted", "zh": "代替" },
+          { "w": "health", "ipa": "helθ", "zh": "健康" }
+        ]},
+        { "name": "ai/ie/a 零散伪装队", "tip": "个个是高频词，个个不写 e——认下来血赚", "words": [
+          { "w": "said", "ipa": "sed", "zh": "说（过去式）" },
+          { "w": "says", "ipa": "sez", "zh": "说（三单）" },
+          { "w": "again", "ipa": "əˈgen", "zh": "再一次" },
+          { "w": "friend", "ipa": "frend", "zh": "朋友" },
+          { "w": "many", "ipa": "ˈmenɪ", "zh": "许多" },
+          { "w": "any", "ipa": "ˈenɪ", "zh": "任何" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "My friend Ted said, Many red hens get bread for breakfast!",
+        "zh": "我朋友泰德说：好多红母鸡早餐都要吃面包！",
+        "pic": "🐔🍞🥚",
+        "coverage": "e(Ted/red/hens/get) + ea(bread/breakfast) + ai(said) + ie(friend) + a(Many) —— 5 个出口全覆盖 ✓",
+        "wordIpa": [["My","maɪ"],["friend","frend"],["Ted","ted"],["said","sed"],["Many","ˈmenɪ"],["red","red"],["hens","henz"],["get","get"],["bread","bred"],["for","fə"],["breakfast","ˈbrekfəst"]]
+      },
+      "contrast": {
+        "vsSymbol": "iː",
+        "note": "ea 的两副面孔正面对决：同样的字母，左边读 /e/，右边读 /iː/",
+        "pairs": [["bread","bead"],["dead","deed"],["head","heat"],["sweat","sweet"],["met","meat"],["bet","beat"]]
+      },
+      "gamePairs": {
+        "designNote": "主打「e/ea 家族字母、不同读音」：met/meat 这类同字母对立，直接练拼写出口",
+        "pairs": [["met","meat"],["bet","beat"],["bed","bead"],["set","seat"],["red","read"],["dead","deed"],["pen","pain"],["let","late"],["sell","sale"],["wet","wait"],["pen","pin"],["ten","tin"]],
+        "ipa": { "met":"met","meat":"miːt","bet":"bet","beat":"biːt","bed":"bed","bead":"biːd","set":"set","seat":"siːt","red":"red","read":"riːd","dead":"ded","deed":"diːd","pen":"pen","pain":"peɪn","let":"let","late":"leɪt","sell":"sel","sale":"seɪl","wet":"wet","wait":"weɪt","pin":"pɪn","ten":"ten","tin":"tɪn" }
+      }
+    },
+    {
+      "symbol": "ɪ",
+      "type": "短元音",
+      "nickname": "放松的小猪音",
+      "howTo": "嘴巴放松微开，舌头稍抬。注意：不是中文的「衣」！比「衣」更松、更含糊、更短，像「衣」和「诶」的中间。念 pig 里的那个音。",
+      "ttsDemo": "it, it, pig",
+      "spellings": [
+        { "letters": "i", "freq": "主力 · 重读短 i 可靠（魔法 e 除外）", "examples": ["pig", "sit", "six"] },
+        { "letters": "y", "freq": "常见 · 词中读 /ɪ/；词尾 y 教材也标 /ɪ/", "examples": ["gym", "happy", "story"] },
+        { "letters": "ui", "freq": "稀有 · ⚠️两副面孔：这里读短音，/uː/ 课读长音", "examples": ["build", "biscuit"] },
+        { "letters": "e / u", "freq": "个别捣蛋鬼", "examples": ["pretty", "English", "busy"] }
+      ],
+      "levels": [
+        { "name": "i 主力短词", "tip": "「辅音+i+辅音」，先认准大部队", "words": [
+          { "w": "pig", "ipa": "pɪg", "zh": "猪" },
+          { "w": "big", "ipa": "bɪg", "zh": "大的" },
+          { "w": "sit", "ipa": "sɪt", "zh": "坐" },
+          { "w": "six", "ipa": "sɪks", "zh": "六" },
+          { "w": "hit", "ipa": "hɪt", "zh": "打" },
+          { "w": "lip", "ipa": "lɪp", "zh": "嘴唇" }
+        ]},
+        { "name": "捣蛋鬼小分队 · y/ui/e/u", "tip": "这一关一个 i 都没有，但个个读 /ɪ/！", "words": [
+          { "w": "gym", "ipa": "dʒɪm", "zh": "健身房" },
+          { "w": "build", "ipa": "bɪld", "zh": "建造" },
+          { "w": "busy", "ipa": "ˈbɪzɪ", "zh": "忙的" },
+          { "w": "pretty", "ipa": "ˈprɪtɪ", "zh": "漂亮的" },
+          { "w": "English", "ipa": "ˈɪŋglɪʃ", "zh": "英语" },
+          { "w": "system", "ipa": "ˈsɪstəm", "zh": "系统" }
+        ]},
+        { "name": "词尾 y 大部队 · 上", "tip": "词尾的 y 十有八九读 /ɪ/", "words": [
+          { "w": "happy", "ipa": "ˈhæpɪ", "zh": "开心的" },
+          { "w": "sunny", "ipa": "ˈsʌnɪ", "zh": "晴朗的" },
+          { "w": "funny", "ipa": "ˈfʌnɪ", "zh": "滑稽的" },
+          { "w": "city", "ipa": "ˈsɪtɪ", "zh": "城市" },
+          { "w": "party", "ipa": "ˈpɑːtɪ", "zh": "聚会" },
+          { "w": "candy", "ipa": "ˈkændɪ", "zh": "糖果" }
+        ]},
+        { "name": "词尾 y 大部队 · 下 + ui", "tip": "再来一批词尾 y，外加 ui 的两个常用词", "words": [
+          { "w": "family", "ipa": "ˈfæməlɪ", "zh": "家庭" },
+          { "w": "story", "ipa": "ˈstɔːrɪ", "zh": "故事" },
+          { "w": "baby", "ipa": "ˈbeɪbɪ", "zh": "宝宝" },
+          { "w": "angry", "ipa": "ˈæŋgrɪ", "zh": "生气的" },
+          { "w": "biscuit", "ipa": "ˈbɪskɪt", "zh": "饼干" },
+          { "w": "guitar", "ipa": "gɪˈtɑː", "zh": "吉他" }
+        ]},
+        { "name": "大词里的 i", "tip": "多音节词里的 i，常常一个词里藏两个 /ɪ/", "words": [
+          { "w": "little", "ipa": "ˈlɪtl", "zh": "小的" },
+          { "w": "dinner", "ipa": "ˈdɪnə", "zh": "晚餐" },
+          { "w": "picture", "ipa": "ˈpɪktʃə", "zh": "图画" },
+          { "w": "chicken", "ipa": "ˈtʃɪkɪn", "zh": "鸡" },
+          { "w": "winter", "ipa": "ˈwɪntə", "zh": "冬天" },
+          { "w": "minute", "ipa": "ˈmɪnɪt", "zh": "分钟" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A busy pig builds a big gym for six pretty kids!",
+        "zh": "一只大忙猪给六个漂亮小孩盖了个大健身房！",
+        "pic": "🐖🏗️🏋️👧👦",
+        "coverage": "i(pig/big/six/kids) + u(busy) + ui(builds) + y(gym) + e(pretty) + 词尾y(busy/pretty) —— 全部出口覆盖 ✓",
+        "wordIpa": [["A","ə"],["busy","ˈbɪzɪ"],["pig","pɪg"],["builds","bɪldz"],["a","ə"],["big","bɪg"],["gym","dʒɪm"],["for","fə"],["six","sɪks"],["pretty","ˈprɪtɪ"],["kids","kɪdz"]]
+      },
+      "contrast": {
+        "vsSymbol": "aɪ",
+        "note": "同一个字母 i：短词里读 /ɪ/（bit），加个魔法 e 变字母名 /aɪ/（bite）——和 a 那套把戏一模一样",
+        "pairs": [["bit","bite"],["kit","kite"],["win","wine"],["fin","fine"],["hid","hide"],["rip","ripe"]]
+      },
+      "gamePairs": {
+        "designNote": "两组拼写呼应：i vs i_e（魔法e）+ 经典 /ɪ/-/iː/ 长短音（中国同学头号易混）",
+        "pairs": [["bit","bite"],["kit","kite"],["win","wine"],["fin","fine"],["hid","hide"],["rip","ripe"],["ship","sheep"],["sit","seat"],["hit","heat"],["chip","cheap"],["live","leave"],["fill","feel"]],
+        "ipa": { "bit":"bɪt","bite":"baɪt","kit":"kɪt","kite":"kaɪt","win":"wɪn","wine":"waɪn","fin":"fɪn","fine":"faɪn","hid":"hɪd","hide":"haɪd","rip":"rɪp","ripe":"raɪp","ship":"ʃɪp","sheep":"ʃiːp","sit":"sɪt","seat":"siːt","hit":"hɪt","heat":"hiːt","chip":"tʃɪp","cheap":"tʃiːp","live":"lɪv","leave":"liːv","fill":"fɪl","feel":"fiːl" }
+      }
+    },
+    {
+      "symbol": "ɒ",
+      "type": "短元音",
+      "nickname": "圆嘴的热狗音",
+      "howTo": "嘴巴张大并且拢圆（像含着一颗大话梅），舌头缩后放低，短促地「奥」一下。念 hot 里的那个音。（美音里这个音读得更像 /ɑː/。）",
+      "ttsDemo": "on, on, hot",
+      "spellings": [
+        { "letters": "o", "freq": "主力 · 重读短 o 可靠（魔法 e 除外）", "examples": ["hot", "dog", "box"] },
+        { "letters": "a", "freq": "w 后面的变身 · ⚠️注意：w+a 不跟 r 读 /ɒ/；跟了 r 变 /ɔː/（warm）", "examples": ["want", "wash", "watch", "what"] }
+      ],
+      "levels": [
+        { "name": "o 主力短词", "tip": "「辅音+o+辅音」，o 全部读 /ɒ/", "words": [
+          { "w": "hot", "ipa": "hɒt", "zh": "热的" },
+          { "w": "dog", "ipa": "dɒg", "zh": "狗" },
+          { "w": "box", "ipa": "bɒks", "zh": "箱子" },
+          { "w": "top", "ipa": "tɒp", "zh": "顶部" },
+          { "w": "fox", "ipa": "fɒks", "zh": "狐狸" },
+          { "w": "pot", "ipa": "pɒt", "zh": "锅" }
+        ]},
+        { "name": "o 连缀词", "tip": "多了辅音伙伴，o 不变心", "words": [
+          { "w": "stop", "ipa": "stɒp", "zh": "停" },
+          { "w": "clock", "ipa": "klɒk", "zh": "钟" },
+          { "w": "frog", "ipa": "frɒg", "zh": "青蛙" },
+          { "w": "shop", "ipa": "ʃɒp", "zh": "商店" },
+          { "w": "sock", "ipa": "sɒk", "zh": "袜子" },
+          { "w": "drop", "ipa": "drɒp", "zh": "掉落" }
+        ]},
+        { "name": "w 后面 a 的变身", "tip": "整关没有一个 o！w 后面的 a 集体变身读 /ɒ/——考试最爱考", "words": [
+          { "w": "want", "ipa": "wɒnt", "zh": "想要" },
+          { "w": "wash", "ipa": "wɒʃ", "zh": "洗" },
+          { "w": "watch", "ipa": "wɒtʃ", "zh": "手表；看" },
+          { "w": "what", "ipa": "wɒt", "zh": "什么" },
+          { "w": "swan", "ipa": "swɒn", "zh": "天鹅" },
+          { "w": "swap", "ipa": "swɒp", "zh": "交换" }
+        ]},
+        { "name": "变身 a 加餐 + o 大词", "tip": "变身 a 的常用词基本穷尽，再配几个 o 的大词", "words": [
+          { "w": "wallet", "ipa": "ˈwɒlɪt", "zh": "钱包" },
+          { "w": "quality", "ipa": "ˈkwɒlətɪ", "zh": "质量" },
+          { "w": "wander", "ipa": "ˈwɒndə", "zh": "闲逛" },
+          { "w": "swallow", "ipa": "ˈswɒləʊ", "zh": "燕子；吞" },
+          { "w": "doctor", "ipa": "ˈdɒktə", "zh": "医生" },
+          { "w": "bottle", "ipa": "ˈbɒtl", "zh": "瓶子" },
+          { "w": "chocolate", "ipa": "ˈtʃɒklət", "zh": "巧克力" },
+          { "w": "hospital", "ipa": "ˈhɒspɪtl", "zh": "医院" },
+          { "w": "orange", "ipa": "ˈɒrɪndʒ", "zh": "橙子" },
+          { "w": "coffee", "ipa": "ˈkɒfɪ", "zh": "咖啡" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Watch the swan wash a dog in a hot pot!",
+        "zh": "快看！那只天鹅在热锅里给狗洗澡！",
+        "pic": "🦢🐕🍲",
+        "coverage": "o(dog/hot/pot) + a变身(Watch/swan/wash) —— 两个出口 3:3 均衡覆盖 ✓",
+        "wordIpa": [["Watch","wɒtʃ"],["the","ðə"],["swan","swɒn"],["wash","wɒʃ"],["a","ə"],["dog","dɒg"],["in","ɪn"],["a","ə"],["hot","hɒt"],["pot","pɒt"]]
+      },
+      "contrast": {
+        "vsSymbol": "əʊ",
+        "note": "同一个字母 o：hop 圆嘴短「奥」，加魔法 e 的 hope 变滑动的「欧」",
+        "pairs": [["hop","hope"],["not","note"],["got","goat"],["rob","robe"],["cost","coast"],["cot","coat"]]
+      },
+      "gamePairs": {
+        "designNote": "三组拼写呼应：o vs o_e/oa（魔法e）+ wa 变身词 vs 普通词 + o vs a",
+        "pairs": [["hop","hope"],["not","note"],["rob","robe"],["got","goat"],["cost","coast"],["wash","wish"],["watch","witch"],["want","went"],["hot","hat"],["top","tap"],["sock","sack"],["fox","fax"]],
+        "ipa": { "hop":"hɒp","hope":"həʊp","not":"nɒt","note":"nəʊt","rob":"rɒb","robe":"rəʊb","got":"gɒt","goat":"gəʊt","cost":"kɒst","coast":"kəʊst","wash":"wɒʃ","wish":"wɪʃ","watch":"wɒtʃ","witch":"wɪtʃ","want":"wɒnt","went":"went","hot":"hɒt","hat":"hæt","top":"tɒp","tap":"tæp","sock":"sɒk","sack":"sæk","fox":"fɒks","fax":"fæks" }
+      }
+    },
+    {
+      "symbol": "ʌ",
+      "type": "短元音",
+      "nickname": "被戳一下的呃音",
+      "howTo": "嘴巴自然微张、完全放松，舌头居中，从喉咙短促地「呃」一声——就像肚子被轻轻戳了一下。念 cup 里的那个音。",
+      "ttsDemo": "up, up, cup",
+      "spellings": [
+        { "letters": "u", "freq": "主力 · 重读短 u 可靠（魔法 e 除外）", "examples": ["cup", "sun", "bus"] },
+        { "letters": "o", "freq": "⚠️大陷阱 · 一大批高频词的 o 读 /ʌ/", "examples": ["mother", "money", "love", "come"] },
+        { "letters": "ou", "freq": "稀有但必学", "examples": ["young", "touch", "cousin", "country"] }
+      ],
+      "levels": [
+        { "name": "u 主力短词", "tip": "「辅音+u+辅音」，u 全部读 /ʌ/", "words": [
+          { "w": "cup", "ipa": "kʌp", "zh": "杯子" },
+          { "w": "bus", "ipa": "bʌs", "zh": "公交车" },
+          { "w": "sun", "ipa": "sʌn", "zh": "太阳" },
+          { "w": "run", "ipa": "rʌn", "zh": "跑" },
+          { "w": "fun", "ipa": "fʌn", "zh": "有趣" },
+          { "w": "cut", "ipa": "kʌt", "zh": "切" }
+        ]},
+        { "name": "u 连缀词", "tip": "动感十足的一组词，u 都读「呃」", "words": [
+          { "w": "duck", "ipa": "dʌk", "zh": "鸭子" },
+          { "w": "jump", "ipa": "dʒʌmp", "zh": "跳" },
+          { "w": "lunch", "ipa": "lʌntʃ", "zh": "午餐" },
+          { "w": "brush", "ipa": "brʌʃ", "zh": "刷子" },
+          { "w": "drum", "ipa": "drʌm", "zh": "鼓" },
+          { "w": "truck", "ipa": "trʌk", "zh": "卡车" }
+        ]},
+        { "name": "o 伪装第一队", "tip": "整关没有一个 u！全是天天用的高频词", "words": [
+          { "w": "mother", "ipa": "ˈmʌðə", "zh": "妈妈" },
+          { "w": "money", "ipa": "ˈmʌnɪ", "zh": "钱" },
+          { "w": "love", "ipa": "lʌv", "zh": "爱" },
+          { "w": "come", "ipa": "kʌm", "zh": "来" },
+          { "w": "some", "ipa": "sʌm", "zh": "一些" },
+          { "w": "son", "ipa": "sʌn", "zh": "儿子" }
+        ]},
+        { "name": "o 伪装第二队", "tip": "o 读 /ʌ/ 的常用词基本穷尽在这两关", "words": [
+          { "w": "brother", "ipa": "ˈbrʌðə", "zh": "兄弟" },
+          { "w": "Monday", "ipa": "ˈmʌndeɪ", "zh": "星期一" },
+          { "w": "monkey", "ipa": "ˈmʌŋkɪ", "zh": "猴子" },
+          { "w": "honey", "ipa": "ˈhʌnɪ", "zh": "蜂蜜" },
+          { "w": "colour", "ipa": "ˈkʌlə", "zh": "颜色" },
+          { "w": "month", "ipa": "mʌnθ", "zh": "月份" }
+        ]},
+        { "name": "ou 伪装队", "tip": "ou 读 /ʌ/ 的常用词也一网打尽", "words": [
+          { "w": "young", "ipa": "jʌŋ", "zh": "年轻的" },
+          { "w": "touch", "ipa": "tʌtʃ", "zh": "触摸" },
+          { "w": "cousin", "ipa": "ˈkʌzn", "zh": "表兄弟姐妹" },
+          { "w": "country", "ipa": "ˈkʌntrɪ", "zh": "国家" },
+          { "w": "trouble", "ipa": "ˈtrʌbl", "zh": "麻烦" },
+          { "w": "double", "ipa": "ˈdʌbl", "zh": "双倍" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "My funny young cousin jumps up on a bus and hugs his mother!",
+        "zh": "我那滑稽的小表弟跳上公交车，一把抱住了他妈妈！",
+        "pic": "🚌🤗👩",
+        "coverage": "u(funny/jumps/up/bus/hugs) + ou(young/cousin) + o(mother) —— 三个出口全覆盖 ✓",
+        "wordIpa": [["My","maɪ"],["funny","ˈfʌnɪ"],["young","jʌŋ"],["cousin","ˈkʌzn"],["jumps","dʒʌmps"],["up","ʌp"],["on","ɒn"],["a","ə"],["bus","bʌs"],["and","ənd"],["hugs","hʌgz"],["his","hɪz"],["mother","ˈmʌðə"]]
+      },
+      "contrast": {
+        "vsSymbol": "æ",
+        "note": "/ʌ/ 嘴放松「呃」（cup 杯子），/æ/ 嘴咧大「哎」（cap 帽子）——买东西别把杯子说成帽子！",
+        "pairs": [["cup","cap"],["cut","cat"],["but","bat"],["fun","fan"],["run","ran"],["hut","hat"]]
+      },
+      "gamePairs": {
+        "designNote": "拼写呼应：u vs a + o伪装词 vs o_e/a_e（come/came、some/same）+ u vs o",
+        "pairs": [["cup","cap"],["cut","cat"],["but","bat"],["fun","fan"],["run","ran"],["bug","bag"],["come","came"],["some","same"],["duck","dock"],["luck","lock"],["nut","not"],["truck","track"]],
+        "ipa": { "cup":"kʌp","cap":"kæp","cut":"kʌt","cat":"kæt","but":"bʌt","bat":"bæt","fun":"fʌn","fan":"fæn","run":"rʌn","ran":"ræn","bug":"bʌg","bag":"bæg","come":"kʌm","came":"keɪm","some":"sʌm","same":"seɪm","duck":"dʌk","dock":"dɒk","luck":"lʌk","lock":"lɒk","nut":"nʌt","not":"nɒt","truck":"trʌk","track":"træk" }
+      }
+    }
+  ]
+}

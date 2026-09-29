@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 7 批 · 单元 7 · 嘘声组（ʃ/ʒ/tʃ/dʒ）+ 教材专属组（tr/dr/ts/dz）",
+    "version": "0.1-待审核",
+    "symbolSet": "48音标（国内教材 DJ 体系）",
+    "consonantNote": "tr/dr/ts/dz 四个是国内教材专属音标（国外词典拆成两个音），课程如实标注「教材专属」，方便孩子对照词典时不困惑。",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律 / ⚠️两副面孔 / 主力 / 稀有",
+      "闯关对立对：清浊对 + 中式易混对（tʃ/ʃ 等）",
+      "词少的音如实呈现，不硬凑",
+      "记忆句用头韵制造节奏感"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "ʃ",
+      "type": "清辅音 · 摩擦音",
+      "nickname": "图书馆嘘声音",
+      "howTo": "嘴唇微微撅起，舌面抬向上颚（不碰到），气流嘘出——就是让人安静的「嘘——」。声带不震。",
+      "ttsDemo": "sh, sh, she",
+      "spellings": [
+        { "letters": "sh", "freq": "✅铁律 · 看到必读", "examples": ["she", "ship", "fish"] },
+        { "letters": "ti / ci（大词里）", "freq": "常见 · station 一族", "examples": ["station", "nation"] },
+        { "letters": "s / ch", "freq": "稀有伪装 · sure/sugar 的 s、法语装的 ch", "examples": ["sure", "sugar", "machine"] }
+      ],
+      "levels": [
+        { "name": "sh 词首队", "tip": "撅嘴嘘气", "words": [
+          { "w": "she", "ipa": "ʃiː", "zh": "她" },
+          { "w": "ship", "ipa": "ʃɪp", "zh": "轮船" },
+          { "w": "shop", "ipa": "ʃɒp", "zh": "商店" },
+          { "w": "shoe", "ipa": "ʃuː", "zh": "鞋" },
+          { "w": "sheep", "ipa": "ʃiːp", "zh": "绵羊" },
+          { "w": "short", "ipa": "ʃɔːt", "zh": "短的" }
+        ]},
+        { "name": "sh 词尾队", "tip": "词尾也要嘘到位", "words": [
+          { "w": "fish", "ipa": "fɪʃ", "zh": "鱼" },
+          { "w": "wash", "ipa": "wɒʃ", "zh": "洗" },
+          { "w": "wish", "ipa": "wɪʃ", "zh": "希望" },
+          { "w": "brush", "ipa": "brʌʃ", "zh": "刷子" },
+          { "w": "finish", "ipa": "ˈfɪnɪʃ", "zh": "完成" }
+        ]},
+        { "name": "伪装队 · s/ti/ch", "tip": "sure/sugar 的 s、station 的 ti、machine 的 ch——全读「嘘」", "words": [
+          { "w": "sure", "ipa": "ʃʊə", "zh": "确定的" },
+          { "w": "sugar", "ipa": "ˈʃʊgə", "zh": "糖" },
+          { "w": "station", "ipa": "ˈsteɪʃn", "zh": "车站" },
+          { "w": "machine", "ipa": "məˈʃiːn", "zh": "机器" },
+          { "w": "chef", "ipa": "ʃef", "zh": "大厨" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Shh! She sells sea shells and shiny shoes in the shop!",
+        "zh": "嘘！她在店里卖海贝壳和亮闪闪的鞋！",
+        "pic": "🐚👟🤫",
+        "coverage": "sh(Shh/She/shells/shiny/shoes/shop) —— 经典绕口令改编 ✓",
+        "wordIpa": [["Shh","ʃ"],["She","ʃiː"],["sells","selz"],["sea","siː"],["shells","ʃelz"],["and","ənd"],["shiny","ˈʃaɪnɪ"],["shoes","ʃuːz"],["in","ɪn"],["the","ðə"],["shop","ʃɒp"]]
+      },
+      "contrast": {
+        "vsSymbol": "s",
+        "note": "嘘声撅嘴（she 她）vs 嘶声咧嘴（sea 海）——嘴型一圆一扁",
+        "pairs": [["she","sea"],["ship","sip"],["shoe","Sue"],["shine","sign"],["short","sort"],["shock","sock"]]
+      },
+      "gamePairs": {
+        "designNote": "ʃ/s 嘴型对 + tʃ 预告（ship/chip、wash/watch）",
+        "pairs": [["she","sea"],["ship","sip"],["shoe","Sue"],["shine","sign"],["short","sort"],["shock","sock"],["shell","sell"],["sheet","seat"],["ship","chip"],["wash","watch"]],
+        "ipa": { "she":"ʃiː","sea":"siː","ship":"ʃɪp","sip":"sɪp","shoe":"ʃuː","Sue":"suː","shine":"ʃaɪn","sign":"saɪn","short":"ʃɔːt","sort":"sɔːt","shock":"ʃɒk","sock":"sɒk","shell":"ʃel","sell":"sel","sheet":"ʃiːt","seat":"siːt","chip":"tʃɪp","wash":"wɒʃ","watch":"wɒtʃ" }
+      }
+    },
+    {
+      "symbol": "ʒ",
+      "type": "浊辅音 · 摩擦音",
+      "nickname": "最稀有的电流音",
+      "howTo": "舌位和 /ʃ/ 一样，加声带震动——像电流「滋——」。诚实说明：这是英语最稀有的辅音，几乎只出现在词中，常用词一只手数得过来。",
+      "ttsDemo": "measure, measure, television",
+      "spellings": [
+        { "letters": "si / su", "freq": "主力（就这几个词）", "examples": ["television", "usually", "measure"] },
+        { "letters": "ge（法语词尾）", "freq": "稀有", "examples": ["garage"] }
+      ],
+      "levels": [
+        { "name": "全家福一网打尽", "tip": "常用词全在这——看电视、量宝藏，一关收工", "words": [
+          { "w": "television", "ipa": "ˈtelɪvɪʒn", "zh": "电视" },
+          { "w": "usually", "ipa": "ˈjuːʒʊəlɪ", "zh": "通常" },
+          { "w": "measure", "ipa": "ˈmeʒə", "zh": "测量" },
+          { "w": "pleasure", "ipa": "ˈpleʒə", "zh": "乐趣" },
+          { "w": "treasure", "ipa": "ˈtreʒə", "zh": "宝藏" },
+          { "w": "garage", "ipa": "ˈgærɑːʒ", "zh": "车库" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "It's a pleasure to measure the treasure on television!",
+        "zh": "在电视上量宝藏，真是一大乐事！",
+        "pic": "📺💎📏",
+        "coverage": "su(pleasure/measure/treasure) + si(television) —— 4 连滋滋 ✓",
+        "wordIpa": [["It's","ɪts"],["a","ə"],["pleasure","ˈpleʒə"],["to","tə"],["measure","ˈmeʒə"],["the","ðə"],["treasure","ˈtreʒə"],["on","ɒn"],["television","ˈtelɪvɪʒn"]]
+      },
+      "contrast": {
+        "vsSymbol": "ʃ",
+        "note": "清浊：嘘（清，sure）vs 滋（浊，usually）——词太少凑不出标准对立对，用词中听辨练",
+        "pairs": [["pleasure","pressure"],["measure","machine"],["television","station"]]
+      },
+      "gamePairs": {
+        "designNote": "本音词太少，非标准最小对——正式关卡建议改为「词中听辨」：听到词里的 /ʒ/ 就拍一下",
+        "pairs": [["pleasure","pressure"],["measure","machine"],["television","station"],["usually","sugar"]],
+        "ipa": { "pleasure":"ˈpleʒə","pressure":"ˈpreʃə","measure":"ˈmeʒə","machine":"məˈʃiːn","television":"ˈtelɪvɪʒn","station":"ˈsteɪʃn","usually":"ˈjuːʒʊəlɪ","sugar":"ˈʃʊgə" }
+      }
+    },
+    {
+      "symbol": "tʃ",
+      "type": "清辅音 · 塞擦音",
+      "nickname": "小火车痴音",
+      "howTo": "舌尖先顶上牙龈（像 t），再滑成嘘声（ʃ），一口气「痴」——像小火车 choo-choo。声带不震。",
+      "ttsDemo": "ch, ch, chair",
+      "spellings": [
+        { "letters": "ch", "freq": "主力 · ⚠️注意 school 一族的 ch 读 /k/、machine 一族读 /ʃ/", "examples": ["chair", "child", "teach"] },
+        { "letters": "tch（短元音后词尾）", "freq": "✅铁律", "examples": ["watch", "catch", "kitchen"] },
+        { "letters": "t(ure/ion)", "freq": "常见 · 大词里的变身", "examples": ["picture", "future", "question"] }
+      ],
+      "levels": [
+        { "name": "ch 词首队", "tip": "先顶舌再嘘，一口气", "words": [
+          { "w": "chair", "ipa": "tʃeə", "zh": "椅子" },
+          { "w": "child", "ipa": "tʃaɪld", "zh": "孩子" },
+          { "w": "chicken", "ipa": "ˈtʃɪkɪn", "zh": "鸡" },
+          { "w": "cheese", "ipa": "tʃiːz", "zh": "奶酪" },
+          { "w": "China", "ipa": "ˈtʃaɪnə", "zh": "中国" },
+          { "w": "chocolate", "ipa": "ˈtʃɒklət", "zh": "巧克力" }
+        ]},
+        { "name": "ch/tch 词尾队", "tip": "短元音后的词尾用 tch（watch/catch），长音后用 ch（teach/beach）", "words": [
+          { "w": "teach", "ipa": "tiːtʃ", "zh": "教" },
+          { "w": "beach", "ipa": "biːtʃ", "zh": "沙滩" },
+          { "w": "lunch", "ipa": "lʌntʃ", "zh": "午餐" },
+          { "w": "watch", "ipa": "wɒtʃ", "zh": "手表；看" },
+          { "w": "catch", "ipa": "kætʃ", "zh": "抓住" },
+          { "w": "kitchen", "ipa": "ˈkɪtʃɪn", "zh": "厨房" }
+        ]},
+        { "name": "ture/tion 变身队", "tip": "大词里 t 和后面字母抱团变「痴」", "words": [
+          { "w": "picture", "ipa": "ˈpɪktʃə", "zh": "图画" },
+          { "w": "future", "ipa": "ˈfjuːtʃə", "zh": "未来" },
+          { "w": "nature", "ipa": "ˈneɪtʃə", "zh": "大自然" },
+          { "w": "question", "ipa": "ˈkwestʃən", "zh": "问题" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The cheerful child chooses cheese and chocolate for lunch in the kitchen!",
+        "zh": "那个乐呵呵的孩子午餐在厨房选了奶酪和巧克力！",
+        "pic": "🧀🍫👦",
+        "coverage": "ch(cheerful/child/chooses/cheese/chocolate/lunch尾) + tch(kitchen) —— 全覆盖 ✓",
+        "wordIpa": [["The","ðə"],["cheerful","ˈtʃɪəfl"],["child","tʃaɪld"],["chooses","ˈtʃuːzɪz"],["cheese","tʃiːz"],["and","ənd"],["chocolate","ˈtʃɒklət"],["for","fə"],["lunch","lʌntʃ"],["in","ɪn"],["the","ðə"],["kitchen","ˈkɪtʃɪn"]]
+      },
+      "contrast": {
+        "vsSymbol": "ʃ",
+        "note": "中国同学易混对：chip（先顶舌「痴」）vs ship（直接嘘）——开头有没有那一下「顶」",
+        "pairs": [["chip","ship"],["chair","share"],["watch","wash"],["catch","cash"],["cheap","sheep"],["chop","shop"]]
+      },
+      "gamePairs": {
+        "designNote": "tʃ/ʃ 易混对全套——听开头顶没顶舌",
+        "pairs": [["chip","ship"],["chair","share"],["watch","wash"],["catch","cash"],["cheap","sheep"],["chop","shop"],["chew","shoe"],["march","marsh"],["cheat","sheet"],["choose","shoes"]],
+        "ipa": { "chip":"tʃɪp","ship":"ʃɪp","chair":"tʃeə","share":"ʃeə","watch":"wɒtʃ","wash":"wɒʃ","catch":"kætʃ","cash":"kæʃ","cheap":"tʃiːp","sheep":"ʃiːp","chop":"tʃɒp","shop":"ʃɒp","chew":"tʃuː","shoe":"ʃuː","march":"mɑːtʃ","marsh":"mɑːʃ","cheat":"tʃiːt","sheet":"ʃiːt","choose":"tʃuːz","shoes":"ʃuːz" }
+      }
+    },
+    {
+      "symbol": "dʒ",
+      "type": "浊辅音 · 塞擦音",
+      "nickname": "果酱音",
+      "howTo": "舌位和 /tʃ/ 一样，加声带震动——jam（果酱）的开头。",
+      "ttsDemo": "j, j, jam",
+      "spellings": [
+        { "letters": "j", "freq": "✅铁律 · 字母 j 看到必读 /dʒ/", "examples": ["jam", "jump", "juice"] },
+        { "letters": "g（e/i/y 前）", "freq": "⚠️g 的第二副面孔 · e/i/y 前的 g 常读 /dʒ/（第 5 批的预告兑现）", "examples": ["giraffe", "orange", "age"] },
+        { "letters": "dge（短元音后词尾）", "freq": "✅铁律", "examples": ["bridge", "fridge"] }
+      ],
+      "spellingNote": "g 两副面孔对决：a/o/u 前读 /g/（go），e/i/y 前常读 /dʒ/（giraffe）。还记得 guess 的保镖 u 吗？它就是挡在 g 和 e 之间保住 /g/ 音的。gym 里 g 也读 /dʒ/——y 前嘛！",
+      "levels": [
+        { "name": "j 铁律队", "tip": "字母 j 最听话，看到必读", "words": [
+          { "w": "jam", "ipa": "dʒæm", "zh": "果酱" },
+          { "w": "jump", "ipa": "dʒʌmp", "zh": "跳" },
+          { "w": "juice", "ipa": "dʒuːs", "zh": "果汁" },
+          { "w": "joke", "ipa": "dʒəʊk", "zh": "笑话" },
+          { "w": "July", "ipa": "dʒʊˈlaɪ", "zh": "七月" },
+          { "w": "jacket", "ipa": "ˈdʒækɪt", "zh": "夹克" }
+        ]},
+        { "name": "g 第二副面孔队", "tip": "整关的 g 全在 e/i/y 前——集体变「果酱音」", "words": [
+          { "w": "giraffe", "ipa": "dʒɪˈrɑːf", "zh": "长颈鹿" },
+          { "w": "orange", "ipa": "ˈɒrɪndʒ", "zh": "橙子" },
+          { "w": "age", "ipa": "eɪdʒ", "zh": "年龄" },
+          { "w": "page", "ipa": "peɪdʒ", "zh": "页" },
+          { "w": "large", "ipa": "lɑːdʒ", "zh": "大的" },
+          { "w": "gym", "ipa": "dʒɪm", "zh": "健身房" }
+        ]},
+        { "name": "dge 词尾队", "tip": "短元音后的词尾用 dge——桥、冰箱、边缘、徽章", "words": [
+          { "w": "bridge", "ipa": "brɪdʒ", "zh": "桥" },
+          { "w": "fridge", "ipa": "frɪdʒ", "zh": "冰箱" },
+          { "w": "edge", "ipa": "edʒ", "zh": "边缘" },
+          { "w": "badge", "ipa": "bædʒ", "zh": "徽章" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A giant giraffe in an orange jacket jumps over the bridge with jam and juice!",
+        "zh": "一只穿橙色夹克的巨型长颈鹿带着果酱和果汁跳过了大桥！",
+        "pic": "🦒🍊🌉",
+        "coverage": "g面孔二(giant/giraffe/orange) + j(jacket/jumps/jam/juice) + dge(bridge) —— 全覆盖 ✓",
+        "wordIpa": [["A","ə"],["giant","ˈdʒaɪənt"],["giraffe","dʒɪˈrɑːf"],["in","ɪn"],["an","ən"],["orange","ˈɒrɪndʒ"],["jacket","ˈdʒækɪt"],["jumps","dʒʌmps"],["over","ˈəʊvə"],["the","ðə"],["bridge","brɪdʒ"],["with","wɪð"],["jam","dʒæm"],["and","ənd"],["juice","dʒuːs"]]
+      },
+      "contrast": {
+        "vsSymbol": "tʃ",
+        "note": "清浊双胞胎：joke 笑话（嗡）vs choke 噎住（不嗡）——讲笑话别把人噎着",
+        "pairs": [["joke","choke"],["jeep","cheap"],["gin","chin"],["jeer","cheer"],["ridge","rich"],["Jane","chain"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对 + 词尾对（badge/batch、age/H）",
+        "pairs": [["joke","choke"],["jeep","cheap"],["gin","chin"],["jeer","cheer"],["ridge","rich"],["Jane","chain"],["age","H"],["badge","batch"],["junk","chunk"],["jam","champ"]],
+        "ipa": { "joke":"dʒəʊk","choke":"tʃəʊk","jeep":"dʒiːp","cheap":"tʃiːp","gin":"dʒɪn","chin":"tʃɪn","jeer":"dʒɪə","cheer":"tʃɪə","ridge":"rɪdʒ","rich":"rɪtʃ","Jane":"dʒeɪn","chain":"tʃeɪn","age":"eɪdʒ","H":"eɪtʃ","badge":"bædʒ","batch":"bætʃ","junk":"dʒʌŋk","chunk":"tʃʌŋk","jam":"dʒæm","champ":"tʃæmp" }
+      }
+    },
+    {
+      "symbol": "tr",
+      "type": "清辅音 · 教材专属",
+      "nickname": "小火车出发音",
+      "howTo": "t 和 r 挤在一起一口气读出，嘴唇撅圆——像火车出发「tr——」。教材专属说明：国外词典把它拆成 /t/+/r/ 两个音，国内教材算一个音标，考试按教材。",
+      "ttsDemo": "tr, tr, tree",
+      "spellings": [
+        { "letters": "tr", "freq": "✅铁律 · 看到必读", "examples": ["tree", "train", "try"] }
+      ],
+      "levels": [
+        { "name": "全家福", "tip": "一口气读，别拆成「特-儿」", "words": [
+          { "w": "tree", "ipa": "triː", "zh": "树" },
+          { "w": "train", "ipa": "treɪn", "zh": "火车" },
+          { "w": "try", "ipa": "traɪ", "zh": "尝试" },
+          { "w": "trip", "ipa": "trɪp", "zh": "旅行" },
+          { "w": "truck", "ipa": "trʌk", "zh": "卡车" },
+          { "w": "trousers", "ipa": "ˈtraʊzəz", "zh": "裤子" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The train travels through the trees on a trip!",
+        "zh": "小火车穿过树林去旅行！",
+        "pic": "🚂🌲",
+        "coverage": "tr(train/travels/trees/trip) ✓",
+        "wordIpa": [["The","ðə"],["train","treɪn"],["travels","ˈtrævlz"],["through","θruː"],["the","ðə"],["trees","triːz"],["on","ɒn"],["a","ə"],["trip","trɪp"]]
+      },
+      "contrast": {
+        "vsSymbol": "dr",
+        "note": "清浊：try 尝试（不嗡）vs dry 干的（嗡）；另配 tree/three——tr 顶舌 vs θr 咬舌，中式易混",
+        "pairs": [["try","dry"],["train","drain"],["trip","drip"],["true","drew"],["tree","three"]]
+      },
+      "gamePairs": {
+        "designNote": "tr/dr 清浊 + tr/θr 咬不咬舌",
+        "pairs": [["try","dry"],["train","drain"],["trip","drip"],["true","drew"],["tree","three"]],
+        "ipa": { "try":"traɪ","dry":"draɪ","train":"treɪn","drain":"dreɪn","trip":"trɪp","drip":"drɪp","true":"truː","drew":"druː","tree":"triː","three":"θriː" }
+      }
+    },
+    {
+      "symbol": "dr",
+      "type": "浊辅音 · 教材专属",
+      "nickname": "打鼓的浊火车音",
+      "howTo": "d 和 r 一口气，声带震动——像鼓槌滚过鼓面「dr——」。教材专属音标。",
+      "ttsDemo": "dr, dr, dress",
+      "spellings": [
+        { "letters": "dr", "freq": "✅铁律 · 看到必读", "examples": ["dress", "drink", "draw"] }
+      ],
+      "levels": [
+        { "name": "全家福", "tip": "一口气读，声带全程嗡", "words": [
+          { "w": "dress", "ipa": "dres", "zh": "连衣裙" },
+          { "w": "drink", "ipa": "drɪŋk", "zh": "喝" },
+          { "w": "draw", "ipa": "drɔː", "zh": "画画" },
+          { "w": "drive", "ipa": "draɪv", "zh": "开车" },
+          { "w": "drop", "ipa": "drɒp", "zh": "掉落" },
+          { "w": "dream", "ipa": "driːm", "zh": "梦" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The dragon draws a dress and drinks a dream drink!",
+        "zh": "小龙画了条裙子，还喝了一杯梦幻饮料！",
+        "pic": "🐉👗🥤",
+        "coverage": "dr(dragon/draws/dress/drinks/dream/drink) —— 6 连滚鼓 ✓",
+        "wordIpa": [["The","ðə"],["dragon","ˈdrægən"],["draws","drɔːz"],["a","ə"],["dress","dres"],["and","ənd"],["drinks","drɪŋks"],["a","ə"],["dream","driːm"],["drink","drɪŋk"]]
+      },
+      "contrast": {
+        "vsSymbol": "tr",
+        "note": "清浊反向：dry 先嗡 vs try 干脆",
+        "pairs": [["dry","try"],["drain","train"],["drip","trip"],["drew","true"]]
+      },
+      "gamePairs": {
+        "designNote": "dr/tr 清浊反向",
+        "pairs": [["dry","try"],["drain","train"],["drip","trip"],["drew","true"]],
+        "ipa": { "dry":"draɪ","try":"traɪ","drain":"dreɪn","train":"treɪn","drip":"drɪp","trip":"trɪp","drew":"druː","true":"truː" }
+      }
+    },
+    {
+      "symbol": "ts",
+      "type": "清辅音 · 教材专属",
+      "nickname": "猫和老鼠的呲音",
+      "howTo": "t 和 s 一口气「呲」，很像中文「次」。教材专属音标，几乎只出现在词尾——就是清辅音 t 结尾的词加复数 s 的场景。",
+      "ttsDemo": "ts, ts, cats",
+      "spellings": [
+        { "letters": "ts（词尾）", "freq": "✅铁律 · t 结尾的词加 s", "examples": ["cats", "hats", "sports"] }
+      ],
+      "levels": [
+        { "name": "复数全家福", "tip": "t 结尾的词变复数，尾巴就是「呲」", "words": [
+          { "w": "cats", "ipa": "kæts", "zh": "猫（复数）" },
+          { "w": "hats", "ipa": "hæts", "zh": "帽子（复数）" },
+          { "w": "boots", "ipa": "buːts", "zh": "靴子（复数）" },
+          { "w": "shirts", "ipa": "ʃɜːts", "zh": "衬衫（复数）" },
+          { "w": "students", "ipa": "ˈstjuːdənts", "zh": "学生（复数）" },
+          { "w": "sports", "ipa": "spɔːts", "zh": "运动（复数）" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Cats in hats eat sweets and fruits!",
+        "zh": "戴帽子的猫吃糖果和水果！",
+        "pic": "🐱🎩🍬",
+        "coverage": "ts(Cats/hats/sweets/fruits) —— 4 连呲 ✓",
+        "wordIpa": [["Cats","kæts"],["in","ɪn"],["hats","hæts"],["eat","iːt"],["sweets","swiːts"],["and","ənd"],["fruits","fruːts"]]
+      },
+      "contrast": {
+        "vsSymbol": "dz",
+        "note": "复数尾巴的清浊：seats 座位（呲）vs seeds 种子（嗡）——前面的音清，尾巴就清；前面浊，尾巴就浊",
+        "pairs": [["seats","seeds"],["carts","cards"],["writes","rides"],["coats","codes"]]
+      },
+      "gamePairs": {
+        "designNote": "ts/dz 复数尾巴清浊对",
+        "pairs": [["seats","seeds"],["carts","cards"],["writes","rides"],["coats","codes"]],
+        "ipa": { "seats":"siːts","seeds":"siːdz","carts":"kɑːts","cards":"kɑːdz","writes":"raɪts","rides":"raɪdz","coats":"kəʊts","codes":"kəʊdz" }
+      }
+    },
+    {
+      "symbol": "dz",
+      "type": "浊辅音 · 教材专属",
+      "nickname": "蜜蜂挤门音",
+      "howTo": "d 和 z 一口气，声带震动。教材专属音标，几乎只出现在词尾——d 结尾的词加复数 s（读 /z/）的场景。",
+      "ttsDemo": "dz, dz, hands",
+      "spellings": [
+        { "letters": "ds（词尾）", "freq": "✅铁律 · d 结尾的词加 s", "examples": ["beds", "hands", "birds"] }
+      ],
+      "levels": [
+        { "name": "复数全家福", "tip": "d 结尾的词变复数，尾巴嗡嗡的", "words": [
+          { "w": "beds", "ipa": "bedz", "zh": "床（复数）" },
+          { "w": "hands", "ipa": "hændz", "zh": "手（复数）" },
+          { "w": "friends", "ipa": "frendz", "zh": "朋友（复数）" },
+          { "w": "birds", "ipa": "bɜːdz", "zh": "鸟（复数）" },
+          { "w": "words", "ipa": "wɜːdz", "zh": "单词（复数）" },
+          { "w": "seeds", "ipa": "siːdz", "zh": "种子（复数）" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Birds and friends hold hands on the beds!",
+        "zh": "小鸟和朋友们在床上手拉手！",
+        "pic": "🐦🤝🛏️",
+        "coverage": "dz(Birds/friends/hands/beds) —— 4 连嗡 ✓",
+        "wordIpa": [["Birds","bɜːdz"],["and","ənd"],["friends","frendz"],["hold","həʊld"],["hands","hændz"],["on","ɒn"],["the","ðə"],["beds","bedz"]]
+      },
+      "contrast": {
+        "vsSymbol": "ts",
+        "note": "反向再听：seeds 嗡 vs seats 呲",
+        "pairs": [["seeds","seats"],["cards","carts"],["rides","writes"],["codes","coats"]]
+      },
+      "gamePairs": {
+        "designNote": "dz/ts 反向",
+        "pairs": [["seeds","seats"],["cards","carts"],["rides","writes"],["codes","coats"]],
+        "ipa": { "seeds":"siːdz","seats":"siːts","cards":"kɑːdz","carts":"kɑːts","rides":"raɪdz","writes":"raɪts","codes":"kəʊdz","coats":"kəʊts" }
+      }
+    }
+  ]
+}

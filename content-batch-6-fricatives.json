@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 6 批 · 单元 6 · 摩擦音六个（f/v · s/z · θ/ð）—— 含中国同学两大魔王",
+    "version": "0.1-待审核",
+    "symbolSet": "48音标（国内教材 DJ 体系）",
+    "consonantNote": "本批含中国同学最难的音：/v/（别读成 w！咬唇）和 /θ/ /ð/（必须咬舌！）。每课的口诀都针对中式易错点设计。",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律 / ⚠️两副面孔 / 主力 / 稀有",
+      "闯关对立对：清浊对 + 中式易混对（v/w、θ/s、ð/d）",
+      "记忆句用头韵制造节奏感",
+      "对比辨音=清浊双胞胎或中式易混音"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "f",
+      "type": "清辅音 · 摩擦音",
+      "nickname": "吹风的咬唇音",
+      "howTo": "上牙轻轻咬住下唇，气从缝里吹出「夫——」，声带不震。关键动作是「咬唇」——照镜子确认上牙碰到下唇了。",
+      "ttsDemo": "f, f, fish",
+      "spellings": [
+        { "letters": "f", "freq": "✅铁律 · 看到必读（唯一例外：of 读 /v/！）", "examples": ["fish", "five", "leaf"] },
+        { "letters": "ff", "freq": "常见", "examples": ["coffee", "off"] },
+        { "letters": "ph", "freq": "✅铁律 · 希腊装，看到必读 /f/", "examples": ["photo", "phone", "elephant"] },
+        { "letters": "gh（词尾）", "freq": "稀有怪咖 · 一小撮词的词尾 gh 读 /f/", "examples": ["laugh", "enough"] }
+      ],
+      "levels": [
+        { "name": "f 主力队", "tip": "咬住下唇再吹气", "words": [
+          { "w": "fish", "ipa": "fɪʃ", "zh": "鱼" },
+          { "w": "five", "ipa": "faɪv", "zh": "五" },
+          { "w": "fox", "ipa": "fɒks", "zh": "狐狸" },
+          { "w": "fun", "ipa": "fʌn", "zh": "有趣" },
+          { "w": "food", "ipa": "fuːd", "zh": "食物" },
+          { "w": "family", "ipa": "ˈfæməlɪ", "zh": "家庭" }
+        ]},
+        { "name": "词尾与 ff 队", "tip": "词尾的 f 也要咬到唇", "words": [
+          { "w": "off", "ipa": "ɒf", "zh": "关闭" },
+          { "w": "if", "ipa": "ɪf", "zh": "如果" },
+          { "w": "leaf", "ipa": "liːf", "zh": "叶子" },
+          { "w": "wolf", "ipa": "wʊlf", "zh": "狼" },
+          { "w": "coffee", "ipa": "ˈkɒfɪ", "zh": "咖啡" }
+        ]},
+        { "name": "ph / gh 伪装队", "tip": "ph 是希腊来的装扮、必读 /f/；laugh/enough 的 gh 是怪咖", "words": [
+          { "w": "photo", "ipa": "ˈfəʊtəʊ", "zh": "照片" },
+          { "w": "phone", "ipa": "fəʊn", "zh": "电话" },
+          { "w": "elephant", "ipa": "ˈelɪfənt", "zh": "大象" },
+          { "w": "laugh", "ipa": "lɑːf", "zh": "大笑" },
+          { "w": "enough", "ipa": "ɪˈnʌf", "zh": "足够" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Four funny fish take a photo of a laughing elephant!",
+        "zh": "四条搞笑的鱼给一头大笑的大象拍照！",
+        "pic": "🐟📷🐘",
+        "coverage": "f(Four/funny/fish) + ph(photo/elephant) + gh(laughing) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Four","fɔː"],["funny","ˈfʌnɪ"],["fish","fɪʃ"],["take","teɪk"],["a","ə"],["photo","ˈfəʊtəʊ"],["of","əv"],["a","ə"],["laughing","ˈlɑːfɪŋ"],["elephant","ˈelɪfənt"]]
+      },
+      "contrast": {
+        "vsSymbol": "v",
+        "note": "清浊双胞胎：同样咬唇，/f/ 只吹气，/v/ 声带震到嘴唇发麻——fan 扇子 vs van 货车",
+        "pairs": [["fan","van"],["ferry","very"],["fine","vine"],["leaf","leave"],["few","view"],["safe","save"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对 + 词尾清浊（leaf/leave、safe/save）",
+        "pairs": [["fan","van"],["ferry","very"],["fine","vine"],["leaf","leave"],["few","view"],["safe","save"],["fast","vast"],["fee","V"],["face","vase"],["surf","serve"]],
+        "ipa": { "fan":"fæn","van":"væn","ferry":"ˈferɪ","very":"ˈverɪ","fine":"faɪn","vine":"vaɪn","leaf":"liːf","leave":"liːv","few":"fjuː","view":"vjuː","safe":"seɪf","save":"seɪv","fast":"fɑːst","vast":"vɑːst","fee":"fiː","V":"viː","face":"feɪs","vase":"vɑːz","surf":"sɜːf","serve":"sɜːv" }
+      }
+    },
+    {
+      "symbol": "v",
+      "type": "浊辅音 · 摩擦音",
+      "nickname": "电动牙刷音（中国同学魔王三号）",
+      "howTo": "嘴型和 /f/ 一样（上牙咬下唇），声带震动——震到嘴唇发麻，像电动牙刷。头号警告：/v/ 不是 /w/！very 不是 wery——/v/ 咬唇、/w/ 嘟圆嘴，照镜子分清。",
+      "ttsDemo": "v, v, very",
+      "spellings": [
+        { "letters": "v", "freq": "✅铁律 · 几乎唯一写法，看到必读", "examples": ["very", "five", "love"] },
+        { "letters": "f（就一个词）", "freq": "⚠️英语最大冷知识 · of 的 f 读 /v/", "examples": ["of"] }
+      ],
+      "levels": [
+        { "name": "词首队 · 咬唇不嘟嘴", "tip": "每个词开口前先咬唇——不咬唇就成 w 了", "words": [
+          { "w": "very", "ipa": "ˈverɪ", "zh": "非常" },
+          { "w": "van", "ipa": "væn", "zh": "货车" },
+          { "w": "voice", "ipa": "vɔɪs", "zh": "声音" },
+          { "w": "video", "ipa": "ˈvɪdɪəʊ", "zh": "视频" },
+          { "w": "visit", "ipa": "ˈvɪzɪt", "zh": "参观" },
+          { "w": "vegetable", "ipa": "ˈvedʒtəbl", "zh": "蔬菜" }
+        ]},
+        { "name": "词中词尾队", "tip": "词尾的 v 也要咬到、震到", "words": [
+          { "w": "five", "ipa": "faɪv", "zh": "五" },
+          { "w": "love", "ipa": "lʌv", "zh": "爱" },
+          { "w": "give", "ipa": "gɪv", "zh": "给" },
+          { "w": "have", "ipa": "hæv", "zh": "有" },
+          { "w": "over", "ipa": "ˈəʊvə", "zh": "越过" },
+          { "w": "seven", "ipa": "ˈsevn", "zh": "七" }
+        ]},
+        { "name": "冷知识与大词队", "tip": "of 的 f 读 /v/——全英语就它一个；river/never/every 天天用", "words": [
+          { "w": "of", "ipa": "əv", "zh": "……的" },
+          { "w": "never", "ipa": "ˈnevə", "zh": "从不" },
+          { "w": "river", "ipa": "ˈrɪvə", "zh": "河" },
+          { "w": "every", "ipa": "ˈevrɪ", "zh": "每个" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A very heavy van gives five vegetables to everyone in the village!",
+        "zh": "一辆超重的货车给村里每个人送了五种蔬菜！",
+        "pic": "🚐🥕🏘️",
+        "coverage": "v 词首(very/van/vegetables/village) + 词中(heavy/gives/everyone) + 词尾(five) —— 全覆盖 ✓",
+        "wordIpa": [["A","ə"],["very","ˈverɪ"],["heavy","ˈhevɪ"],["van","væn"],["gives","gɪvz"],["five","faɪv"],["vegetables","ˈvedʒtəblz"],["to","tə"],["everyone","ˈevrɪwʌn"],["in","ɪn"],["the","ðə"],["village","ˈvɪlɪdʒ"]]
+      },
+      "contrast": {
+        "vsSymbol": "w",
+        "note": "中国同学特供对决：/v/ 咬唇发麻（vine 藤蔓）vs /w/ 嘟圆嘴（wine 葡萄酒）——照镜子，牙齿碰没碰到嘴唇？",
+        "pairs": [["vine","wine"],["vest","west"],["V","we"],["veil","whale"],["verse","worse"],["vet","wet"]]
+      },
+      "gamePairs": {
+        "designNote": "v/w 中式易混对为主 + 回看 f/v 清浊对",
+        "pairs": [["vine","wine"],["vest","west"],["V","we"],["veil","whale"],["verse","worse"],["vet","wet"],["vow","wow"],["van","fan"],["view","few"],["leave","leaf"]],
+        "ipa": { "vine":"vaɪn","wine":"waɪn","vest":"vest","west":"west","V":"viː","we":"wiː","veil":"veɪl","whale":"weɪl","verse":"vɜːs","worse":"wɜːs","vet":"vet","wet":"wet","vow":"vaʊ","wow":"waʊ","van":"væn","fan":"fæn","view":"vjuː","few":"fjuː","leave":"liːv","leaf":"liːf" }
+      }
+    },
+    {
+      "symbol": "s",
+      "type": "清辅音 · 摩擦音",
+      "nickname": "小蛇嘶嘶音",
+      "howTo": "舌尖靠近上牙龈（不要碰到），气从缝里嘶出「嘶——」，像小蛇。声带不震。",
+      "ttsDemo": "s, s, sun",
+      "spellings": [
+        { "letters": "s", "freq": "主力 · ⚠️但 s 常变 /z/（is/dogs），下一课揭晓", "examples": ["sun", "six", "sit"] },
+        { "letters": "ss", "freq": "✅铁律 · 双写 ss 必读清音 /s/", "examples": ["class", "miss", "dress"] },
+        { "letters": "c（e/i/y 前）", "freq": "✅铁律 · c 的第二副面孔：e/i/y 前读 /s/", "examples": ["city", "pencil", "nice"] },
+        { "letters": "sc", "freq": "稀有 · c 装死", "examples": ["science", "scissors"] }
+      ],
+      "spellingNote": "c 的两副面孔正式对决：a/o/u 前读 /k/（cat），e/i/y 前读 /s/（city）——两条都是铁律，学会即终身受用。",
+      "levels": [
+        { "name": "s 主力队", "tip": "舌尖别碰牙龈，留缝嘶气", "words": [
+          { "w": "sun", "ipa": "sʌn", "zh": "太阳" },
+          { "w": "six", "ipa": "sɪks", "zh": "六" },
+          { "w": "sit", "ipa": "sɪt", "zh": "坐" },
+          { "w": "say", "ipa": "seɪ", "zh": "说" },
+          { "w": "sea", "ipa": "siː", "zh": "大海" },
+          { "w": "sister", "ipa": "ˈsɪstə", "zh": "姐妹" }
+        ]},
+        { "name": "ss 与词尾队", "tip": "双写 ss 必是清脆的「嘶」", "words": [
+          { "w": "class", "ipa": "klɑːs", "zh": "班级" },
+          { "w": "glass", "ipa": "glɑːs", "zh": "玻璃杯" },
+          { "w": "miss", "ipa": "mɪs", "zh": "想念" },
+          { "w": "dress", "ipa": "dres", "zh": "连衣裙" },
+          { "w": "bus", "ipa": "bʌs", "zh": "公交车" },
+          { "w": "house", "ipa": "haʊs", "zh": "房子" }
+        ]},
+        { "name": "c 第二副面孔队", "tip": "整关没有字母 s！e/i/y 前的 c 集体变「嘶」——铁律", "words": [
+          { "w": "city", "ipa": "ˈsɪtɪ", "zh": "城市" },
+          { "w": "pencil", "ipa": "ˈpensl", "zh": "铅笔" },
+          { "w": "nice", "ipa": "naɪs", "zh": "好的" },
+          { "w": "ice", "ipa": "aɪs", "zh": "冰" },
+          { "w": "bicycle", "ipa": "ˈbaɪsɪkl", "zh": "自行车" },
+          { "w": "juice", "ipa": "dʒuːs", "zh": "果汁" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Six silly snakes sing a nice song in the city on Sunday!",
+        "zh": "六条傻蛇星期天在城里唱了一首好听的歌！",
+        "pic": "🐍🎵🏙️",
+        "coverage": "s(Six/silly/snakes/sing/song/Sunday) + c面孔二(nice/city) —— 全覆盖 ✓",
+        "wordIpa": [["Six","sɪks"],["silly","ˈsɪlɪ"],["snakes","sneɪks"],["sing","sɪŋ"],["a","ə"],["nice","naɪs"],["song","sɒŋ"],["in","ɪn"],["the","ðə"],["city","ˈsɪtɪ"],["on","ɒn"],["Sunday","ˈsʌndɪ"]]
+      },
+      "contrast": {
+        "vsSymbol": "z",
+        "note": "清浊双胞胎：小蛇嘶嘶（清）vs 蜜蜂嗡嗡（浊）——price 价格 vs prize 奖品，一字千金",
+        "pairs": [["Sue","zoo"],["sip","zip"],["bus","buzz"],["price","prize"],["ice","eyes"],["rice","rise"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对 + 词尾清浊（loose/lose、peace/peas——词尾 s/z 决定单复数和词义）",
+        "pairs": [["Sue","zoo"],["sip","zip"],["bus","buzz"],["price","prize"],["ice","eyes"],["rice","rise"],["loose","lose"],["peace","peas"],["race","raise"],["face","phase"]],
+        "ipa": { "Sue":"suː","zoo":"zuː","sip":"sɪp","zip":"zɪp","bus":"bʌs","buzz":"bʌz","price":"praɪs","prize":"praɪz","ice":"aɪs","eyes":"aɪz","rice":"raɪs","rise":"raɪz","loose":"luːs","lose":"luːz","peace":"piːs","peas":"piːz","race":"reɪs","raise":"reɪz","face":"feɪs","phase":"feɪz" }
+      }
+    },
+    {
+      "symbol": "z",
+      "type": "浊辅音 · 摩擦音",
+      "nickname": "蜜蜂嗡嗡音",
+      "howTo": "舌位和 /s/ 一样，声带震动，像蜜蜂飞过「嗡——」。注意：中文的 z（资）舌头会先顶一下再放，英语 /z/ 全程留缝、气一直流——牙齿别碰舌头。",
+      "ttsDemo": "z, z, zoo",
+      "spellings": [
+        { "letters": "z / zz", "freq": "✅铁律 · 看到必读", "examples": ["zoo", "zero", "buzz"] },
+        { "letters": "s（浊音后/小词）", "freq": "⚠️重磅 · s 是英语里最常读成 /z/ 的字母：is/his/was、复数 dogs、please/music", "examples": ["is", "dogs", "music"] }
+      ],
+      "spellingNote": "本课重磅：字母 s 读 /z/ 的场合比读 /s/ 还多！三大规律：① is/his/was/has/does 这批小词全是 /z/；② 复数 s 跟在浊音后读 /z/（dogs/boys）；③ 两个元音之间的 s 多读 /z/（music/please/busy）。",
+      "levels": [
+        { "name": "z / zz 主力队", "tip": "让声带一直嗡到底", "words": [
+          { "w": "zoo", "ipa": "zuː", "zh": "动物园" },
+          { "w": "zero", "ipa": "ˈzɪərəʊ", "zh": "零" },
+          { "w": "zebra", "ipa": "ˈzebrə", "zh": "斑马" },
+          { "w": "buzz", "ipa": "bʌz", "zh": "嗡嗡声" },
+          { "w": "dizzy", "ipa": "ˈdɪzɪ", "zh": "头晕的" }
+        ]},
+        { "name": "s 变身 · 小词队", "tip": "整关没有字母 z！is/his/was 的 s 全是蜜蜂音", "words": [
+          { "w": "is", "ipa": "ɪz", "zh": "是" },
+          { "w": "his", "ipa": "hɪz", "zh": "他的" },
+          { "w": "was", "ipa": "wɒz", "zh": "是（过去式）" },
+          { "w": "has", "ipa": "hæz", "zh": "有" },
+          { "w": "does", "ipa": "dʌz", "zh": "做（三单）" },
+          { "w": "these", "ipa": "ðiːz", "zh": "这些" }
+        ]},
+        { "name": "s 变身 · 复数与大词队", "tip": "复数 s 跟浊音读 /z/；两个元音夹着的 s 也多读 /z/", "words": [
+          { "w": "dogs", "ipa": "dɒgz", "zh": "狗（复数）" },
+          { "w": "boys", "ipa": "bɔɪz", "zh": "男孩（复数）" },
+          { "w": "please", "ipa": "pliːz", "zh": "请" },
+          { "w": "music", "ipa": "ˈmjuːzɪk", "zh": "音乐" },
+          { "w": "busy", "ipa": "ˈbɪzɪ", "zh": "忙的" },
+          { "w": "nose", "ipa": "nəʊz", "zh": "鼻子" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A busy zebra plays jazz music with his nose in the zoo!",
+        "zh": "一只大忙斑马在动物园里用鼻子演奏爵士乐！",
+        "pic": "🦓🎷👃",
+        "coverage": "z(zebra/jazz/zoo) + s变身(busy/plays/music/his/nose) —— 全覆盖 ✓",
+        "wordIpa": [["A","ə"],["busy","ˈbɪzɪ"],["zebra","ˈzebrə"],["plays","pleɪz"],["jazz","dʒæz"],["music","ˈmjuːzɪk"],["with","wɪð"],["his","hɪz"],["nose","nəʊz"],["in","ɪn"],["the","ðə"],["zoo","zuː"]]
+      },
+      "contrast": {
+        "vsSymbol": "s",
+        "note": "双胞胎反向：eyes 眼睛（嗡）vs ice 冰（嘶）——听词尾定乾坤",
+        "pairs": [["zoo","Sue"],["zip","sip"],["buzz","bus"],["prize","price"],["eyes","ice"],["rise","rice"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对反向 + 词尾 s/z 语义对",
+        "pairs": [["zoo","Sue"],["zip","sip"],["buzz","bus"],["prize","price"],["eyes","ice"],["rise","rice"],["lose","loose"],["peas","peace"],["raise","race"],["plays","place"]],
+        "ipa": { "zoo":"zuː","Sue":"suː","zip":"zɪp","sip":"sɪp","buzz":"bʌz","bus":"bʌs","prize":"praɪz","price":"praɪs","eyes":"aɪz","ice":"aɪs","rise":"raɪz","rice":"raɪs","lose":"luːz","loose":"luːs","peas":"piːz","peace":"piːs","raise":"reɪz","race":"reɪs","plays":"pleɪz","place":"pleɪs" }
+      }
+    },
+    {
+      "symbol": "θ",
+      "type": "清辅音 · 摩擦音",
+      "nickname": "咬舌尖的思音（中国同学魔王一号）",
+      "howTo": "舌尖轻轻伸出来、放在上下牙之间咬住，气从舌齿缝里吹出。必须咬舌！不咬舌就变成 /s/——think 会变 sink（思考变下沉）。照镜子：能看到自己舌尖露出来才算对。",
+      "ttsDemo": "th, th, three",
+      "spellings": [
+        { "letters": "th", "freq": "✅唯一写法 · ⚠️但 th 本身两副面孔：清 /θ/（think）和浊 /ð/（this），下一课对决", "examples": ["think", "three", "mouth"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "每个词开口前先把舌尖伸出来咬住", "words": [
+          { "w": "three", "ipa": "θriː", "zh": "三" },
+          { "w": "think", "ipa": "θɪŋk", "zh": "思考" },
+          { "w": "thank", "ipa": "θæŋk", "zh": "感谢" },
+          { "w": "thin", "ipa": "θɪn", "zh": "瘦的" },
+          { "w": "thirty", "ipa": "ˈθɜːtɪ", "zh": "三十" },
+          { "w": "Thursday", "ipa": "ˈθɜːzdɪ", "zh": "星期四" }
+        ]},
+        { "name": "词尾队", "tip": "词尾也要咬到——mouth 结尾舌尖要露出来", "words": [
+          { "w": "mouth", "ipa": "maʊθ", "zh": "嘴巴" },
+          { "w": "month", "ipa": "mʌnθ", "zh": "月份" },
+          { "w": "bath", "ipa": "bɑːθ", "zh": "洗澡" },
+          { "w": "tooth", "ipa": "tuːθ", "zh": "牙齿" },
+          { "w": "north", "ipa": "nɔːθ", "zh": "北方" },
+          { "w": "earth", "ipa": "ɜːθ", "zh": "地球" }
+        ]},
+        { "name": "大词队", "tip": "藏在大词里的咬舌音", "words": [
+          { "w": "something", "ipa": "ˈsʌmθɪŋ", "zh": "某物" },
+          { "w": "nothing", "ipa": "ˈnʌθɪŋ", "zh": "没有东西" },
+          { "w": "healthy", "ipa": "ˈhelθɪ", "zh": "健康的" },
+          { "w": "thirteen", "ipa": "ˌθɜːˈtiːn", "zh": "十三" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Three thin thieves think thirty thoughts on Thursday!",
+        "zh": "三个瘦小偷在星期四想了三十个念头！",
+        "pic": "🦹🦹🦹💭",
+        "coverage": "词首θ(Three/thin/thieves/think/thirty/thoughts/Thursday) —— 7 连咬舌绕口令 ✓",
+        "wordIpa": [["Three","θriː"],["thin","θɪn"],["thieves","θiːvz"],["think","θɪŋk"],["thirty","ˈθɜːtɪ"],["thoughts","θɔːts"],["on","ɒn"],["Thursday","ˈθɜːzdɪ"]]
+      },
+      "contrast": {
+        "vsSymbol": "s",
+        "note": "中国同学特供对决：咬舌 think（思考）vs 不咬舌 sink（下沉）——舌尖露不露，意思差一个海底",
+        "pairs": [["think","sink"],["thank","sank"],["thick","sick"],["mouth","mouse"],["path","pass"],["worth","worse"]]
+      },
+      "gamePairs": {
+        "designNote": "θ/s 中式易混为主 + θ/f、θ/t 附加（three/free/tree 三连辨）",
+        "pairs": [["think","sink"],["thank","sank"],["thick","sick"],["mouth","mouse"],["path","pass"],["three","free"],["thin","fin"],["thought","fought"],["three","tree"],["worth","worse"]],
+        "ipa": { "think":"θɪŋk","sink":"sɪŋk","thank":"θæŋk","sank":"sæŋk","thick":"θɪk","sick":"sɪk","mouth":"maʊθ","mouse":"maʊs","path":"pɑːθ","pass":"pɑːs","three":"θriː","free":"friː","thin":"θɪn","fin":"fɪn","thought":"θɔːt","fought":"fɔːt","tree":"triː","worth":"wɜːθ","worse":"wɜːs" }
+      }
+    },
+    {
+      "symbol": "ð",
+      "type": "浊辅音 · 摩擦音",
+      "nickname": "咬舌尖的嗡音（魔王二号）",
+      "howTo": "舌位和 /θ/ 一模一样（舌尖伸出咬住！），加上声带震动。不咬舌就变成 /z/ 或 /d/——this 会变成 zis 或 dis。好消息：读 /ð/ 的几乎全是天天用的小词，练熟这一课，开口频率最高的音就拿下了。",
+      "ttsDemo": "th, th, this",
+      "spellings": [
+        { "letters": "th", "freq": "th 的浊面孔 · 规律：功能小词（the/this/that）和家人词（mother/father）的 th 基本全浊", "examples": ["this", "the", "mother"] }
+      ],
+      "levels": [
+        { "name": "天天用小词队 · 上", "tip": "英语出场率最高的几个词全在这——每个都要咬舌+嗡", "words": [
+          { "w": "the", "ipa": "ðə", "zh": "这个；那个" },
+          { "w": "this", "ipa": "ðɪs", "zh": "这个" },
+          { "w": "that", "ipa": "ðæt", "zh": "那个" },
+          { "w": "these", "ipa": "ðiːz", "zh": "这些" },
+          { "w": "those", "ipa": "ðəʊz", "zh": "那些" },
+          { "w": "they", "ipa": "ðeɪ", "zh": "他们" }
+        ]},
+        { "name": "天天用小词队 · 下", "tip": "继续高频小词", "words": [
+          { "w": "them", "ipa": "ðem", "zh": "他们（宾格）" },
+          { "w": "then", "ipa": "ðen", "zh": "然后" },
+          { "w": "there", "ipa": "ðeə", "zh": "那里" },
+          { "w": "with", "ipa": "wɪð", "zh": "和……一起" },
+          { "w": "than", "ipa": "ðæn", "zh": "比" }
+        ]},
+        { "name": "家人词队", "tip": "家人词的 th 全是浊音——一家人都嗡嗡的", "words": [
+          { "w": "mother", "ipa": "ˈmʌðə", "zh": "妈妈" },
+          { "w": "father", "ipa": "ˈfɑːðə", "zh": "爸爸" },
+          { "w": "brother", "ipa": "ˈbrʌðə", "zh": "兄弟" },
+          { "w": "weather", "ipa": "ˈweðə", "zh": "天气" },
+          { "w": "together", "ipa": "təˈgeðə", "zh": "一起" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "That's their mother and father together in this weather!",
+        "zh": "那是他们的妈妈和爸爸，一起站在这样的天气里！",
+        "pic": "👩👨🌦️",
+        "coverage": "小词ð(That's/their/this) + 家人词ð(mother/father/together/weather) —— 7 连咬舌 ✓",
+        "wordIpa": [["That's","ðæts"],["their","ðeə"],["mother","ˈmʌðə"],["and","ənd"],["father","ˈfɑːðə"],["together","təˈgeðə"],["in","ɪn"],["this","ðɪs"],["weather","ˈweðə"]]
+      },
+      "contrast": {
+        "vsSymbol": "d",
+        "note": "中国同学特供：they（咬舌）vs day（舌尖顶牙龈）——不咬舌，「他们」就变「白天」。th 清浊怎么分？口诀：小词和家人词浊（this/mother），实词多清（think/mouth）",
+        "pairs": [["they","day"],["than","Dan"],["those","doze"],["then","den"],["there","dare"],["breathe","breeze"]]
+      },
+      "gamePairs": {
+        "designNote": "ð/d 中式易混为主 + ð/z（breathe/breeze）",
+        "pairs": [["they","day"],["than","Dan"],["those","doze"],["then","den"],["there","dare"],["breathe","breeze"]],
+        "ipa": { "they":"ðeɪ","day":"deɪ","than":"ðæn","Dan":"dæn","those":"ðəʊz","doze":"dəʊz","then":"ðen","den":"den","there":"ðeə","dare":"deə","breathe":"briːð","breeze":"briːz" }
+      }
+    }
+  ]
+}

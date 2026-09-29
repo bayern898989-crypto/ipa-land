@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>音标乐园 IPA Land · 课程地图</title>
+<link rel="manifest" href="manifest.json?v=2">
+<meta name="theme-color" content="#ff5a4e">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192-v2.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-v2.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/theme.css">
+<style>
+  .overall{display:flex;align-items:center;gap:12px;margin:14px 0 4px}
+  .overall .pbar{flex:1}
+  .overall-label{font-family:var(--ui);font-size:12.5px;color:#82715e;flex:none;white-space:nowrap}
+
+  .unit-card{background:var(--card);border:3px solid var(--ink);border-radius:22px;
+    box-shadow:0 6px 0 var(--shadow);margin-bottom:18px;overflow:hidden}
+  .unit-head{padding:12px 18px;color:#fff;font-weight:900;font-size:15px;display:flex;align-items:center;gap:10px}
+  .unit-head .num{font-family:var(--ui);background:rgba(255,255,255,.28);border-radius:999px;padding:3px 11px;font-size:12px;flex:none}
+  .unit-card:nth-of-type(4n+1) .unit-head{background:var(--teal)}
+  .unit-card:nth-of-type(4n+2) .unit-head{background:var(--sky)}
+  .unit-card:nth-of-type(4n+3) .unit-head{background:var(--coral)}
+  .unit-card:nth-of-type(4n+4) .unit-head{background:var(--sun);color:var(--ink)}
+  .unit-card:nth-of-type(4n+4) .unit-head .num{background:rgba(51,38,26,.14)}
+  .unit-body{padding:16px 18px;background:#fffdf7}
+
+  .lesson-grid{display:flex;flex-wrap:wrap;gap:10px}
+  .lesson-tile{width:104px;text-align:center;background:#fff;border:3px solid var(--ink);border-radius:16px;
+    padding:10px 6px 9px;box-shadow:0 4px 0 var(--shadow);cursor:pointer;display:block;
+    transition:transform .06s, box-shadow .06s}
+  .lesson-tile:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+  .lesson-tile:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+  .lesson-tile.done{background:#e6fbf8;border-color:var(--teal-deep)}
+  .lesson-tile .lnum{font-family:var(--ui);font-size:9.5px;color:#a3907a}
+  .lesson-tile .sym{font-family:var(--en);font-weight:800;font-size:22px;color:var(--coral-deep);line-height:1.3}
+  .lesson-tile .type{font-family:var(--ui);font-size:9px;letter-spacing:.02em;color:#8a6a2c;margin-top:1px}
+  .lesson-tile .nick{font-size:10.5px;color:#82715e;margin-top:3px;line-height:1.3;min-height:2.2em}
+  .lesson-tile .stars{margin-top:5px;font-size:11.5px;letter-spacing:1px;color:#c7b79c}
+  .lesson-tile.done .stars{color:inherit}
+
+  @media (max-width:380px){
+    .lesson-tile{width:96px}
+  }
+
+  .specials-head{font-family:var(--ui);font-size:13px;letter-spacing:.06em;color:#82715e;
+    margin:4px 0 12px;display:flex;align-items:center;gap:8px}
+  .specials-head::after{content:'';flex:1;height:3px;border-radius:2px;background:#f0e2cb}
+  .special-card{display:block;background:linear-gradient(160deg,#fff3d6,#ffe9e6);
+    border:3px solid var(--ink);border-radius:22px;box-shadow:0 6px 0 var(--shadow);
+    padding:16px 18px;margin-bottom:18px;transition:transform .06s, box-shadow .06s}
+  .special-card:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+  .special-card:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+  .special-card .t{font-weight:900;font-size:16px;display:flex;align-items:center;gap:8px}
+  .special-card .d{font-size:12.5px;color:#6b5b49;line-height:1.65;margin-top:6px}
+  .special-card .lock{font-family:var(--ui);font-size:11.5px;color:#8a6a2c;margin-top:8px;margin-right:6px;
+    background:rgba(255,255,255,.7);border-radius:999px;padding:4px 11px;display:inline-block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="badge">IPA Land · 课程地图</div>
+    <h1>音标乐园</h1>
+    <p>48 个音标 · 8 个单元 · 一课一个音，从此不怕查词典</p>
+    <div class="overall">
+      <div class="pbar"><i id="overallFill"></i></div>
+      <span class="overall-label" id="overallText">加载中…</span>
+    </div>
+    <a class="btn sun" href="wrongbook.html" style="display:inline-block;margin-top:12px" id="wrongbookLink">🗂️ 我的错题本</a>
+  </header>
+
+  <div id="units">
+    <div class="card" style="text-align:center;color:#82715e">课程加载中…</div>
+  </div>
+
+  <div id="specials"></div>
+
+  <footer>音标乐园 · 内测版 · 为一个五年级小朋友特别定制 🐾</footer>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/lesson-data.js"></script>
+<script src="js/special-progress.js"></script>
+<script src="js/sorting-sets.js"></script>
+<script src="js/home.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>

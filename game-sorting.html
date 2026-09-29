@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>两面派分拣工厂 · 特别关</title>
+<link rel="manifest" href="manifest.json?v=2">
+<meta name="theme-color" content="#ff5a4e">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192-v2.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-v2.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/theme.css">
+<style>
+  .lesson-nav{display:flex;justify-content:space-between;align-items:center;
+    font-family:var(--ui);font-size:13px;color:#82715e;margin-bottom:12px}
+  header h1{font-family:var(--zh);font-weight:900;font-size:25px;text-shadow:none}
+
+  /* ---- 通缉令 ---- */
+  .wanted{background:linear-gradient(160deg,#fff3d6,#ffe9e6);text-align:center}
+  .wanted .masks{font-size:40px}
+  .wanted h2{font-weight:900;font-size:19px;margin:4px 0 10px;display:block}
+  .wanted .combo{font-family:var(--en);font-weight:800;font-size:52px;color:var(--coral-deep);
+    text-decoration:underline wavy var(--sun) 3px;text-underline-offset:8px;line-height:1.3}
+  .faces{display:grid;gap:12px;margin-top:14px}
+  .faces.n2{grid-template-columns:1fr 1fr}
+  .faces.n3{grid-template-columns:1fr 1fr 1fr}
+  .faces.n4{grid-template-columns:1fr 1fr}
+  .face{border:3px solid var(--ink);border-radius:14px;padding:10px 6px;background:#fffdf7}
+  .face .ipa{font-family:var(--en);font-weight:800;font-size:24px}
+  .face .tag{font-family:var(--ui);font-size:10.5px;letter-spacing:.04em;color:#82715e;margin:2px 0 6px;line-height:1.4}
+  .face .eg{font-family:var(--en);font-weight:700;font-size:13px;line-height:1.6;word-break:break-word}
+  .rule{background:#e6fbf8;border:2.5px dashed var(--teal);border-radius:12px;padding:10px 12px;
+    font-size:13.5px;margin-top:12px;text-align:left;line-height:1.75}
+  .rule b{color:var(--teal-deep)}
+  .egg{background:#fff3d6;border:2.5px dashed var(--sun-deep);border-radius:12px;padding:9px 12px;
+    font-size:12.5px;margin-top:10px;text-align:left;line-height:1.7;color:#6b5b49}
+
+  /* ---- 分拣区 ---- */
+  .game-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .game-top .pbar{flex:1;height:14px}
+  .round-label{font-family:var(--ui);font-size:12.5px;color:#82715e;flex:none}
+  .conveyor{text-align:center;margin:6px 0 14px}
+  .wordbox{display:inline-block;font-family:var(--en);font-weight:800;font-size:42px;background:#fff;
+    border:3px solid var(--ink);border-radius:18px;padding:12px 30px;box-shadow:0 5px 0 var(--shadow);line-height:1.15}
+  .wordbox .hit{color:var(--coral-deep);text-decoration:underline wavy var(--sun) 3px;text-underline-offset:6px}
+  .wordbox .zh{display:block;font-family:var(--zh);font-weight:500;font-size:13px;color:#82715e;margin-top:4px}
+  .ask{text-align:center;font-size:14px;font-weight:700;margin-bottom:10px;line-height:1.6}
+  .bins{display:grid;gap:12px}
+  .bins.n2{grid-template-columns:1fr 1fr}
+  .bins.n3{grid-template-columns:1fr 1fr 1fr}
+  .bins.n4{grid-template-columns:1fr 1fr}
+  .bin{border:3px solid var(--ink);border-radius:18px;padding:14px 6px;text-align:center;cursor:pointer;
+    box-shadow:0 5px 0 var(--shadow);transition:transform .06s, box-shadow .06s;background:#fffdf7;
+    font:inherit;color:inherit;display:block;width:100%}
+  .bin:active{transform:translateY(4px);box-shadow:0 1px 0 var(--shadow)}
+  .bin:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .bin .bucket{font-size:30px;line-height:1.2}
+  .bin .ipa{font-family:var(--en);font-weight:800;font-size:24px}
+  .bin .hint{font-family:var(--zh);font-size:11.5px;color:#82715e;line-height:1.4;margin-top:2px}
+  .bin.right{background:#d8f8ee;border-color:var(--teal-deep)}
+  .bin.wrong{background:#ffe0dd;border-color:var(--coral-deep)}
+  .c-teal .ipa{color:var(--teal-deep)}
+  .c-coral .ipa{color:var(--coral-deep)}
+  .c-sun .ipa{color:#a8760a}
+  .c-sky .ipa{color:var(--sky-deep)}
+  .feedback{min-height:44px;text-align:center;font-size:14.5px;font-weight:900;margin-top:12px;line-height:1.6}
+  .feedback.ok{color:var(--teal-deep)}
+  .feedback.no{color:var(--coral-deep)}
+
+  @media (max-width:360px){
+    .bins.n3{grid-template-columns:1fr 1fr}
+    .faces.n3{grid-template-columns:1fr 1fr}
+    .wordbox{font-size:34px;padding:10px 20px}
+  }
+
+  /* ---- 结算 ---- */
+  .result{text-align:center;padding:4px 0}
+  .result .big{font-size:42px;letter-spacing:6px}
+  .result h3{font-size:19px;font-weight:900;margin:6px 0 4px}
+  .result p{font-size:13.5px;color:#82715e}
+  .listbox{background:#fff3d6;border:3px solid var(--ink);border-radius:14px;padding:12px;margin-top:12px;text-align:left}
+  .listbox h4{font-size:14px;font-weight:900;margin-bottom:6px}
+  .listbox .list{font-family:var(--en);font-weight:700;font-size:15px;line-height:1.9}
+  .listbox .list button{font:inherit;background:none;border:none;padding:0;cursor:pointer;color:#1a5fb4}
+  .listbox .list button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  .listbox p{font-size:12.5px;color:#82715e;margin-top:6px;line-height:1.6}
+  .listbox.book{background:#ffe9e6}
+
+  /* ---- 关卡选择（没带 ?set= 时）---- */
+  .pick-card{display:block;background:linear-gradient(160deg,#fff3d6,#ffe9e6);border:3px solid var(--ink);
+    border-radius:20px;box-shadow:0 5px 0 var(--shadow);padding:14px 16px;margin-bottom:14px}
+  .pick-card:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+  .pick-card .t{font-weight:900;font-size:16px}
+  .pick-card .d{font-size:12.5px;color:#6b5b49;line-height:1.6;margin-top:5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lesson-nav">
+    <a href="index.html">← 课程地图</a>
+    <span id="navTag">特别关</span>
+  </div>
+
+  <header>
+    <div class="badge">SPECIAL STAGE · 特别关</div>
+    <h1 id="pageTitle">🏭 分拣工厂</h1>
+    <p id="pageSub">先凭记忆分拣，再听发音验证——练出「看到它心里咯噔一下」的本能</p>
+  </header>
+
+  <div id="app">
+    <div class="card" style="text-align:center;color:#82715e">关卡加载中…</div>
+  </div>
+
+  <footer id="pageFoot">音标乐园 · 特别关 🎭</footer>
+</div>
+
+<script src="js/speak.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/lesson-data.js"></script>
+<script src="js/special-progress.js"></script>
+<script src="js/sorting-sets.js"></script>
+<script src="js/pwa.js"></script>
+<script>
+(function () {
+  const app = document.getElementById('app');
+  const say = IpaSpeak.say;
+
+  function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  /* 关卡选择：没带 ?set= 或写错时，把所有厂列出来 */
+  function renderPicker() {
+    document.getElementById('pageTitle').textContent = '🎭 特别关 · 分拣工厂';
+    document.getElementById('pageSub').textContent = '专治「一个字母组合好几个读音」——挑一个厂开工';
+    app.innerHTML = '';
+    IpaSorting.SETS.forEach(function (s) {
+      const a = document.createElement('a');
+      a.className = 'pick-card';
+      a.href = 'game-sorting.html?set=' + s.id;
+      a.innerHTML = '<div class="t">' + s.emoji + ' ' + esc(s.title) + '</div>' +
+        '<div class="d">' + esc(s.desc) + '</div>';
+      app.appendChild(a);
+    });
+  }
+
+  function renderError(err) {
+    app.innerHTML =
+      '<div class="card" style="text-align:center">' +
+      '<p style="font-weight:700;margin-bottom:8px">😿 内容加载失败</p>' +
+      '<p style="font-size:13px;color:#82715e;line-height:1.7">' +
+      '直接双击打开网页时，浏览器会拦截本地 JSON 文件的读取。<br>' +
+      '请在本目录下启动本地服务器再访问：<code>npx serve .</code> 或 <code>python -m http.server</code>' +
+      '</p><p style="font-size:11px;color:#a3907a;margin-top:10px">' + esc(err.message) + '</p></div>';
+  }
+
+  /* ---------------- 一个厂的完整流程 ---------------- */
+  function runFactory(set, words) {
+    const faces = set.faces;
+    const n = faces.length;
+    const nCls = 'n' + Math.min(n, 4);
+    const TARGET = 12;
+
+    document.title = set.title + ' · 音标乐园';
+    document.getElementById('navTag').textContent = '特别关 · ' + set.combo;
+    document.getElementById('pageTitle').textContent = set.emoji + ' ' + set.title;
+    document.getElementById('pageFoot').textContent =
+      '音标乐园 · ' + set.short + ' · 学完 ' + set.needs.map(function (s) { return '/' + s + '/'; }).join(' ') + ' 后解锁 🎭';
+
+    /* 每副面孔取 3 个词当通缉令示例 */
+    function egOf(idx) {
+      return words.filter(function (w) { return w.faceIdx === idx; }).slice(0, 3)
+        .map(function (w) { return w.w; }).join(' · ') || '—';
+    }
+
+    const facesHtml = faces.map(function (f, i) {
+      return '<div class="face c-' + f.color + '">' +
+        '<div class="ipa">/' + esc(f.sym) + '/</div>' +
+        '<div class="tag">' + esc(f.tag) + '</div>' +
+        '<div class="eg">' + esc(egOf(i)) + '</div></div>';
+    }).join('');
+
+    const binsHtml = faces.map(function (f, i) {
+      return '<button type="button" class="bin c-' + f.color + '" data-face="' + i + '" id="bin' + i + '">' +
+        '<div class="bucket">🪣</div>' +
+        '<div class="ipa">/' + esc(f.sym) + '/</div>' +
+        '<div class="hint">' + esc(f.hint) + '</div></button>';
+    }).join('');
+
+    app.innerHTML =
+      '<div class="card wanted">' +
+        '<div class="masks">🎭</div>' +
+        '<h2>通缉令：字母组合' + (n > 2 ? '多面派' : '两面派') + '</h2>' +
+        '<div class="combo">' + esc(set.combo) + '</div>' +
+        '<div class="faces ' + nCls + '">' + facesHtml + '</div>' +
+        '<div class="rule">🧠 <b>聪明记法：</b>' + set.rule + '</div>' +
+        (set.easterEgg ? '<div class="egg">' + esc(set.easterEgg) + '</div>' : '') +
+      '</div>' +
+      '<div class="card">' +
+        '<div class="game-top">' +
+          '<span class="round-label" id="roundLabel"></span>' +
+          '<div class="pbar"><i id="pfill"></i></div>' +
+        '</div>' +
+        '<div id="quiz">' +
+          '<div class="conveyor"><div class="wordbox" id="wordbox"></div></div>' +
+          '<p class="ask">这个词里的 <b>' + esc(set.combo) + '</b> 读哪个音？先想好再选，选完才有发音！</p>' +
+          '<div class="bins ' + nCls + '" id="bins">' + binsHtml + '</div>' +
+          '<div class="feedback" id="fb"></div>' +
+        '</div>' +
+        '<div class="result" id="result" style="display:none">' +
+          '<div class="big" id="stars"></div>' +
+          '<h3 id="rTitle"></h3><p id="rText"></p>' +
+          '<div class="listbox" id="recapBox" style="display:none">' +
+            '<h4>📖 本局错题回顾（点词可听）</h4><div class="list" id="recapList"></div>' +
+            '<p>错过的词都当场重考过了——明天再来特训一遍，才算真记住。</p>' +
+          '</div>' +
+          '<div class="listbox book" id="bookBox" style="display:none">' +
+            '<h4>🗂️ 这个厂的错题本（累计通缉犯 · 点词可听）</h4><div class="list" id="bookList"></div>' +
+            '<p>特训里答对一次销一笔账，账销干净自动出本。</p>' +
+          '</div>' +
+          '<div id="rewardBox"></div>' +
+          '<div>' +
+            '<button class="btn" id="againBtn">🔁 再分拣一轮</button> ' +
+            '<button class="btn sun" id="drillBtn">🔥 错题特训</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    const elWord = document.getElementById('wordbox');
+    const elFb = document.getElementById('fb');
+    const elRound = document.getElementById('roundLabel');
+    const elFill = document.getElementById('pfill');
+    const elQuiz = document.getElementById('quiz');
+    const elResult = document.getElementById('result');
+    const bins = [];
+    for (let i = 0; i < n; i++) bins.push(document.getElementById('bin' + i));
+
+    let queue = [], cur = null, locked = false, drill = false, roundTotal = 0;
+    let done, firstTryRight, sessionWrong;
+    let timer = null;
+
+    function pickWords() {
+      const per = Math.ceil(TARGET / n);
+      let out = [];
+      faces.forEach(function (f, i) {
+        const pool = shuffle(words.filter(function (w) { return w.faceIdx === i; }).slice());
+        out = out.concat(pool.slice(0, per));
+      });
+      return shuffle(out);
+    }
+
+    function start() {
+      drill = false;
+      queue = pickWords();
+      roundTotal = queue.length;
+      begin();
+    }
+
+    function startDrill() {
+      const book = IpaSpecial.loadBook(set.id);
+      let list = words.filter(function (w) { return book[w.w]; });
+      if (list.length === 0) return;
+      if (list.length < 4) { /* 不足 4 个补几个随机词当陪练 */
+        const pad = shuffle(words.filter(function (w) { return !book[w.w]; }).slice()).slice(0, 4 - list.length);
+        list = list.concat(pad);
+      }
+      drill = true;
+      queue = shuffle(list.slice());
+      roundTotal = queue.length;
+      begin();
+    }
+
+    function begin() {
+      done = {}; firstTryRight = {}; sessionWrong = {};
+      elResult.style.display = 'none';
+      elQuiz.style.display = 'block';
+      next();
+    }
+
+    function count(o) { return Object.keys(o).length; }
+
+    function next() {
+      if (queue.length === 0) return end();
+      locked = false;
+      cur = queue.shift();
+      elRound.textContent = (drill ? '🔥特训 · ' : '') +
+        '已分好 ' + count(done) + ' / ' + roundTotal + ' · 还剩 ' + (queue.length + 1);
+      elFill.style.width = (count(done) / roundTotal * 100) + '%';
+      elFb.textContent = ''; elFb.className = 'feedback';
+      bins.forEach(function (b, i) { b.className = 'bin c-' + faces[i].color; });
+      const w = cur.w;
+      elWord.innerHTML =
+        esc(w.slice(0, cur.at)) +
+        '<span class="hit">' + esc(w.slice(cur.at, cur.at + cur.len)) + '</span>' +
+        esc(w.slice(cur.at + cur.len)) +
+        '<span class="zh">' + esc(cur.zh || '') + '</span>';
+    }
+
+    function choose(faceIdx) {
+      if (locked) return;
+      locked = true;
+      const right = cur.faceIdx;
+      bins[right].classList.add('right');
+      say(cur.w);                                  /* 选完才播音：先记忆后验证 */
+      const book = IpaSpecial.loadBook(set.id);
+
+      if (faceIdx === right) {
+        done[cur.w] = 1;
+        if (!sessionWrong[cur.w]) firstTryRight[cur.w] = 1;
+        if (drill && book[cur.w]) {                /* 特训答对：销一笔账 */
+          book[cur.w]--;
+          const left = book[cur.w];
+          if (left <= 0) delete book[cur.w];
+          IpaSpecial.saveBook(set.id, book);
+          elFb.textContent = '✅ ' + cur.w + ' /' + cur.ipa + '/ —— 账销一笔！' +
+            (left > 0 ? '（还剩 ' + left + ' 笔）' : '（已出错题本 🎉）');
+        } else {
+          elFb.textContent = '✅ 分对了！' + cur.w + ' /' + cur.ipa + '/';
+        }
+        elFb.className = 'feedback ok';
+      } else {
+        bins[faceIdx].classList.add('wrong');
+        sessionWrong[cur.w] = 1;
+        book[cur.w] = (book[cur.w] || 0) + 1;
+        IpaSpecial.saveBook(set.id, book);
+        queue.splice(Math.min(2, queue.length), 0, cur);   /* 当场重考：隔 2 题再来 */
+        elFb.textContent = '❌ 它读 /' + faces[right].sym + '/（' + faces[right].tag + '）！' +
+          cur.w + ' /' + cur.ipa + '/ —— 记入错题本，待会儿重考！';
+        elFb.className = 'feedback no';
+      }
+      clearTimeout(timer);
+      timer = setTimeout(next, faceIdx === right ? 1400 : 2800);
+    }
+
+    bins.forEach(function (b, i) {
+      b.addEventListener('click', function () { choose(i); });
+    });
+
+    function fillList(el, items) {
+      el.innerHTML = '';
+      items.forEach(function (x, i) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = x.label;
+        b.addEventListener('click', function () { say(x.w); });
+        el.appendChild(b);
+        if (i < items.length - 1) el.appendChild(document.createTextNode('  ·  '));
+      });
+    }
+
+    function end() {
+      elFill.style.width = '100%';
+      elQuiz.style.display = 'none';
+      elResult.style.display = 'block';
+
+      const score = count(firstTryRight);
+      const stars = score >= roundTotal ? 3
+        : score >= roundTotal - 2 ? 2
+        : score >= Math.ceil(roundTotal * 0.6) ? 1 : 0;
+      if (!drill) IpaSpecial.setStars(set.id, stars);
+
+      document.getElementById('stars').textContent = '⭐'.repeat(stars) + '☆'.repeat(3 - stars);
+      const titles = ['多面派把你骗惨了，但每个都重考过了！', '有点感觉了！', '火眼金睛快练成了！', '分拣大师！多面派无处遁形！🏆'];
+      document.getElementById('rTitle').textContent = titles[stars];
+      document.getElementById('rText').textContent =
+        '一次分对 ' + score + ' / ' + roundTotal + ' 个（错的都已当场重考补齐）';
+
+      const recapBox = document.getElementById('recapBox');
+      const recap = words.filter(function (w) { return sessionWrong[w.w]; });
+      if (recap.length) {
+        recapBox.style.display = 'block';
+        fillList(document.getElementById('recapList'), recap.map(function (w) {
+          return { w: w.w, label: w.w + ' /' + w.ipa + '/' };
+        }));
+      } else { recapBox.style.display = 'none'; }
+
+      const book = IpaSpecial.loadBook(set.id);
+      const bookWords = words.filter(function (w) { return book[w.w]; });
+      const bookBox = document.getElementById('bookBox');
+      const drillBtn = document.getElementById('drillBtn');
+      if (bookWords.length) {
+        bookBox.style.display = 'block';
+        fillList(document.getElementById('bookList'), bookWords.map(function (w) {
+          return { w: w.w, label: w.w + ' ×' + book[w.w] };
+        }));
+        drillBtn.style.display = '';
+      } else {
+        bookBox.style.display = 'none';
+        drillBtn.style.display = 'none';
+      }
+
+      /* 通关奖励：把该背的小名单整张给出来 */
+      const rewardBox = document.getElementById('rewardBox');
+      rewardBox.innerHTML = '';
+      (set.rewardFaces || []).forEach(function (idx) {
+        const f = faces[idx];
+        const items = words.filter(function (w) { return w.faceIdx === idx; });
+        if (!items.length) return;
+        const box = document.createElement('div');
+        box.className = 'listbox';
+        box.innerHTML = '<h4>🎁 通关奖励 · ' + esc(set.combo) + ' 读 /' + esc(f.sym) + '/ 的名单（点词可听）</h4>' +
+          '<div class="list"></div><p>' + esc(f.tag) + ' —— 就这一小撮，背下它们，剩下的大胆按默认读法读。</p>';
+        rewardBox.appendChild(box);
+        fillList(box.querySelector('.list'), items.map(function (w) { return { w: w.w, label: w.w }; }));
+      });
+
+      if (stars === 3) say('Perfect! You are the sorting master!');
+    }
+
+    document.getElementById('againBtn').addEventListener('click', start);
+    document.getElementById('drillBtn').addEventListener('click', startDrill);
+    start();
+  }
+
+  /* ---------------- 启动 ---------------- */
+  const id = new URLSearchParams(location.search).get('set');
+  const set = id ? IpaSorting.getSet(id) : null;
+  if (!set) { renderPicker(); return; }
+
+  IpaData.loadAll().then(function (units) {
+    const words = IpaSorting.buildWords(units, set);
+    if (words.length < set.faces.length * 2) {
+      app.innerHTML = '<div class="card" style="text-align:center;color:#82715e">' +
+        '这个厂的词还不够开工（内容库里含 ' + esc(set.combo) + ' 的词太少）。' +
+        '<br><a href="index.html" style="color:#1a5fb4">← 回课程地图</a></div>';
+      return;
+    }
+    runFactory(set, words);
+  }).catch(renderError);
+})();
+</script>
+</body>
+</html>

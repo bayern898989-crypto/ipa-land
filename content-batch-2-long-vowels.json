@@ -1,0 +1,2135 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 2 批 · 单元 2 · 长元音五个",
+    "version": "0.2-可靠度标记+词库扩容",
+    "symbolSet": "48音标（国内教材 DJ 体系，英音不卷舌）",
+    "accentNote": "/ɑː/ 一课是英美音分歧重灾区（ask/class 英 /ɑː/ 美 /æ/），TTS 为美音，以教材标注为准。",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律 / ⚠️两副面孔 / 主力 / 稀有",
+      "闯关对立对呼应拼写出口",
+      "稀有拼写多练：词库尽量穷尽常用词，关数不限",
+      "记忆句覆盖全部拼写出口",
+      "对比辨音每组至少6对"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "iː",
+      "type": "长元音",
+      "nickname": "微笑的绵羊音",
+      "howTo": "嘴角往两边咧开像微笑，拉——长了念「衣——」。/iː/ 用力咧嘴拉长，/ɪ/ 放松短促。念 sheep 里的那个音。",
+      "ttsDemo": "eat, eat, sheep",
+      "spellings": [
+        {
+          "letters": "ee",
+          "freq": "✅铁律 · 看到 ee 基本必读 /iː/，几乎没有例外",
+          "examples": [
+            "see",
+            "tree",
+            "green"
+          ]
+        },
+        {
+          "letters": "ea",
+          "freq": "⚠️两副面孔 · 这里读 /iː/，另一批读 /e/（bread）",
+          "examples": [
+            "eat",
+            "tea",
+            "meat"
+          ]
+        },
+        {
+          "letters": "e / e_e",
+          "freq": "常见 · 小词和魔法e",
+          "examples": [
+            "he",
+            "she",
+            "these"
+          ]
+        },
+        {
+          "letters": "ie / ey",
+          "freq": "稀有",
+          "examples": [
+            "piece",
+            "key"
+          ]
+        },
+        {
+          "letters": "i",
+          "freq": "个别外来词",
+          "examples": [
+            "police",
+            "pizza"
+          ]
+        }
+      ],
+      "levels": [
+        {
+          "name": "ee 铁律队 · 上",
+          "tip": "两个 e 手拉手，看到就放心读「衣——」，这是最讲信用的组合",
+          "words": [
+            {
+              "w": "see",
+              "ipa": "siː",
+              "zh": "看见"
+            },
+            {
+              "w": "bee",
+              "ipa": "biː",
+              "zh": "蜜蜂"
+            },
+            {
+              "w": "tree",
+              "ipa": "triː",
+              "zh": "树"
+            },
+            {
+              "w": "three",
+              "ipa": "θriː",
+              "zh": "三"
+            },
+            {
+              "w": "green",
+              "ipa": "griːn",
+              "zh": "绿色"
+            },
+            {
+              "w": "sleep",
+              "ipa": "sliːp",
+              "zh": "睡觉"
+            }
+          ]
+        },
+        {
+          "name": "ee 铁律队 · 下",
+          "tip": "再来一批 ee，全部读「衣——」，零例外",
+          "words": [
+            {
+              "w": "sweet",
+              "ipa": "swiːt",
+              "zh": "甜的"
+            },
+            {
+              "w": "week",
+              "ipa": "wiːk",
+              "zh": "星期"
+            },
+            {
+              "w": "sheep",
+              "ipa": "ʃiːp",
+              "zh": "绵羊"
+            },
+            {
+              "w": "queen",
+              "ipa": "kwiːn",
+              "zh": "女王"
+            },
+            {
+              "w": "feet",
+              "ipa": "fiːt",
+              "zh": "脚（复数）"
+            },
+            {
+              "w": "street",
+              "ipa": "striːt",
+              "zh": "街道"
+            }
+          ]
+        },
+        {
+          "name": "ea 的另一副面孔 · 上",
+          "tip": "上一单元 ea 读 /e/（bread），这里 ea 读 /iː/——两副面孔凑齐",
+          "words": [
+            {
+              "w": "eat",
+              "ipa": "iːt",
+              "zh": "吃"
+            },
+            {
+              "w": "tea",
+              "ipa": "tiː",
+              "zh": "茶"
+            },
+            {
+              "w": "sea",
+              "ipa": "siː",
+              "zh": "大海"
+            },
+            {
+              "w": "meat",
+              "ipa": "miːt",
+              "zh": "肉"
+            },
+            {
+              "w": "read",
+              "ipa": "riːd",
+              "zh": "读"
+            },
+            {
+              "w": "clean",
+              "ipa": "kliːn",
+              "zh": "干净的"
+            }
+          ]
+        },
+        {
+          "name": "ea 的另一副面孔 · 下",
+          "tip": "ea 读 /iː/ 的高频词继续",
+          "words": [
+            {
+              "w": "beach",
+              "ipa": "biːtʃ",
+              "zh": "沙滩"
+            },
+            {
+              "w": "teacher",
+              "ipa": "ˈtiːtʃə",
+              "zh": "老师"
+            },
+            {
+              "w": "please",
+              "ipa": "pliːz",
+              "zh": "请"
+            },
+            {
+              "w": "dream",
+              "ipa": "driːm",
+              "zh": "梦"
+            },
+            {
+              "w": "cream",
+              "ipa": "kriːm",
+              "zh": "奶油"
+            },
+            {
+              "w": "leaf",
+              "ipa": "liːf",
+              "zh": "叶子"
+            }
+          ]
+        },
+        {
+          "name": "e / e_e 小词队",
+          "tip": "单独的 e 在小词里 + 魔法 e 拉长",
+          "words": [
+            {
+              "w": "he",
+              "ipa": "hiː",
+              "zh": "他"
+            },
+            {
+              "w": "she",
+              "ipa": "ʃiː",
+              "zh": "她"
+            },
+            {
+              "w": "we",
+              "ipa": "wiː",
+              "zh": "我们"
+            },
+            {
+              "w": "me",
+              "ipa": "miː",
+              "zh": "我（宾格）"
+            },
+            {
+              "w": "be",
+              "ipa": "biː",
+              "zh": "是"
+            },
+            {
+              "w": "these",
+              "ipa": "ðiːz",
+              "zh": "这些"
+            }
+          ]
+        },
+        {
+          "name": "ie/ey/i 伪装队",
+          "tip": "最后一批伪装：piece 藏 ie、key 藏 ey、外来大明星 police 和 pizza",
+          "words": [
+            {
+              "w": "piece",
+              "ipa": "piːs",
+              "zh": "一块"
+            },
+            {
+              "w": "believe",
+              "ipa": "bɪˈliːv",
+              "zh": "相信"
+            },
+            {
+              "w": "key",
+              "ipa": "kiː",
+              "zh": "钥匙"
+            },
+            {
+              "w": "police",
+              "ipa": "pəˈliːs",
+              "zh": "警察"
+            },
+            {
+              "w": "pizza",
+              "ipa": "ˈpiːtsə",
+              "zh": "披萨"
+            }
+          ]
+        }
+      ],
+      "mnemonic": {
+        "sentence": "She sees a bee with a key eat a piece of green tea cream!",
+        "zh": "她看见一只蜜蜂拿着钥匙，在吃一块抹茶奶油！",
+        "pic": "🐝🔑🍵🍦",
+        "coverage": "e(She) + ee(sees/bee/green) + ey(key) + ea(eat/tea/cream) + ie(piece) —— 全部出口覆盖 ✓",
+        "wordIpa": [
+          [
+            "She",
+            "ʃiː"
+          ],
+          [
+            "sees",
+            "siːz"
+          ],
+          [
+            "a",
+            "ə"
+          ],
+          [
+            "bee",
+            "biː"
+          ],
+          [
+            "with",
+            "wɪð"
+          ],
+          [
+            "a",
+            "ə"
+          ],
+          [
+            "key",
+            "kiː"
+          ],
+          [
+            "eat",
+            "iːt"
+          ],
+          [
+            "a",
+            "ə"
+          ],
+          [
+            "piece",
+            "piːs"
+          ],
+          [
+            "of",
+            "əv"
+          ],
+          [
+            "green",
+            "griːn"
+          ],
+          [
+            "tea",
+            "tiː"
+          ],
+          [
+            "cream",
+            "kriːm"
+          ]
+        ]
+      },
+      "contrast": {
+        "vsSymbol": "ɪ",
+        "note": "微笑拉长的绵羊 sheep vs 放松短促的小船 ship——上一单元的对手，这次从长音这边再练",
+        "pairs": [
+          [
+            "sheep",
+            "ship"
+          ],
+          [
+            "seat",
+            "sit"
+          ],
+          [
+            "feel",
+            "fill"
+          ],
+          [
+            "heat",
+            "hit"
+          ],
+          [
+            "leave",
+            "live"
+          ],
+          [
+            "cheap",
+            "chip"
+          ]
+        ]
+      },
+      "gamePairs": {
+        "designNote": "长短音 /iː/-/ɪ/（头号易混）+ ea vs e 同家族字母对（beat/bet 呼应 ea 两副面孔）",
+        "pairs": [
+          [
+            "sheep",
+            "ship"
+          ],
+          [
+            "seat",
+            "sit"
+          ],
+          [
+            "feel",
+            "fill"
+          ],
+          [
+            "heat",
+            "hit"
+          ],
+          [
+            "leave",
+            "live"
+          ],
+          [
+            "cheap",
+            "chip"
+          ],
+          [
+            "green",
+            "grin"
+          ],
+          [
+            "steal",
+            "still"
+          ],
+          [
+            "beat",
+            "bet"
+          ],
+          [
+            "mean",
+            "men"
+          ],
+          [
+            "bean",
+            "bin"
+          ],
+          [
+            "peach",
+            "pitch"
+          ]
+        ],
+        "ipa": {
+          "sheep": "ʃiːp",
+          "ship": "ʃɪp",
+          "seat": "siːt",
+          "sit": "sɪt",
+          "feel": "fiːl",
+          "fill": "fɪl",
+          "heat": "hiːt",
+          "hit": "hɪt",
+          "leave": "liːv",
+          "live": "lɪv",
+          "cheap": "tʃiːp",
+          "chip": "tʃɪp",
+          "green": "griːn",
+          "grin": "grɪn",
+          "steal": "stiːl",
+          "still": "stɪl",
+          "beat": "biːt",
+          "bet": "bet",
+          "mean": "miːn",
+          "men": "men",
+          "bean": "biːn",
+          "bin": "bɪn",
+          "peach": "piːtʃ",
+          "pitch": "pɪtʃ"
+        }
+      }
+    },
+    {
+      "symbol": "ɑː",
+      "type": "长元音",
+      "nickname": "看医生的张嘴音",
+      "howTo": "嘴巴张到最大，舌头放平压低，像看喉咙时医生让你「啊——」的那声，拉长。念 car 里的那个音。",
+      "ttsDemo": "are, are, car",
+      "spellings": [
+        {
+          "letters": "ar",
+          "freq": "✅铁律 · 重读 ar 基本必读 /ɑː/（唯一例外：w 后面变 /ɔː/，如 warm）",
+          "examples": [
+            "car",
+            "star",
+            "park"
+          ]
+        },
+        {
+          "letters": "a",
+          "freq": "常见 · 英音专属：a 在 s/f/th/n 类音前读长「啊」",
+          "examples": [
+            "ask",
+            "class",
+            "father"
+          ]
+        },
+        {
+          "letters": "al",
+          "freq": "稀有 · l 装死不发音",
+          "examples": [
+            "half",
+            "calm",
+            "palm"
+          ]
+        },
+        {
+          "letters": "au / ear",
+          "freq": "稀有 · 老朋友回归",
+          "examples": [
+            "laugh",
+            "aunt",
+            "heart"
+          ]
+        }
+      ],
+      "spellingNote": "laugh/aunt 从 /æ/ 课搬家至此（教材英音读 /ɑː/）；basketball 也从 /æ/ 课搬来（英音 /ˈbɑːskɪtbɔːl/）。注意 ask/class/fast 这批是英美音分歧最大的词（英 /ɑː/ 美 /æ/），TTS 读美音，以教材为准。",
+      "levels": [
+        {
+          "name": "ar 铁律队 · 上",
+          "tip": "a 和 r 手拉手（英音 r 不卷舌，只管拉长「啊——」）",
+          "words": [
+            {
+              "w": "car",
+              "ipa": "kɑː",
+              "zh": "汽车"
+            },
+            {
+              "w": "far",
+              "ipa": "fɑː",
+              "zh": "远的"
+            },
+            {
+              "w": "star",
+              "ipa": "stɑː",
+              "zh": "星星"
+            },
+            {
+              "w": "arm",
+              "ipa": "ɑːm",
+              "zh": "手臂"
+            },
+            {
+              "w": "art",
+              "ipa": "ɑːt",
+              "zh": "艺术"
+            },
+            {
+              "w": "park",
+              "ipa": "pɑːk",
+              "zh": "公园"
+            }
+          ]
+        },
+        {
+          "name": "ar 铁律队 · 下",
+          "tip": "ar 继续零例外",
+          "words": [
+            {
+              "w": "card",
+              "ipa": "kɑːd",
+              "zh": "卡片"
+            },
+            {
+              "w": "dark",
+              "ipa": "dɑːk",
+              "zh": "黑暗的"
+            },
+            {
+              "w": "farm",
+              "ipa": "fɑːm",
+              "zh": "农场"
+            },
+            {
+              "w": "garden",
+              "ipa": "ˈgɑːdn",
+              "zh": "花园"
+            },
+            {
+              "w": "shark",
+              "ipa": "ʃɑːk",
+              "zh": "鲨鱼"
+            },
+            {
+              "w": "party",
+              "ipa": "ˈpɑːtɪ",
+              "zh": "聚会"
+            }
+          ]
+        },
+        {
+          "name": "没有 r 的长「啊」· 上",
+          "tip": "整关没有 r！英音里这批 a 也读长「啊」——英美音分歧最大的一批",
+          "words": [
+            {
+              "w": "ask",
+              "ipa": "ɑːsk",
+              "zh": "问"
+            },
+            {
+              "w": "fast",
+              "ipa": "fɑːst",
+              "zh": "快的"
+            },
+            {
+              "w": "last",
+              "ipa": "lɑːst",
+              "zh": "最后的"
+            },
+            {
+              "w": "class",
+              "ipa": "klɑːs",
+              "zh": "班级"
+            },
+            {
+              "w": "glass",
+              "ipa": "glɑːs",
+              "zh": "玻璃杯"
+            },
+            {
+              "w": "grass",
+              "ipa": "grɑːs",
+              "zh": "草"
+            }
+          ]
+        },
+        {
+          "name": "没有 r 的长「啊」· 下",
+          "tip": "继续：跳舞、洗澡、篮球都在这队",
+          "words": [
+            {
+              "w": "dance",
+              "ipa": "dɑːns",
+              "zh": "跳舞"
+            },
+            {
+              "w": "plant",
+              "ipa": "plɑːnt",
+              "zh": "植物"
+            },
+            {
+              "w": "bath",
+              "ipa": "bɑːθ",
+              "zh": "洗澡"
+            },
+            {
+              "w": "path",
+              "ipa": "pɑːθ",
+              "zh": "小路"
+            },
+            {
+              "w": "basket",
+              "ipa": "ˈbɑːskɪt",
+              "zh": "篮子"
+            },
+            {
+              "w": "basketball",
+              "ipa": "ˈbɑːskɪtbɔːl",
+              "zh": "篮球（从 /æ/ 课搬家来的）"
+            }
+          ]
+        },
+        {
+          "name": "伪装大军 · al/au/ear + 大词",
+          "tip": "half 的 l 装死、laugh 和 aunt 搬家来了、heart 里藏着 ear",
+          "words": [
+            {
+              "w": "father",
+              "ipa": "ˈfɑːðə",
+              "zh": "父亲"
+            },
+            {
+              "w": "after",
+              "ipa": "ˈɑːftə",
+              "zh": "在……之后"
+            },
+            {
+              "w": "banana",
+              "ipa": "bəˈnɑːnə",
+              "zh": "香蕉"
+            },
+            {
+              "w": "half",
+              "ipa": "hɑːf",
+              "zh": "一半"
+            },
+            {
+              "w": "calm",
+              "ipa": "kɑːm",
+              "zh": "平静的"
+            },
+            {
+              "w": "laugh",
+              "ipa": "lɑːf",
+              "zh": "大笑"
+            },
+            {
+              "w": "aunt",
+              "ipa": "ɑːnt",
+              "zh": "姑姑；阿姨"
+            },
+            {
+              "w": "heart",
+              "ipa": "hɑːt",
+              "zh": "心"
+            }
+          ]
+        }
+      ],
+      "mnemonic": {
+        "sentence": "My calm aunt laughs with all her heart: Father can't park the car in the dark!",
+        "zh": "我那淡定的姑姑开怀大笑：天黑了，爸爸连车都停不进去！",
+        "pic": "🚗🌙😂👩",
+        "coverage": "al(calm) + au(aunt/laughs) + ear(heart) + a(Father/can't) + ar(park/car/dark) —— 全部出口覆盖 ✓",
+        "wordIpa": [
+          [
+            "My",
+            "maɪ"
+          ],
+          [
+            "calm",
+            "kɑːm"
+          ],
+          [
+            "aunt",
+            "ɑːnt"
+          ],
+          [
+            "laughs",
+            "lɑːfs"
+          ],
+          [
+            "with",
+            "wɪð"
+          ],
+          [
+            "all",
+            "ɔːl"
+          ],
+          [
+            "her",
+            "hɜː"
+          ],
+          [
+            "heart",
+            "hɑːt"
+          ],
+          [
+            "Father",
+            "ˈfɑːðə"
+          ],
+          [
+            "can't",
+            "kɑːnt"
+          ],
+          [
+            "park",
+            "pɑːk"
+          ],
+          [
+            "the",
+            "ðə"
+          ],
+          [
+            "car",
+            "kɑː"
+          ],
+          [
+            "in",
+            "ɪn"
+          ],
+          [
+            "the",
+            "ðə"
+          ],
+          [
+            "dark",
+            "dɑːk"
+          ]
+        ]
+      },
+      "contrast": {
+        "vsSymbol": "æ",
+        "note": "张大嘴拉长的「啊——」（cart）vs 咧嘴短促的「哎」（cat）——同字母 a，加不加 r 两个世界",
+        "pairs": [
+          [
+            "cart",
+            "cat"
+          ],
+          [
+            "part",
+            "pat"
+          ],
+          [
+            "heart",
+            "hat"
+          ],
+          [
+            "park",
+            "pack"
+          ],
+          [
+            "arm",
+            "am"
+          ],
+          [
+            "far",
+            "fat"
+          ]
+        ]
+      },
+      "gamePairs": {
+        "designNote": "主打 ar vs 短 a（同字母加不加 r）+ 少量 /ɑː/-/ʌ/（calm/come 呼应 o 伪装）",
+        "pairs": [
+          [
+            "cart",
+            "cat"
+          ],
+          [
+            "part",
+            "pat"
+          ],
+          [
+            "heart",
+            "hat"
+          ],
+          [
+            "park",
+            "pack"
+          ],
+          [
+            "arm",
+            "am"
+          ],
+          [
+            "art",
+            "at"
+          ],
+          [
+            "far",
+            "fat"
+          ],
+          [
+            "hard",
+            "had"
+          ],
+          [
+            "barn",
+            "ban"
+          ],
+          [
+            "calm",
+            "come"
+          ],
+          [
+            "cart",
+            "cut"
+          ],
+          [
+            "dark",
+            "duck"
+          ]
+        ],
+        "ipa": {
+          "cart": "kɑːt",
+          "cat": "kæt",
+          "part": "pɑːt",
+          "pat": "pæt",
+          "heart": "hɑːt",
+          "hat": "hæt",
+          "park": "pɑːk",
+          "pack": "pæk",
+          "arm": "ɑːm",
+          "am": "æm",
+          "art": "ɑːt",
+          "at": "æt",
+          "far": "fɑː",
+          "fat": "fæt",
+          "hard": "hɑːd",
+          "had": "hæd",
+          "barn": "bɑːn",
+          "ban": "bæn",
+          "calm": "kɑːm",
+          "come": "kʌm",
+          "cut": "kʌt",
+          "dark": "dɑːk",
+          "duck": "dʌk"
+        }
+      }
+    },
+    {
+      "symbol": "ɔː",
+      "type": "长元音",
+      "nickname": "惊讶的圆嘴音",
+      "howTo": "嘴唇拢圆往前撅（比 /ɒ/ 更圆更用力），发一个拉长的「哦——」，像看到惊人东西时的「哦——！」。念 ball 里的那个音。",
+      "ttsDemo": "all, all, ball",
+      "spellings": [
+        {
+          "letters": "aw",
+          "freq": "✅铁律 · 看到 aw 必读 /ɔː/，零例外",
+          "examples": [
+            "saw",
+            "draw",
+            "straw"
+          ]
+        },
+        {
+          "letters": "or",
+          "freq": "主力 · 可靠（唯一例外：w 后面变 /ɜː/，如 work）",
+          "examples": [
+            "short",
+            "sport",
+            "horse"
+          ]
+        },
+        {
+          "letters": "al / all",
+          "freq": "可靠 · l 有时装死（walk/talk）",
+          "examples": [
+            "ball",
+            "walk",
+            "talk"
+          ]
+        },
+        {
+          "letters": "au",
+          "freq": "常见",
+          "examples": [
+            "autumn",
+            "daughter",
+            "sauce"
+          ]
+        },
+        {
+          "letters": "oor / our / ore",
+          "freq": "稀有",
+          "examples": [
+            "door",
+            "four",
+            "more"
+          ]
+        },
+        {
+          "letters": "ough / war",
+          "freq": "稀有 · 大变身",
+          "examples": [
+            "thought",
+            "warm",
+            "water"
+          ]
+        }
+      ],
+      "levels": [
+        {
+          "name": "or 主力短词",
+          "tip": "o 和 r 手拉手，圆嘴「哦——」",
+          "words": [
+            {
+              "w": "for",
+              "ipa": "fɔː",
+              "zh": "为了"
+            },
+            {
+              "w": "short",
+              "ipa": "ʃɔːt",
+              "zh": "短的"
+            },
+            {
+              "w": "sport",
+              "ipa": "spɔːt",
+              "zh": "运动"
+            },
+            {
+              "w": "horse",
+              "ipa": "hɔːs",
+              "zh": "马"
+            },
+            {
+              "w": "fork",
+              "ipa": "fɔːk",
+              "zh": "叉子"
+            },
+            {
+              "w": "born",
+              "ipa": "bɔːn",
+              "zh": "出生"
+            }
+          ]
+        },
+        {
+          "name": "all 家族",
+          "tip": "all 里的 a 读「哦——」，基本零例外",
+          "words": [
+            {
+              "w": "ball",
+              "ipa": "bɔːl",
+              "zh": "球"
+            },
+            {
+              "w": "tall",
+              "ipa": "tɔːl",
+              "zh": "高的"
+            },
+            {
+              "w": "wall",
+              "ipa": "wɔːl",
+              "zh": "墙"
+            },
+            {
+              "w": "small",
+              "ipa": "smɔːl",
+              "zh": "小的"
+            },
+            {
+              "w": "call",
+              "ipa": "kɔːl",
+              "zh": "打电话"
+            },
+            {
+              "w": "fall",
+              "ipa": "fɔːl",
+              "zh": "落下"
+            }
+          ]
+        },
+        {
+          "name": "l 装死队 + aw 铁律队",
+          "tip": "walk/talk/chalk 的 l 不发音；aw 看到必读，零例外",
+          "words": [
+            {
+              "w": "walk",
+              "ipa": "wɔːk",
+              "zh": "走路"
+            },
+            {
+              "w": "talk",
+              "ipa": "tɔːk",
+              "zh": "说话"
+            },
+            {
+              "w": "chalk",
+              "ipa": "tʃɔːk",
+              "zh": "粉笔"
+            },
+            {
+              "w": "saw",
+              "ipa": "sɔː",
+              "zh": "看见（过去式）"
+            },
+            {
+              "w": "draw",
+              "ipa": "drɔː",
+              "zh": "画画"
+            },
+            {
+              "w": "straw",
+              "ipa": "strɔː",
+              "zh": "吸管"
+            }
+          ]
+        },
+        {
+          "name": "au + ough 变装队",
+          "tip": "秋天、女儿、酱汁都在这队；thought/bought 的 ough 是终极变装",
+          "words": [
+            {
+              "w": "autumn",
+              "ipa": "ˈɔːtəm",
+              "zh": "秋天"
+            },
+            {
+              "w": "August",
+              "ipa": "ˈɔːgəst",
+              "zh": "八月"
+            },
+            {
+              "w": "daughter",
+              "ipa": "ˈdɔːtə",
+              "zh": "女儿"
+            },
+            {
+              "w": "sauce",
+              "ipa": "sɔːs",
+              "zh": "酱汁"
+            },
+            {
+              "w": "thought",
+              "ipa": "θɔːt",
+              "zh": "想（过去式）"
+            },
+            {
+              "w": "bought",
+              "ipa": "bɔːt",
+              "zh": "买（过去式）"
+            }
+          ]
+        },
+        {
+          "name": "oor/our/ore 门窗队",
+          "tip": "门、地板、四、更多——全读「哦——」",
+          "words": [
+            {
+              "w": "door",
+              "ipa": "dɔː",
+              "zh": "门"
+            },
+            {
+              "w": "floor",
+              "ipa": "flɔː",
+              "zh": "地板"
+            },
+            {
+              "w": "four",
+              "ipa": "fɔː",
+              "zh": "四"
+            },
+            {
+              "w": "your",
+              "ipa": "jɔː",
+              "zh": "你的"
+            },
+            {
+              "w": "more",
+              "ipa": "mɔː",
+              "zh": "更多"
+            },
+            {
+              "w": "before",
+              "ipa": "bɪˈfɔː",
+              "zh": "在……之前"
+            }
+          ]
+        },
+        {
+          "name": "w 变身队 · war/wa+ter",
+          "tip": "又是 w 搞事：w 后面的 ar 变 /ɔː/（warm）——和 /ɑː/ 课的铁律正好互补",
+          "words": [
+            {
+              "w": "warm",
+              "ipa": "wɔːm",
+              "zh": "温暖的"
+            },
+            {
+              "w": "war",
+              "ipa": "wɔː",
+              "zh": "战争"
+            },
+            {
+              "w": "water",
+              "ipa": "ˈwɔːtə",
+              "zh": "水"
+            },
+            {
+              "w": "quarter",
+              "ipa": "ˈkwɔːtə",
+              "zh": "四分之一"
+            }
+          ]
+        }
+      ],
+      "mnemonic": {
+        "sentence": "My tall daughter draws four small horses on the door!",
+        "zh": "我高个子的女儿在门上画了四匹小马！",
+        "pic": "🚪🐴🖍️👧",
+        "coverage": "al(tall/small) + au(daughter) + aw(draws) + our(four) + or(horses) + oor(door) —— 六个出口覆盖 ✓（war 变身在词库单独一关）",
+        "wordIpa": [
+          [
+            "My",
+            "maɪ"
+          ],
+          [
+            "tall",
+            "tɔːl"
+          ],
+          [
+            "daughter",
+            "ˈdɔːtə"
+          ],
+          [
+            "draws",
+            "drɔːz"
+          ],
+          [
+            "four",
+            "fɔː"
+          ],
+          [
+            "small",
+            "smɔːl"
+          ],
+          [
+            "horses",
+            "ˈhɔːsɪz"
+          ],
+          [
+            "on",
+            "ɒn"
+          ],
+          [
+            "the",
+            "ðə"
+          ],
+          [
+            "door",
+            "dɔː"
+          ]
+        ]
+      },
+      "contrast": {
+        "vsSymbol": "ɒ",
+        "note": "同一个字母 o：加了 r 变拉长圆嘴「哦——」（sport），不加 r 是短促的「奥」（spot）",
+        "pairs": [
+          [
+            "sport",
+            "spot"
+          ],
+          [
+            "short",
+            "shot"
+          ],
+          [
+            "port",
+            "pot"
+          ],
+          [
+            "cord",
+            "cod"
+          ],
+          [
+            "form",
+            "from"
+          ],
+          [
+            "stalk",
+            "stock"
+          ]
+        ]
+      },
+      "gamePairs": {
+        "designNote": "三组拼写呼应：or vs o（长短）+ all vs e（tall/tell）+ 大坑 walk/work（/ɔː/-/ɜː/）",
+        "pairs": [
+          [
+            "sport",
+            "spot"
+          ],
+          [
+            "short",
+            "shot"
+          ],
+          [
+            "port",
+            "pot"
+          ],
+          [
+            "form",
+            "from"
+          ],
+          [
+            "tall",
+            "tell"
+          ],
+          [
+            "wall",
+            "well"
+          ],
+          [
+            "ball",
+            "bell"
+          ],
+          [
+            "walk",
+            "work"
+          ],
+          [
+            "saw",
+            "so"
+          ],
+          [
+            "four",
+            "far"
+          ],
+          [
+            "born",
+            "barn"
+          ],
+          [
+            "horse",
+            "house"
+          ]
+        ],
+        "ipa": {
+          "sport": "spɔːt",
+          "spot": "spɒt",
+          "short": "ʃɔːt",
+          "shot": "ʃɒt",
+          "port": "pɔːt",
+          "pot": "pɒt",
+          "form": "fɔːm",
+          "from": "frɒm",
+          "tall": "tɔːl",
+          "tell": "tel",
+          "wall": "wɔːl",
+          "well": "wel",
+          "ball": "bɔːl",
+          "bell": "bel",
+          "walk": "wɔːk",
+          "work": "wɜːk",
+          "saw": "sɔː",
+          "so": "səʊ",
+          "four": "fɔː",
+          "far": "fɑː",
+          "born": "bɔːn",
+          "barn": "bɑːn",
+          "horse": "hɔːs",
+          "house": "haʊs"
+        }
+      }
+    },
+    {
+      "symbol": "uː",
+      "type": "长元音",
+      "nickname": "吹口哨的月亮音",
+      "howTo": "嘴唇拢成小圆孔往前撅（像要吹口哨），发一个拉长的「呜——」。念 moon 里的那个音。",
+      "ttsDemo": "ooh, ooh, moon",
+      "spellings": [
+        {
+          "letters": "oo",
+          "freq": "⚠️两副面孔 · 多数读长「呜——」；k 前面常读短 /ʊ/（book/look）",
+          "examples": [
+            "moon",
+            "food",
+            "school"
+          ]
+        },
+        {
+          "letters": "u_e / u",
+          "freq": "常见",
+          "examples": [
+            "June",
+            "rule",
+            "super"
+          ]
+        },
+        {
+          "letters": "o",
+          "freq": "常见陷阱 · 小词专属",
+          "examples": [
+            "do",
+            "who",
+            "move"
+          ]
+        },
+        {
+          "letters": "ou",
+          "freq": "稀有",
+          "examples": [
+            "soup",
+            "group",
+            "you"
+          ]
+        },
+        {
+          "letters": "ew / ue",
+          "freq": "稀有",
+          "examples": [
+            "new",
+            "flew",
+            "blue",
+            "glue"
+          ]
+        },
+        {
+          "letters": "ui / oe",
+          "freq": "稀有 · ui 的另一副面孔",
+          "examples": [
+            "fruit",
+            "juice",
+            "shoe"
+          ]
+        }
+      ],
+      "spellingNote": "彩蛋：ui 在 /ɪ/ 课读短音（build），这课读长音（fruit）——又一对两副面孔。oo 的 k 前短音规则（book/look/cook）是下一批 /ʊ/ 课的主场，先埋伏笔。",
+      "levels": [
+        {
+          "name": "oo 主力队 · 上",
+          "tip": "两个 o 手拉手像满月，读「呜——」",
+          "words": [
+            {
+              "w": "zoo",
+              "ipa": "zuː",
+              "zh": "动物园"
+            },
+            {
+              "w": "too",
+              "ipa": "tuː",
+              "zh": "也"
+            },
+            {
+              "w": "food",
+              "ipa": "fuːd",
+              "zh": "食物"
+            },
+            {
+              "w": "moon",
+              "ipa": "muːn",
+              "zh": "月亮"
+            },
+            {
+              "w": "cool",
+              "ipa": "kuːl",
+              "zh": "凉爽的；酷"
+            },
+            {
+              "w": "room",
+              "ipa": "ruːm",
+              "zh": "房间"
+            }
+          ]
+        },
+        {
+          "name": "oo 主力队 · 下",
+          "tip": "继续「呜——」（记住：k 前面的 oo 是另一副面孔，下批见）",
+          "words": [
+            {
+              "w": "school",
+              "ipa": "skuːl",
+              "zh": "学校"
+            },
+            {
+              "w": "spoon",
+              "ipa": "spuːn",
+              "zh": "勺子"
+            },
+            {
+              "w": "boot",
+              "ipa": "buːt",
+              "zh": "靴子"
+            },
+            {
+              "w": "roof",
+              "ipa": "ruːf",
+              "zh": "屋顶"
+            },
+            {
+              "w": "noon",
+              "ipa": "nuːn",
+              "zh": "中午"
+            },
+            {
+              "w": "balloon",
+              "ipa": "bəˈluːn",
+              "zh": "气球"
+            }
+          ]
+        },
+        {
+          "name": "u_e / ew / ue 小分队",
+          "tip": "魔法 e、双胞胎 ew/ue——一个 oo 都没有",
+          "words": [
+            {
+              "w": "June",
+              "ipa": "dʒuːn",
+              "zh": "六月"
+            },
+            {
+              "w": "rule",
+              "ipa": "ruːl",
+              "zh": "规则"
+            },
+            {
+              "w": "blue",
+              "ipa": "bluː",
+              "zh": "蓝色"
+            },
+            {
+              "w": "glue",
+              "ipa": "gluː",
+              "zh": "胶水"
+            },
+            {
+              "w": "new",
+              "ipa": "njuː",
+              "zh": "新的"
+            },
+            {
+              "w": "flew",
+              "ipa": "fluː",
+              "zh": "飞（过去式）"
+            }
+          ]
+        },
+        {
+          "name": "u_e / u 加餐",
+          "tip": "尺子、超级、管子——u 家族继续",
+          "words": [
+            {
+              "w": "ruler",
+              "ipa": "ˈruːlə",
+              "zh": "尺子"
+            },
+            {
+              "w": "super",
+              "ipa": "ˈsuːpə",
+              "zh": "超级"
+            },
+            {
+              "w": "tube",
+              "ipa": "tjuːb",
+              "zh": "管子"
+            },
+            {
+              "w": "flute",
+              "ipa": "fluːt",
+              "zh": "长笛"
+            }
+          ]
+        },
+        {
+          "name": "o / ou 小词陷阱队",
+          "tip": "do/who/you 天天用，soup 天天喝——全读「呜——」",
+          "words": [
+            {
+              "w": "do",
+              "ipa": "duː",
+              "zh": "做"
+            },
+            {
+              "w": "who",
+              "ipa": "huː",
+              "zh": "谁"
+            },
+            {
+              "w": "move",
+              "ipa": "muːv",
+              "zh": "移动"
+            },
+            {
+              "w": "soup",
+              "ipa": "suːp",
+              "zh": "汤"
+            },
+            {
+              "w": "group",
+              "ipa": "gruːp",
+              "zh": "小组"
+            },
+            {
+              "w": "you",
+              "ipa": "juː",
+              "zh": "你"
+            }
+          ]
+        },
+        {
+          "name": "ui / oe 伪装队",
+          "tip": "ui 的长音面孔 + 鞋子的 oe",
+          "words": [
+            {
+              "w": "fruit",
+              "ipa": "fruːt",
+              "zh": "水果"
+            },
+            {
+              "w": "juice",
+              "ipa": "dʒuːs",
+              "zh": "果汁"
+            },
+            {
+              "w": "suit",
+              "ipa": "suːt",
+              "zh": "西装"
+            },
+            {
+              "w": "shoe",
+              "ipa": "ʃuː",
+              "zh": "鞋"
+            }
+          ]
+        }
+      ],
+      "mnemonic": {
+        "sentence": "Who flew to the moon in June with blue fruit juice and soup?!",
+        "zh": "谁在六月带着蓝色果汁和一锅汤飞上了月球？！",
+        "pic": "🚀🌕🧃🍜",
+        "coverage": "o(Who) + ew(flew) + oo(moon) + u_e(June) + ue(blue) + ui(fruit/juice) + ou(soup) —— 全部出口覆盖 ✓",
+        "wordIpa": [
+          [
+            "Who",
+            "huː"
+          ],
+          [
+            "flew",
+            "fluː"
+          ],
+          [
+            "to",
+            "tuː"
+          ],
+          [
+            "the",
+            "ðə"
+          ],
+          [
+            "moon",
+            "muːn"
+          ],
+          [
+            "in",
+            "ɪn"
+          ],
+          [
+            "June",
+            "dʒuːn"
+          ],
+          [
+            "with",
+            "wɪð"
+          ],
+          [
+            "blue",
+            "bluː"
+          ],
+          [
+            "fruit",
+            "fruːt"
+          ],
+          [
+            "juice",
+            "dʒuːs"
+          ],
+          [
+            "and",
+            "ənd"
+          ],
+          [
+            "soup",
+            "suːp"
+          ]
+        ]
+      },
+      "contrast": {
+        "vsSymbol": "ʊ",
+        "note": "oo 的两副面孔正面对决：长「呜——」（pool）vs 短「乌」（pull）——/ʊ/ 下一批正式登场，先热身",
+        "pairs": [
+          [
+            "pool",
+            "pull"
+          ],
+          [
+            "fool",
+            "full"
+          ],
+          [
+            "Luke",
+            "look"
+          ],
+          [
+            "food",
+            "foot"
+          ],
+          [
+            "boot",
+            "book"
+          ],
+          [
+            "cool",
+            "cook"
+          ]
+        ]
+      },
+      "gamePairs": {
+        "designNote": "两组拼写呼应：oo 的两副面孔（pool/pull）+ oo/ue/ou vs o_e/oa/ow（too/toe、soup/soap）",
+        "pairs": [
+          [
+            "pool",
+            "pull"
+          ],
+          [
+            "fool",
+            "full"
+          ],
+          [
+            "Luke",
+            "look"
+          ],
+          [
+            "food",
+            "foot"
+          ],
+          [
+            "too",
+            "toe"
+          ],
+          [
+            "blue",
+            "blow"
+          ],
+          [
+            "shoe",
+            "show"
+          ],
+          [
+            "soup",
+            "soap"
+          ],
+          [
+            "boot",
+            "boat"
+          ],
+          [
+            "moon",
+            "moan"
+          ],
+          [
+            "cool",
+            "coal"
+          ],
+          [
+            "room",
+            "roam"
+          ]
+        ],
+        "ipa": {
+          "pool": "puːl",
+          "pull": "pʊl",
+          "fool": "fuːl",
+          "full": "fʊl",
+          "Luke": "luːk",
+          "look": "lʊk",
+          "food": "fuːd",
+          "foot": "fʊt",
+          "too": "tuː",
+          "toe": "təʊ",
+          "blue": "bluː",
+          "blow": "bləʊ",
+          "shoe": "ʃuː",
+          "show": "ʃəʊ",
+          "soup": "suːp",
+          "soap": "səʊp",
+          "boot": "buːt",
+          "boat": "bəʊt",
+          "moon": "muːn",
+          "moan": "məʊn",
+          "cool": "kuːl",
+          "coal": "kəʊl",
+          "room": "ruːm",
+          "roam": "rəʊm"
+        }
+      }
+    },
+    {
+      "symbol": "ɜː",
+      "type": "长元音",
+      "nickname": "思考的嗯音",
+      "howTo": "嘴巴微开不圆不咧，舌头居中，从喉咙发一个拉长的「呃——」，像思考时的「嗯——让我想想」。念 bird 里的那个音。",
+      "ttsDemo": "her, her, bird",
+      "spellings": [
+        {
+          "letters": "ir",
+          "freq": "✅铁律 · 重读 ir 基本必读 /ɜː/",
+          "examples": [
+            "bird",
+            "girl",
+            "first"
+          ]
+        },
+        {
+          "letters": "ur",
+          "freq": "✅铁律 · 重读 ur 基本必读 /ɜː/",
+          "examples": [
+            "turn",
+            "nurse",
+            "purple"
+          ]
+        },
+        {
+          "letters": "er",
+          "freq": "主力 · 重读时读 /ɜː/（词尾轻读是 /ə/，下批见）",
+          "examples": [
+            "her",
+            "term",
+            "serve"
+          ]
+        },
+        {
+          "letters": "or",
+          "freq": "✅铁律 · w 后面的 or 必读 /ɜː/",
+          "examples": [
+            "work",
+            "word",
+            "world"
+          ]
+        },
+        {
+          "letters": "ear",
+          "freq": "稀有 · 后面跟辅音时常读 /ɜː/",
+          "examples": [
+            "early",
+            "learn",
+            "earth"
+          ]
+        }
+      ],
+      "spellingNote": "w 搞事三部曲集齐：w+a 变 /ɒ/（want）、w+ar 变 /ɔː/（warm）、w+or 变 /ɜː/（work）——w 是英语里最爱搞事的字母，这三条放在一起记效率最高。",
+      "levels": [
+        {
+          "name": "三巨头短词",
+          "tip": "ir、er、ur 各显神通，读音一模一样",
+          "words": [
+            {
+              "w": "bird",
+              "ipa": "bɜːd",
+              "zh": "鸟"
+            },
+            {
+              "w": "girl",
+              "ipa": "gɜːl",
+              "zh": "女孩"
+            },
+            {
+              "w": "her",
+              "ipa": "hɜː",
+              "zh": "她的"
+            },
+            {
+              "w": "turn",
+              "ipa": "tɜːn",
+              "zh": "转"
+            },
+            {
+              "w": "hurt",
+              "ipa": "hɜːt",
+              "zh": "受伤"
+            },
+            {
+              "w": "sir",
+              "ipa": "sɜː",
+              "zh": "先生"
+            }
+          ]
+        },
+        {
+          "name": "三巨头 · 衣柜队",
+          "tip": "衬衫、裙子、紫色、护士——穿搭词全在 /ɜː/",
+          "words": [
+            {
+              "w": "first",
+              "ipa": "fɜːst",
+              "zh": "第一"
+            },
+            {
+              "w": "shirt",
+              "ipa": "ʃɜːt",
+              "zh": "衬衫"
+            },
+            {
+              "w": "skirt",
+              "ipa": "skɜːt",
+              "zh": "裙子"
+            },
+            {
+              "w": "third",
+              "ipa": "θɜːd",
+              "zh": "第三"
+            },
+            {
+              "w": "nurse",
+              "ipa": "nɜːs",
+              "zh": "护士"
+            },
+            {
+              "w": "purple",
+              "ipa": "ˈpɜːpl",
+              "zh": "紫色"
+            }
+          ]
+        },
+        {
+          "name": "三巨头 · 数字生活队",
+          "tip": "三十、十三、星期四、汉堡、乌龟——高频词继续穷尽",
+          "words": [
+            {
+              "w": "dirty",
+              "ipa": "ˈdɜːtɪ",
+              "zh": "脏的"
+            },
+            {
+              "w": "thirty",
+              "ipa": "ˈθɜːtɪ",
+              "zh": "三十"
+            },
+            {
+              "w": "thirteen",
+              "ipa": "ˌθɜːˈtiːn",
+              "zh": "十三"
+            },
+            {
+              "w": "Thursday",
+              "ipa": "ˈθɜːzdɪ",
+              "zh": "星期四"
+            },
+            {
+              "w": "hamburger",
+              "ipa": "ˈhæmbɜːgə",
+              "zh": "汉堡"
+            },
+            {
+              "w": "turtle",
+              "ipa": "ˈtɜːtl",
+              "zh": "乌龟"
+            }
+          ]
+        },
+        {
+          "name": "w 变身队 · wor",
+          "tip": "整关没有 ir/er/ur！w 后面的 or 集体变身——铁律，零例外",
+          "words": [
+            {
+              "w": "work",
+              "ipa": "wɜːk",
+              "zh": "工作"
+            },
+            {
+              "w": "word",
+              "ipa": "wɜːd",
+              "zh": "单词"
+            },
+            {
+              "w": "world",
+              "ipa": "wɜːld",
+              "zh": "世界"
+            },
+            {
+              "w": "worm",
+              "ipa": "wɜːm",
+              "zh": "虫子"
+            },
+            {
+              "w": "worse",
+              "ipa": "wɜːs",
+              "zh": "更糟的"
+            },
+            {
+              "w": "worth",
+              "ipa": "wɜːθ",
+              "zh": "值得"
+            }
+          ]
+        },
+        {
+          "name": "ear 变装队",
+          "tip": "ear 后面跟辅音时读「呃——」：早起、学习、地球、听见、搜索",
+          "words": [
+            {
+              "w": "early",
+              "ipa": "ˈɜːlɪ",
+              "zh": "早的"
+            },
+            {
+              "w": "learn",
+              "ipa": "lɜːn",
+              "zh": "学习"
+            },
+            {
+              "w": "earth",
+              "ipa": "ɜːθ",
+              "zh": "地球"
+            },
+            {
+              "w": "heard",
+              "ipa": "hɜːd",
+              "zh": "听见（过去式）"
+            },
+            {
+              "w": "search",
+              "ipa": "sɜːtʃ",
+              "zh": "搜索"
+            }
+          ]
+        }
+      ],
+      "mnemonic": {
+        "sentence": "A dirty bird in her purple shirt learns to work on Earth first!",
+        "zh": "一只脏兮兮的小鸟穿着她的紫衬衫，要先学会在地球上打工！",
+        "pic": "🐦👕🌍💼",
+        "coverage": "ir(dirty/bird/shirt/first) + er(her) + ur(purple) + ear(learns/Earth) + or(work) —— 五个出口全覆盖 ✓",
+        "wordIpa": [
+          [
+            "A",
+            "ə"
+          ],
+          [
+            "dirty",
+            "ˈdɜːtɪ"
+          ],
+          [
+            "bird",
+            "bɜːd"
+          ],
+          [
+            "in",
+            "ɪn"
+          ],
+          [
+            "her",
+            "hɜː"
+          ],
+          [
+            "purple",
+            "ˈpɜːpl"
+          ],
+          [
+            "shirt",
+            "ʃɜːt"
+          ],
+          [
+            "learns",
+            "lɜːnz"
+          ],
+          [
+            "to",
+            "tə"
+          ],
+          [
+            "work",
+            "wɜːk"
+          ],
+          [
+            "on",
+            "ɒn"
+          ],
+          [
+            "Earth",
+            "ɜːθ"
+          ],
+          [
+            "first",
+            "fɜːst"
+          ]
+        ]
+      },
+      "contrast": {
+        "vsSymbol": "ɔː",
+        "note": "中国同学十大易混之首：walk /wɔːk/ 圆嘴「哦」，work /wɜːk/ 不圆不咧的「呃」——嘴型完全相反！",
+        "pairs": [
+          [
+            "work",
+            "walk"
+          ],
+          [
+            "worm",
+            "warm"
+          ],
+          [
+            "word",
+            "ward"
+          ],
+          [
+            "were",
+            "wore"
+          ],
+          [
+            "shirt",
+            "short"
+          ],
+          [
+            "fur",
+            "four"
+          ]
+        ]
+      },
+      "gamePairs": {
+        "designNote": "主打 w 变身混战：wor(/ɜː/) vs war/wal(/ɔː/) + ir/ur vs or/ar 拼写对照",
+        "pairs": [
+          [
+            "work",
+            "walk"
+          ],
+          [
+            "worm",
+            "warm"
+          ],
+          [
+            "word",
+            "ward"
+          ],
+          [
+            "were",
+            "wore"
+          ],
+          [
+            "shirt",
+            "short"
+          ],
+          [
+            "fur",
+            "four"
+          ],
+          [
+            "turn",
+            "torn"
+          ],
+          [
+            "learn",
+            "lawn"
+          ],
+          [
+            "bird",
+            "board"
+          ],
+          [
+            "hurt",
+            "heart"
+          ],
+          [
+            "first",
+            "fast"
+          ],
+          [
+            "burn",
+            "barn"
+          ]
+        ],
+        "ipa": {
+          "work": "wɜːk",
+          "walk": "wɔːk",
+          "worm": "wɜːm",
+          "warm": "wɔːm",
+          "word": "wɜːd",
+          "ward": "wɔːd",
+          "were": "wɜː",
+          "wore": "wɔː",
+          "shirt": "ʃɜːt",
+          "short": "ʃɔːt",
+          "fur": "fɜː",
+          "four": "fɔː",
+          "turn": "tɜːn",
+          "torn": "tɔːn",
+          "learn": "lɜːn",
+          "lawn": "lɔːn",
+          "bird": "bɜːd",
+          "board": "bɔːd",
+          "hurt": "hɜːt",
+          "heart": "hɑːt",
+          "first": "fɜːst",
+          "fast": "fɑːst",
+          "burn": "bɜːn",
+          "barn": "bɑːn"
+        }
+      }
+    }
+  ]
+}

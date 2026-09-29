@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>音标乐园 · 我的错题本</title>
+<link rel="manifest" href="manifest.json?v=2">
+<meta name="theme-color" content="#ff5a4e">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192-v2.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-v2.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lesson-nav">
+    <a href="index.html">← 课程地图</a>
+    <span>错题本</span>
+  </div>
+
+  <header>
+    <div class="badge">IPA Land · 错题本</div>
+    <h1>我的错题本</h1>
+    <p>所有课大闯关里答错的词，都会自动收集在这里，特训销账</p>
+  </header>
+
+  <div class="card" id="bookCard">
+    <p style="text-align:center;color:#82715e">加载中…</p>
+  </div>
+  <div class="card" id="drillCard"></div>
+
+  <footer>音标乐园 · 内测版 · 为一个五年级小朋友特别定制 🐾</footer>
+</div>
+
+<script src="js/speak.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/lesson-data.js"></script>
+<script src="js/wrongbook-render.js"></script>
+<script src="js/pwa.js"></script>
+<script>
+IpaData.loadAll()
+  .then((units) => {
+    IpaWrongbook.renderWrongbook(
+      { list: document.getElementById('bookCard'), drill: document.getElementById('drillCard') },
+      units
+    );
+  })
+  .catch((err) => {
+    document.getElementById('bookCard').innerHTML =
+      '<p style="text-align:center;color:#82715e">内容加载失败：请启动本地服务器（如 <code>npx serve .</code>）后用 http://localhost 地址访问。</p>';
+    console.error(err);
+  });
+</script>
+</body>
+</html>

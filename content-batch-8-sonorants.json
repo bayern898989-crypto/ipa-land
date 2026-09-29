@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 8 批 · 单元 8 · 鼻音滑音收官（m/n/ŋ/h/l/r/w/j）—— 48 音标全部完成 🎉",
+    "version": "0.1-待审核",
+    "symbolSet": "48音标（国内教材 DJ 体系）",
+    "consonantNote": "本批含中文自带优势项（前后鼻音 n/ŋ = 恩/昂）和两个符号澄清（音标 /j/ 不是字母 j！词尾 l 别读成「欧」）。",
+    "designRules": ["拼写出口标可靠度","闯关呼应拼写与中式易混","词少不硬凑","记忆句头韵"]
+  },
+  "sounds": [
+    {
+      "symbol": "m",
+      "type": "浊辅音 · 鼻音",
+      "nickname": "好吃的呣音",
+      "howTo": "双唇闭紧，气从鼻子出来「呣——」，像闻到好吃的。捏住鼻子就发不出来——试试！",
+      "ttsDemo": "m, m, mum",
+      "spellings": [
+        { "letters": "m / mm", "freq": "✅铁律 · 看到必读", "examples": ["map", "mum", "summer"] },
+        { "letters": "mb（词尾）", "freq": "⚠️回看 · b 装死只剩 m", "examples": ["climb", "comb"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "闭唇哼鼻", "words": [
+          { "w": "map", "ipa": "mæp", "zh": "地图" },
+          { "w": "mum", "ipa": "mʌm", "zh": "妈妈" },
+          { "w": "moon", "ipa": "muːn", "zh": "月亮" },
+          { "w": "milk", "ipa": "mɪlk", "zh": "牛奶" },
+          { "w": "mouse", "ipa": "maʊs", "zh": "老鼠" },
+          { "w": "monkey", "ipa": "ˈmʌŋkɪ", "zh": "猴子" }
+        ]},
+        { "name": "词尾队", "tip": "词尾要把双唇真的闭上——am 结尾嘴是合着的", "words": [
+          { "w": "am", "ipa": "æm", "zh": "是" },
+          { "w": "him", "ipa": "hɪm", "zh": "他（宾格）" },
+          { "w": "room", "ipa": "ruːm", "zh": "房间" },
+          { "w": "arm", "ipa": "ɑːm", "zh": "手臂" },
+          { "w": "swim", "ipa": "swɪm", "zh": "游泳" }
+        ]},
+        { "name": "mm / mb 队", "tip": "mm 照读一个；mb 的 b 装死", "words": [
+          { "w": "summer", "ipa": "ˈsʌmə", "zh": "夏天" },
+          { "w": "swimming", "ipa": "ˈswɪmɪŋ", "zh": "游泳（进行时）" },
+          { "w": "climb", "ipa": "klaɪm", "zh": "爬" },
+          { "w": "comb", "ipa": "kəʊm", "zh": "梳子" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Mmm! Mum makes me a magic milk mooncake in the morning!",
+        "zh": "呣！妈妈早上给我做了一个魔法牛奶月饼！",
+        "pic": "🥮🥛😋",
+        "coverage": "m(Mmm/Mum/makes/me/magic/milk/mooncake/morning) —— 头韵拉满 ✓",
+        "wordIpa": [["Mmm","m"],["Mum","mʌm"],["makes","meɪks"],["me","miː"],["a","ə"],["magic","ˈmædʒɪk"],["milk","mɪlk"],["mooncake","ˈmuːnkeɪk"],["in","ɪn"],["the","ðə"],["morning","ˈmɔːnɪŋ"]]
+      },
+      "contrast": {
+        "vsSymbol": "n",
+        "note": "都走鼻子：/m/ 闭嘴唇（some），/n/ 舌尖顶牙龈嘴微开（son）——词尾看嘴闭没闭",
+        "pairs": [["some","son"],["team","teen"],["seem","seen"],["gum","gun"],["dime","dine"],["comb","cone"]]
+      },
+      "gamePairs": {
+        "designNote": "词尾 m/n 辨析——闭不闭嘴",
+        "pairs": [["some","son"],["team","teen"],["seem","seen"],["gum","gun"],["dime","dine"],["comb","cone"]],
+        "ipa": { "some":"sʌm","son":"sʌn","team":"tiːm","teen":"tiːn","seem":"siːm","seen":"siːn","gum":"gʌm","gun":"gʌn","dime":"daɪm","dine":"daɪn","comb":"kəʊm","cone":"kəʊn" }
+      }
+    },
+    {
+      "symbol": "n",
+      "type": "浊辅音 · 鼻音",
+      "nickname": "前鼻音的呢音",
+      "howTo": "舌尖顶上牙龈，气走鼻子——就是中文前鼻音「恩(en)」的尾巴。中文自带，放心用！",
+      "ttsDemo": "n, n, nine",
+      "spellings": [
+        { "letters": "n / nn", "freq": "✅铁律（⚠️唯一例外：k/g 前的 n 读 /ŋ/，下一课）", "examples": ["no", "nine", "dinner"] },
+        { "letters": "kn / gn", "freq": "⚠️装死陷阱 · k 和 g 不发音只剩 n", "examples": ["know", "knife", "sign"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "舌尖顶牙龈走鼻音", "words": [
+          { "w": "no", "ipa": "nəʊ", "zh": "不" },
+          { "w": "nine", "ipa": "naɪn", "zh": "九" },
+          { "w": "name", "ipa": "neɪm", "zh": "名字" },
+          { "w": "night", "ipa": "naɪt", "zh": "夜晚" },
+          { "w": "nose", "ipa": "nəʊz", "zh": "鼻子" },
+          { "w": "nurse", "ipa": "nɜːs", "zh": "护士" }
+        ]},
+        { "name": "词尾队", "tip": "词尾收在舌尖上，像「恩」", "words": [
+          { "w": "ten", "ipa": "ten", "zh": "十" },
+          { "w": "sun", "ipa": "sʌn", "zh": "太阳" },
+          { "w": "run", "ipa": "rʌn", "zh": "跑" },
+          { "w": "rain", "ipa": "reɪn", "zh": "雨" },
+          { "w": "green", "ipa": "griːn", "zh": "绿色" },
+          { "w": "again", "ipa": "əˈgen", "zh": "再一次" }
+        ]},
+        { "name": "kn/gn 装死队", "tip": "know 的 k、sign 的 g 全部装死——英语著名的哑巴字母", "words": [
+          { "w": "know", "ipa": "nəʊ", "zh": "知道" },
+          { "w": "knife", "ipa": "naɪf", "zh": "刀" },
+          { "w": "knee", "ipa": "niː", "zh": "膝盖" },
+          { "w": "knock", "ipa": "nɒk", "zh": "敲" },
+          { "w": "sign", "ipa": "saɪn", "zh": "标志" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Nine naughty knights know a new name at night!",
+        "zh": "九个淘气的骑士在夜里知道了一个新名字！",
+        "pic": "⚔️🌙",
+        "coverage": "n(Nine/naughty/new/name/night) + kn(knights/know) —— 全覆盖 ✓",
+        "wordIpa": [["Nine","naɪn"],["naughty","ˈnɔːtɪ"],["knights","naɪts"],["know","nəʊ"],["a","ə"],["new","njuː"],["name","neɪm"],["at","æt"],["night","naɪt"]]
+      },
+      "contrast": {
+        "vsSymbol": "ŋ",
+        "note": "前后鼻音大战——中文自带优势！/n/ = 安(an)的尾巴，/ŋ/ = 昂(ang)的尾巴：thin 瘦 vs thing 东西",
+        "pairs": [["thin","thing"],["sin","sing"],["win","wing"],["ran","rang"],["ban","bang"],["kin","king"]]
+      },
+      "gamePairs": {
+        "designNote": "n/ŋ 前后鼻音全套——用中文的 an/ang 语感直接迁移",
+        "pairs": [["thin","thing"],["sin","sing"],["win","wing"],["ran","rang"],["ban","bang"],["kin","king"],["fan","fang"],["ton","tongue"],["run","rung"],["pin","ping"]],
+        "ipa": { "thin":"θɪn","thing":"θɪŋ","sin":"sɪn","sing":"sɪŋ","win":"wɪn","wing":"wɪŋ","ran":"ræn","rang":"ræŋ","ban":"bæn","bang":"bæŋ","kin":"kɪn","king":"kɪŋ","fan":"fæn","fang":"fæŋ","ton":"tʌn","tongue":"tʌŋ","run":"rʌn","rung":"rʌŋ","pin":"pɪn","ping":"pɪŋ" }
+      }
+    },
+    {
+      "symbol": "ŋ",
+      "type": "浊辅音 · 鼻音",
+      "nickname": "后鼻音的昂音",
+      "howTo": "舌根顶软腭，气走鼻子——中文后鼻音「昂(ang)」的尾巴。中文自带！规则：它从不站词首；ng 里的 g 不单独发音。",
+      "ttsDemo": "ng, ng, sing",
+      "spellings": [
+        { "letters": "ng（词尾）", "freq": "✅铁律 · 看到必读", "examples": ["sing", "long", "morning"] },
+        { "letters": "n（k/g 前）", "freq": "✅铁律 · k/g 前的 n 自动变后鼻音", "examples": ["think", "pink", "English"] }
+      ],
+      "levels": [
+        { "name": "ng 词尾队", "tip": "舌根顶住，像说「昂」", "words": [
+          { "w": "sing", "ipa": "sɪŋ", "zh": "唱歌" },
+          { "w": "long", "ipa": "lɒŋ", "zh": "长的" },
+          { "w": "song", "ipa": "sɒŋ", "zh": "歌" },
+          { "w": "king", "ipa": "kɪŋ", "zh": "国王" },
+          { "w": "ring", "ipa": "rɪŋ", "zh": "戒指" },
+          { "w": "wing", "ipa": "wɪŋ", "zh": "翅膀" }
+        ]},
+        { "name": "ing 进行时队", "tip": "所有进行时的尾巴都是它——学一次用一辈子", "words": [
+          { "w": "morning", "ipa": "ˈmɔːnɪŋ", "zh": "早上" },
+          { "w": "evening", "ipa": "ˈiːvnɪŋ", "zh": "晚上" },
+          { "w": "reading", "ipa": "ˈriːdɪŋ", "zh": "阅读（进行时）" },
+          { "w": "playing", "ipa": "ˈpleɪɪŋ", "zh": "玩（进行时）" },
+          { "w": "shopping", "ipa": "ˈʃɒpɪŋ", "zh": "购物（进行时）" }
+        ]},
+        { "name": "n 隐身变身队", "tip": "整关没有 ng！k/g 前的 n 全部自动变「昂」——think 是「θ昂克」不是「θ恩克」", "words": [
+          { "w": "think", "ipa": "θɪŋk", "zh": "思考" },
+          { "w": "thank", "ipa": "θæŋk", "zh": "感谢" },
+          { "w": "pink", "ipa": "pɪŋk", "zh": "粉色" },
+          { "w": "drink", "ipa": "drɪŋk", "zh": "喝" },
+          { "w": "English", "ipa": "ˈɪŋglɪʃ", "zh": "英语" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The king sings a long song with a pink ring every morning!",
+        "zh": "国王每天早上戴着粉红戒指唱一首长长的歌！",
+        "pic": "👑💍🎵",
+        "coverage": "ng(king/sings/long/song/ring/morning) + nk(pink) —— 全覆盖 ✓",
+        "wordIpa": [["The","ðə"],["king","kɪŋ"],["sings","sɪŋz"],["a","ə"],["long","lɒŋ"],["song","sɒŋ"],["with","wɪð"],["a","ə"],["pink","pɪŋk"],["ring","rɪŋ"],["every","ˈevrɪ"],["morning","ˈmɔːnɪŋ"]]
+      },
+      "contrast": {
+        "vsSymbol": "n",
+        "note": "反向再战：thing（昂）vs thin（恩）——想着中文的 ang/an 就分清了",
+        "pairs": [["thing","thin"],["sing","sin"],["wing","win"],["rang","ran"],["bang","ban"],["king","kin"]]
+      },
+      "gamePairs": {
+        "designNote": "ŋ/n 反向全套",
+        "pairs": [["thing","thin"],["sing","sin"],["wing","win"],["rang","ran"],["bang","ban"],["king","kin"],["fang","fan"],["tongue","ton"],["rung","run"],["ping","pin"]],
+        "ipa": { "thing":"θɪŋ","thin":"θɪn","sing":"sɪŋ","sin":"sɪn","wing":"wɪŋ","win":"wɪn","rang":"ræŋ","ran":"ræn","bang":"bæŋ","ban":"bæn","king":"kɪŋ","kin":"kɪn","fang":"fæŋ","fan":"fæn","tongue":"tʌŋ","ton":"tʌn","rung":"rʌŋ","run":"rʌn","ping":"pɪŋ","pin":"pɪn" }
+      }
+    },
+    {
+      "symbol": "h",
+      "type": "清辅音 · 摩擦音",
+      "nickname": "给眼镜哈气音",
+      "howTo": "轻轻哈一口气，像给眼镜片哈气。比中文「喝」更轻，喉咙完全不用力。",
+      "ttsDemo": "h, h, hat",
+      "spellings": [
+        { "letters": "h", "freq": "主力（⚠️注意装死名单）", "examples": ["hat", "home", "happy"] },
+        { "letters": "wh（个别）", "freq": "稀有 · who 一族读 /h/", "examples": ["who", "whole"] },
+        { "letters": "h 装死名单", "freq": "⚠️陷阱 · hour/honest 的 h 完全不发音", "examples": ["hour", "honest"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "轻哈一口气", "words": [
+          { "w": "hat", "ipa": "hæt", "zh": "帽子" },
+          { "w": "home", "ipa": "həʊm", "zh": "家" },
+          { "w": "hand", "ipa": "hænd", "zh": "手" },
+          { "w": "happy", "ipa": "ˈhæpɪ", "zh": "开心的" },
+          { "w": "horse", "ipa": "hɔːs", "zh": "马" },
+          { "w": "hello", "ipa": "həˈləʊ", "zh": "你好" }
+        ]},
+        { "name": "词中队", "tip": "藏在词中间也要哈到", "words": [
+          { "w": "behind", "ipa": "bɪˈhaɪnd", "zh": "在……后面" },
+          { "w": "perhaps", "ipa": "pəˈhæps", "zh": "也许" },
+          { "w": "ahead", "ipa": "əˈhed", "zh": "在前面" }
+        ]},
+        { "name": "wh 与装死队", "tip": "who 一族的 wh 读 /h/；hour/honest 的 h 彻底装死（所以是 an hour！）", "words": [
+          { "w": "who", "ipa": "huː", "zh": "谁" },
+          { "w": "whole", "ipa": "həʊl", "zh": "整个" },
+          { "w": "hour", "ipa": "aʊə", "zh": "小时" },
+          { "w": "honest", "ipa": "ˈɒnɪst", "zh": "诚实的" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The happy horse says hello to a huge hen in his house!",
+        "zh": "快乐的马在家里向一只巨型母鸡问好！",
+        "pic": "🐴🐔🏠",
+        "coverage": "h(happy/horse/hello/huge/hen/his/house) —— 头韵拉满 ✓",
+        "wordIpa": [["The","ðə"],["happy","ˈhæpɪ"],["horse","hɔːs"],["says","sez"],["hello","həˈləʊ"],["to","tə"],["a","ə"],["huge","hjuːdʒ"],["hen","hen"],["in","ɪn"],["his","hɪz"],["house","haʊs"]]
+      },
+      "contrast": {
+        "vsSymbol": "-",
+        "note": "特色对比：有 h 没 h 一对照——hat 帽子 vs at 在；hear 听 vs ear 耳朵。丢了那口气，词就变了",
+        "pairs": [["hat","at"],["hear","ear"],["hand","and"],["hair","air"],["hold","old"],["high","eye"]]
+      },
+      "gamePairs": {
+        "designNote": "h 有无辨析——那一口气在不在",
+        "pairs": [["hat","at"],["hear","ear"],["hand","and"],["hair","air"],["hold","old"],["high","eye"],["his","is"],["hall","all"]],
+        "ipa": { "hat":"hæt","at":"æt","hear":"hɪə","ear":"ɪə","hand":"hænd","and":"ænd","hair":"heə","air":"eə","hold":"həʊld","old":"əʊld","high":"haɪ","eye":"aɪ","his":"hɪz","is":"ɪz","hall":"hɔːl","all":"ɔːl" }
+      }
+    },
+    {
+      "symbol": "l",
+      "type": "浊辅音 · 舌边音",
+      "nickname": "舌尖顶牙的乐音",
+      "howTo": "舌尖顶住上牙龈，气从舌头两边流出。两副面孔：词首清亮（light），词尾发闷（ball）——重点提醒：词尾的 l 舌尖也必须碰到牙龈，别偷懒读成「欧」！",
+      "ttsDemo": "l, l, like",
+      "spellings": [
+        { "letters": "l / ll", "freq": "主力", "examples": ["leg", "like", "yellow"] },
+        { "letters": "l 装死名单", "freq": "⚠️回看 · walk/talk/half/could 的 l 不发音", "examples": ["walk", "half", "could"] }
+      ],
+      "levels": [
+        { "name": "词首清亮队", "tip": "舌尖弹上牙龈，清清亮亮", "words": [
+          { "w": "leg", "ipa": "leg", "zh": "腿" },
+          { "w": "like", "ipa": "laɪk", "zh": "喜欢" },
+          { "w": "look", "ipa": "lʊk", "zh": "看" },
+          { "w": "love", "ipa": "lʌv", "zh": "爱" },
+          { "w": "lion", "ipa": "ˈlaɪən", "zh": "狮子" },
+          { "w": "lemon", "ipa": "ˈlemən", "zh": "柠檬" }
+        ]},
+        { "name": "词尾闷 l 队 · 别读成欧", "tip": "ball 结尾舌尖必须碰到牙龈——读成「包欧」是中国同学最常见错音之一", "words": [
+          { "w": "ball", "ipa": "bɔːl", "zh": "球" },
+          { "w": "tall", "ipa": "tɔːl", "zh": "高的" },
+          { "w": "girl", "ipa": "gɜːl", "zh": "女孩" },
+          { "w": "school", "ipa": "skuːl", "zh": "学校" },
+          { "w": "apple", "ipa": "ˈæpl", "zh": "苹果" },
+          { "w": "little", "ipa": "ˈlɪtl", "zh": "小的" }
+        ]},
+        { "name": "装死回看队", "tip": "这些 l 不发音——前面的课都见过，集合复习", "words": [
+          { "w": "walk", "ipa": "wɔːk", "zh": "走路" },
+          { "w": "talk", "ipa": "tɔːk", "zh": "说话" },
+          { "w": "half", "ipa": "hɑːf", "zh": "一半" },
+          { "w": "could", "ipa": "kʊd", "zh": "能（过去式）" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A lovely lion licks a little yellow lolly in the long line!",
+        "zh": "一只可爱的狮子在长队里舔一根小黄棒棒糖！",
+        "pic": "🦁🍭",
+        "coverage": "词首l(lovely/lion/licks/little/lolly/long/line) + ll(yellow/lolly) —— 头韵拉满 ✓",
+        "wordIpa": [["A","ə"],["lovely","ˈlʌvlɪ"],["lion","ˈlaɪən"],["licks","lɪks"],["a","ə"],["little","ˈlɪtl"],["yellow","ˈjeləʊ"],["lolly","ˈlɒlɪ"],["in","ɪn"],["the","ðə"],["long","lɒŋ"],["line","laɪn"]]
+      },
+      "contrast": {
+        "vsSymbol": "r",
+        "note": "舌尖碰牙龈（light 灯）vs 舌尖卷起不碰（right 对）——南方同学可加练 l/n：light vs night",
+        "pairs": [["light","right"],["lead","read"],["long","wrong"],["lice","rice"],["glass","grass"],["late","rate"]]
+      },
+      "gamePairs": {
+        "designNote": "l/r 全套 + l/n 附加（南方同学特供）",
+        "pairs": [["light","right"],["lead","read"],["long","wrong"],["lice","rice"],["glass","grass"],["late","rate"],["fly","fry"],["light","night"],["low","no"],["lock","rock"]],
+        "ipa": { "light":"laɪt","right":"raɪt","lead":"liːd","read":"riːd","long":"lɒŋ","wrong":"rɒŋ","lice":"laɪs","rice":"raɪs","glass":"glɑːs","grass":"grɑːs","late":"leɪt","rate":"reɪt","fly":"flaɪ","fry":"fraɪ","night":"naɪt","low":"ləʊ","no":"nəʊ","lock":"lɒk","rock":"rɒk" }
+      }
+    },
+    {
+      "symbol": "r",
+      "type": "浊辅音 · 卷舌音",
+      "nickname": "小狗低吼音",
+      "howTo": "舌尖卷起接近上颚但绝不碰到，嘴唇微微撅圆——像小狗低吼。和中文 r 相近但嘴唇更圆。英音里 r 只在元音前发音（car 词尾的 r 不发）。",
+      "ttsDemo": "r, r, red",
+      "spellings": [
+        { "letters": "r / rr", "freq": "主力", "examples": ["red", "run", "sorry"] },
+        { "letters": "wr", "freq": "⚠️装死陷阱 · w 不发音只剩 r", "examples": ["write", "wrong"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "卷舌不碰、嘴唇撅圆", "words": [
+          { "w": "red", "ipa": "red", "zh": "红色" },
+          { "w": "run", "ipa": "rʌn", "zh": "跑" },
+          { "w": "rain", "ipa": "reɪn", "zh": "雨" },
+          { "w": "rice", "ipa": "raɪs", "zh": "米饭" },
+          { "w": "rabbit", "ipa": "ˈræbɪt", "zh": "兔子" },
+          { "w": "river", "ipa": "ˈrɪvə", "zh": "河" }
+        ]},
+        { "name": "词中队", "tip": "夹在中间也要卷到位", "words": [
+          { "w": "sorry", "ipa": "ˈsɒrɪ", "zh": "抱歉" },
+          { "w": "carrot", "ipa": "ˈkærət", "zh": "胡萝卜" },
+          { "w": "very", "ipa": "ˈverɪ", "zh": "非常" },
+          { "w": "orange", "ipa": "ˈɒrɪndʒ", "zh": "橙子" },
+          { "w": "tomorrow", "ipa": "təˈmɒrəʊ", "zh": "明天" }
+        ]},
+        { "name": "wr 装死队", "tip": "wr 里的 w 全部装死——write 和 right 同音！", "words": [
+          { "w": "write", "ipa": "raɪt", "zh": "写" },
+          { "w": "wrong", "ipa": "rɒŋ", "zh": "错的" },
+          { "w": "wrist", "ipa": "rɪst", "zh": "手腕" },
+          { "w": "wrap", "ipa": "ræp", "zh": "包裹" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A red rabbit runs in the rain to write a real story!",
+        "zh": "一只红兔子冒雨跑去写一个真实的故事！",
+        "pic": "🐰🌧️✍️",
+        "coverage": "r(red/rabbit/runs/rain/real) + wr(write) —— 全覆盖 ✓",
+        "wordIpa": [["A","ə"],["red","red"],["rabbit","ˈræbɪt"],["runs","rʌnz"],["in","ɪn"],["the","ðə"],["rain","reɪn"],["to","tə"],["write","raɪt"],["a","ə"],["real","rɪəl"],["story","ˈstɔːrɪ"]]
+      },
+      "contrast": {
+        "vsSymbol": "l",
+        "note": "反向再战：right 卷舌不碰 vs light 舌尖碰牙龈",
+        "pairs": [["right","light"],["read","lead"],["wrong","long"],["rice","lice"],["grass","glass"],["rate","late"]]
+      },
+      "gamePairs": {
+        "designNote": "r/l 反向全套",
+        "pairs": [["right","light"],["read","lead"],["wrong","long"],["rice","lice"],["grass","glass"],["rate","late"],["fry","fly"],["rock","lock"],["row","low"],["red","led"]],
+        "ipa": { "right":"raɪt","light":"laɪt","read":"riːd","lead":"liːd","wrong":"rɒŋ","long":"lɒŋ","rice":"raɪs","lice":"laɪs","grass":"grɑːs","glass":"glɑːs","rate":"reɪt","late":"leɪt","fry":"fraɪ","fly":"flaɪ","rock":"rɒk","lock":"lɒk","row":"rəʊ","low":"ləʊ","red":"red","led":"led" }
+      }
+    },
+    {
+      "symbol": "w",
+      "type": "浊辅音 · 半元音",
+      "nickname": "嘟嘴的乌音",
+      "howTo": "嘴唇嘟成小圆圈再快速滑开，像吹口哨的起手式。和 /v/ 的关键区别：/w/ 嘟嘴不咬唇！",
+      "ttsDemo": "w, w, we",
+      "spellings": [
+        { "letters": "w", "freq": "主力", "examples": ["we", "water", "window"] },
+        { "letters": "wh", "freq": "✅多数读 /w/（who 一族除外读 /h/）", "examples": ["what", "when", "white"] },
+        { "letters": "o 里藏着 w", "freq": "⚠️冷知识 · one/once 开头藏着 /w/", "examples": ["one", "once"] }
+      ],
+      "levels": [
+        { "name": "w 主力队", "tip": "先嘟嘴再滑开", "words": [
+          { "w": "we", "ipa": "wiː", "zh": "我们" },
+          { "w": "water", "ipa": "ˈwɔːtə", "zh": "水" },
+          { "w": "window", "ipa": "ˈwɪndəʊ", "zh": "窗户" },
+          { "w": "week", "ipa": "wiːk", "zh": "星期" },
+          { "w": "warm", "ipa": "wɔːm", "zh": "温暖的" },
+          { "w": "winter", "ipa": "ˈwɪntə", "zh": "冬天" }
+        ]},
+        { "name": "wh 疑问词队", "tip": "疑问词大本营——what/when/where/why 全在这", "words": [
+          { "w": "what", "ipa": "wɒt", "zh": "什么" },
+          { "w": "when", "ipa": "wen", "zh": "什么时候" },
+          { "w": "where", "ipa": "weə", "zh": "哪里" },
+          { "w": "why", "ipa": "waɪ", "zh": "为什么" },
+          { "w": "white", "ipa": "waɪt", "zh": "白色" },
+          { "w": "whale", "ipa": "weɪl", "zh": "鲸鱼" }
+        ]},
+        { "name": "藏起来的 w 队", "tip": "one 拼写里没有 w，读音里却有——英语冷知识；qu 里也藏着它", "words": [
+          { "w": "one", "ipa": "wʌn", "zh": "一" },
+          { "w": "once", "ipa": "wʌns", "zh": "一次" },
+          { "w": "question", "ipa": "ˈkwestʃən", "zh": "问题" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Why does the white whale want warm water in winter?",
+        "zh": "为什么白鲸冬天想要温水？",
+        "pic": "🐋❄️♨️",
+        "coverage": "wh(Why/white/whale) + w(want/warm/water/winter) —— 头韵拉满 ✓",
+        "wordIpa": [["Why","waɪ"],["does","dʌz"],["the","ðə"],["white","waɪt"],["whale","weɪl"],["want","wɒnt"],["warm","wɔːm"],["water","ˈwɔːtə"],["in","ɪn"],["winter","ˈwɪntə"]]
+      },
+      "contrast": {
+        "vsSymbol": "v",
+        "note": "魔王对决反向场：/w/ 嘟嘴（wine 酒）vs /v/ 咬唇（vine 藤）——照镜子验收",
+        "pairs": [["wine","vine"],["west","vest"],["we","V"],["whale","veil"],["worse","verse"],["wet","vet"]]
+      },
+      "gamePairs": {
+        "designNote": "w/v 反向全套 + wow/vow",
+        "pairs": [["wine","vine"],["west","vest"],["we","V"],["whale","veil"],["worse","verse"],["wet","vet"],["wow","vow"],["went","vent"]],
+        "ipa": { "wine":"waɪn","vine":"vaɪn","west":"west","vest":"vest","we":"wiː","V":"viː","whale":"weɪl","veil":"veɪl","worse":"wɜːs","verse":"vɜːs","wet":"wet","vet":"vet","wow":"waʊ","vow":"vaʊ","went":"went","vent":"vent" }
+      }
+    },
+    {
+      "symbol": "j",
+      "type": "浊辅音 · 半元音",
+      "nickname": "拉住的耶音",
+      "howTo": "像中文「耶」的开头，舌面抬高快速滑开。最重要的澄清：音标 /j/ 不是字母 j 的音！字母 j 读 /dʒ/（jam 果酱），音标 /j/ 是 yes 的开头——48 个音标里最容易认错的符号。",
+      "ttsDemo": "y, y, yes",
+      "spellings": [
+        { "letters": "y（词首）", "freq": "✅铁律 · y 的第四副面孔：词首读 /j/", "examples": ["yes", "you", "yellow"] },
+        { "letters": "u / ew / ui 里藏着 /j/", "freq": "⚠️冷知识 · use/new/music 里都藏着「耶」", "examples": ["use", "new", "music"] }
+      ],
+      "spellingNote": "y 四副面孔终于集齐：词中 /ɪ/（gym）、长词尾 /ɪ/（happy）、短词尾重读 /aɪ/（my）、词首 /j/（yes）——y 是全字母表最多变的选手，值得一张专属通缉令。",
+      "levels": [
+        { "name": "y 词首队", "tip": "词首的 y 全读「耶」的开头", "words": [
+          { "w": "yes", "ipa": "jes", "zh": "是的" },
+          { "w": "you", "ipa": "juː", "zh": "你" },
+          { "w": "yellow", "ipa": "ˈjeləʊ", "zh": "黄色" },
+          { "w": "young", "ipa": "jʌŋ", "zh": "年轻的" },
+          { "w": "year", "ipa": "jɪə", "zh": "年" },
+          { "w": "yesterday", "ipa": "ˈjestədɪ", "zh": "昨天" }
+        ]},
+        { "name": "藏起来的耶队", "tip": "拼写里看不到，读音里却有——use 是「优斯」不是「乌斯」", "words": [
+          { "w": "use", "ipa": "juːz", "zh": "使用" },
+          { "w": "music", "ipa": "ˈmjuːzɪk", "zh": "音乐" },
+          { "w": "new", "ipa": "njuː", "zh": "新的" },
+          { "w": "cute", "ipa": "kjuːt", "zh": "可爱的" },
+          { "w": "few", "ipa": "fjuː", "zh": "很少" },
+          { "w": "computer", "ipa": "kəmˈpjuːtə", "zh": "电脑" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Yes! You use your new yellow computer to play music every year!",
+        "zh": "耶！你每年都用你的新黄电脑放音乐！",
+        "pic": "💻🎵🎉",
+        "coverage": "y词首(Yes/You/your/yellow/year) + 藏耶(use/new/computer/music) —— 全覆盖 ✓",
+        "wordIpa": [["Yes","jes"],["You","juː"],["use","juːz"],["your","jɔː"],["new","njuː"],["yellow","ˈjeləʊ"],["computer","kəmˈpjuːtə"],["to","tə"],["play","pleɪ"],["music","ˈmjuːzɪk"],["every","ˈevrɪ"],["year","jɪə"]]
+      },
+      "contrast": {
+        "vsSymbol": "dʒ",
+        "note": "符号大澄清对决：音标 /j/（yes 耶）vs 字母 j 的音 /dʒ/（Jess 果酱音）——year 年 vs jeer 嘲笑，认错符号意思全反",
+        "pairs": [["yes","Jess"],["year","jeer"],["yet","jet"],["yam","jam"],["Yale","jail"],["use","juice"]]
+      },
+      "gamePairs": {
+        "designNote": "/j/ vs /dʒ/ 符号澄清全套",
+        "pairs": [["yes","Jess"],["year","jeer"],["yet","jet"],["yam","jam"],["Yale","jail"],["use","juice"]],
+        "ipa": { "yes":"jes","Jess":"dʒes","year":"jɪə","jeer":"dʒɪə","yet":"jet","jet":"dʒet","yam":"jæm","jam":"dʒæm","Yale":"jeɪl","jail":"dʒeɪl","use":"juːs","juice":"dʒuːs" }
+      }
+    }
+  ]
+}

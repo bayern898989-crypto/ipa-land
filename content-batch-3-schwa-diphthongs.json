@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 3 批 · 单元 3 · 短元音收官（/ʊ/ /ə/）+ 双元音三大字母名（/eɪ/ /aɪ/ /əʊ/）",
+    "version": "0.1-待审核",
+    "symbolSet": "48音标（国内教材 DJ 体系）",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律 / ⚠️两副面孔 / 主力 / 稀有",
+      "闯关对立对呼应拼写出口",
+      "稀有拼写多练：词库尽量穷尽常用词",
+      "记忆句覆盖全部拼写出口",
+      "对比辨音每组至少6对"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "ʊ",
+      "type": "短元音",
+      "nickname": "含着的短乌音",
+      "howTo": "嘴唇稍稍拢圆，喉咙放松，很短促地「乌」一下——不是拉长的「呜——」。念 book 里的那个音。",
+      "ttsDemo": "book, book, look",
+      "spellings": [
+        { "letters": "oo", "freq": "⚠️两副面孔 · k 前面的 oo 基本读短音（book/look/cook）+ 一小撮少数派（good/foot/wood）", "examples": ["book", "look", "good"] },
+        { "letters": "u", "freq": "常见 · p/b/f 附近的 u 常读 /ʊ/", "examples": ["put", "push", "full"] },
+        { "letters": "oul", "freq": "稀有但超高频 · 三兄弟必背", "examples": ["could", "would", "should"] },
+        { "letters": "o", "freq": "个别捣蛋鬼", "examples": ["woman", "wolf"] }
+      ],
+      "spellingNote": "上一批 /uː/ 课埋的伏笔在这里接上：oo 的两副面孔——长音是大多数（moon），k 前 + good/foot 这一小撮读短音。少数派名单就在词库第 1、2 关，背下即破案。",
+      "levels": [
+        { "name": "oo + k 规律队", "tip": "k 前面的 oo 基本读短「乌」——这条规律很可靠", "words": [
+          { "w": "book", "ipa": "bʊk", "zh": "书" },
+          { "w": "look", "ipa": "lʊk", "zh": "看" },
+          { "w": "cook", "ipa": "kʊk", "zh": "做饭" },
+          { "w": "took", "ipa": "tʊk", "zh": "拿（过去式）" },
+          { "w": "shook", "ipa": "ʃʊk", "zh": "摇（过去式）" }
+        ]},
+        { "name": "oo 少数派名单", "tip": "不带 k 也读短音的一小撮——就这几个，背下来！", "words": [
+          { "w": "good", "ipa": "gʊd", "zh": "好的" },
+          { "w": "wood", "ipa": "wʊd", "zh": "木头" },
+          { "w": "foot", "ipa": "fʊt", "zh": "脚" },
+          { "w": "wool", "ipa": "wʊl", "zh": "羊毛" },
+          { "w": "stood", "ipa": "stʊd", "zh": "站（过去式）" }
+        ]},
+        { "name": "u 队", "tip": "p/b/f 附近的 u 常读 /ʊ/，最后一个 sugar 还是 s 读 /ʃ/ 的怪词", "words": [
+          { "w": "put", "ipa": "pʊt", "zh": "放" },
+          { "w": "push", "ipa": "pʊʃ", "zh": "推" },
+          { "w": "pull", "ipa": "pʊl", "zh": "拉" },
+          { "w": "full", "ipa": "fʊl", "zh": "满的" },
+          { "w": "bull", "ipa": "bʊl", "zh": "公牛" },
+          { "w": "sugar", "ipa": "ˈʃʊgə", "zh": "糖" }
+        ]},
+        { "name": "oul 三兄弟 + o 捣蛋鬼", "tip": "could/would/should 天天用、l 全部装死；woman 和 wolf 的 o 也读 /ʊ/", "words": [
+          { "w": "could", "ipa": "kʊd", "zh": "能（过去式）" },
+          { "w": "would", "ipa": "wʊd", "zh": "将会（过去式）" },
+          { "w": "should", "ipa": "ʃʊd", "zh": "应该" },
+          { "w": "woman", "ipa": "ˈwʊmən", "zh": "女人" },
+          { "w": "wolf", "ipa": "wʊlf", "zh": "狼" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Look! The good wolf could push a full bookshelf with one foot!",
+        "zh": "快看！那只善良的狼能用一只脚推动装满的书架！",
+        "pic": "🐺📚🦶",
+        "coverage": "oo(Look/bookshelf/good/foot) + o(wolf) + oul(could) + u(push/full) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Look","lʊk"],["The","ðə"],["good","gʊd"],["wolf","wʊlf"],["could","kʊd"],["push","pʊʃ"],["a","ə"],["full","fʊl"],["bookshelf","ˈbʊkʃelf"],["with","wɪð"],["one","wʌn"],["foot","fʊt"]]
+      },
+      "contrast": {
+        "vsSymbol": "uː",
+        "note": "oo 两副面孔的正式对决：短促含着的「乌」（pull）vs 吹口哨拉长的「呜——」（pool）",
+        "pairs": [["pull","pool"],["full","fool"],["look","Luke"],["foot","food"],["book","boot"],["cook","cool"]]
+      },
+      "gamePairs": {
+        "designNote": "主打 oo 两副面孔（长短分拣）+ u/oo vs 其他元音字母对照",
+        "pairs": [["pull","pool"],["full","fool"],["look","Luke"],["foot","food"],["book","boot"],["cook","cool"],["stood","stool"],["bull","ball"],["wood","word"],["put","pot"]],
+        "ipa": { "pull":"pʊl","pool":"puːl","full":"fʊl","fool":"fuːl","look":"lʊk","Luke":"luːk","foot":"fʊt","food":"fuːd","book":"bʊk","boot":"buːt","cook":"kʊk","cool":"kuːl","stood":"stʊd","stool":"stuːl","bull":"bʊl","ball":"bɔːl","wood":"wʊd","word":"wɜːd","put":"pʊt","pot":"pɒt" }
+      }
+    },
+    {
+      "symbol": "ə",
+      "type": "短元音",
+      "nickname": "打酱油的懒人音",
+      "howTo": "全英语最懒的音：嘴巴微张、完全放松，轻轻「呃」一下就完事。它永远不重读、永远轻声，但它是英语里出现次数最多的音！",
+      "ttsDemo": "about, about, banana",
+      "spellings": [
+        { "letters": "任何元音字母", "freq": "✅铁律反着用 · 不看拼写看重音：非重读音节里的元音，大多懒化成 /ə/", "examples": ["about", "lemon", "today"] },
+        { "letters": "er / or / ar / our（词尾）", "freq": "主力 · 词尾轻读的 r 组合基本都是 /ə/", "examples": ["teacher", "doctor", "sugar", "colour"] },
+        { "letters": "a（词首轻读）", "freq": "常见", "examples": ["about", "again", "away"] }
+      ],
+      "spellingNote": "这一课是思维转换课：/ə/ 不问「哪些字母读它」，而问「哪个音节偷懒」。学会找懒音节，长单词的发音就破解了一半。上一批埋的伏笔也接上了：er 重读是 /ɜː/（her），轻读是 /ə/（teacher 的尾巴）。",
+      "levels": [
+        { "name": "词尾 er 懒人队", "tip": "词尾的 er 全部躺平读 /ə/（英音不卷舌）", "words": [
+          { "w": "teacher", "ipa": "ˈtiːtʃə", "zh": "老师" },
+          { "w": "water", "ipa": "ˈwɔːtə", "zh": "水" },
+          { "w": "sister", "ipa": "ˈsɪstə", "zh": "姐妹" },
+          { "w": "dinner", "ipa": "ˈdɪnə", "zh": "晚餐" },
+          { "w": "winter", "ipa": "ˈwɪntə", "zh": "冬天" },
+          { "w": "paper", "ipa": "ˈpeɪpə", "zh": "纸" }
+        ]},
+        { "name": "or/ar/our/ure 懒人队", "tip": "词尾其他 r 组合，照样躺平", "words": [
+          { "w": "doctor", "ipa": "ˈdɒktə", "zh": "医生" },
+          { "w": "colour", "ipa": "ˈkʌlə", "zh": "颜色" },
+          { "w": "sugar", "ipa": "ˈʃʊgə", "zh": "糖" },
+          { "w": "dollar", "ipa": "ˈdɒlə", "zh": "美元" },
+          { "w": "picture", "ipa": "ˈpɪktʃə", "zh": "图画" },
+          { "w": "actor", "ipa": "ˈæktə", "zh": "演员" }
+        ]},
+        { "name": "词首懒 a 队", "tip": "词首轻读的 a 都是懒懒的「呃」——about 不是「阿包特」！", "words": [
+          { "w": "about", "ipa": "əˈbaʊt", "zh": "关于" },
+          { "w": "again", "ipa": "əˈgen", "zh": "再一次" },
+          { "w": "ago", "ipa": "əˈgəʊ", "zh": "以前" },
+          { "w": "away", "ipa": "əˈweɪ", "zh": "离开" },
+          { "w": "asleep", "ipa": "əˈsliːp", "zh": "睡着的" },
+          { "w": "banana", "ipa": "bəˈnɑːnə", "zh": "香蕉（首尾两个懒音！）" }
+        ]},
+        { "name": "词中懒音潜伏队", "tip": "藏在词中间的懒音节，找到它们，长词就好读了", "words": [
+          { "w": "lemon", "ipa": "ˈlemən", "zh": "柠檬" },
+          { "w": "open", "ipa": "ˈəʊpən", "zh": "打开" },
+          { "w": "hundred", "ipa": "ˈhʌndrəd", "zh": "一百" },
+          { "w": "today", "ipa": "təˈdeɪ", "zh": "今天" },
+          { "w": "tonight", "ipa": "təˈnaɪt", "zh": "今晚" },
+          { "w": "camera", "ipa": "ˈkæmərə", "zh": "相机（两个懒音）" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A teacher and a doctor eat banana and chocolate for dinner today!",
+        "zh": "一位老师和一位医生今天晚餐吃香蕉配巧克力！",
+        "pic": "👩‍🏫👨‍⚕️🍌🍫",
+        "coverage": "er(teacher/dinner) + or(doctor) + a(banana×2/冠词a) + o(chocolate/today) —— 懒音无处不在 ✓",
+        "wordIpa": [["A","ə"],["teacher","ˈtiːtʃə"],["and","ənd"],["a","ə"],["doctor","ˈdɒktə"],["eat","iːt"],["banana","bəˈnɑːnə"],["and","ənd"],["chocolate","ˈtʃɒklət"],["for","fə"],["dinner","ˈdɪnə"],["today","təˈdeɪ"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɜː",
+        "note": "同样的 er：重读时是用力的「呃——」/ɜː/（her、term），词尾轻读时是躺平的「呃」/ə/（teacher）——一个音的强弱两态，不是最小对立对，听感对比即可",
+        "pairs": [["term","teacher"],["serve","sister"],["turn","water"]]
+      },
+      "gameSchwa": {
+        "designNote": "/ə/ 从不重读，没有最小对立对，所以它的专属玩法是「懒音侦探」：单词出现后，点出哪个（哪些）音节在偷懒。黄色标出的就是懒音节。",
+        "words": [
+          { "w": "banana", "syl": ["ba","na","na"], "lazy": [0,2], "ipa": "bəˈnɑːnə" },
+          { "w": "teacher", "syl": ["tea","cher"], "lazy": [1], "ipa": "ˈtiːtʃə" },
+          { "w": "doctor", "syl": ["doc","tor"], "lazy": [1], "ipa": "ˈdɒktə" },
+          { "w": "about", "syl": ["a","bout"], "lazy": [0], "ipa": "əˈbaʊt" },
+          { "w": "today", "syl": ["to","day"], "lazy": [0], "ipa": "təˈdeɪ" },
+          { "w": "lemon", "syl": ["le","mon"], "lazy": [1], "ipa": "ˈlemən" },
+          { "w": "open", "syl": ["o","pen"], "lazy": [1], "ipa": "ˈəʊpən" },
+          { "w": "camera", "syl": ["ca","me","ra"], "lazy": [1,2], "ipa": "ˈkæmərə" },
+          { "w": "sugar", "syl": ["su","gar"], "lazy": [1], "ipa": "ˈʃʊgə" },
+          { "w": "water", "syl": ["wa","ter"], "lazy": [1], "ipa": "ˈwɔːtə" },
+          { "w": "again", "syl": ["a","gain"], "lazy": [0], "ipa": "əˈgen" },
+          { "w": "colour", "syl": ["co","lour"], "lazy": [1], "ipa": "ˈkʌlə" }
+        ]
+      }
+    },
+    {
+      "symbol": "eɪ",
+      "type": "双元音",
+      "nickname": "字母 A 的本名音",
+      "howTo": "双元音=两个音滑着连读，嘴型要动起来：从「诶」滑到「衣」，正好是字母 A 的名字。念 cake 里的那个音。",
+      "ttsDemo": "ay, ay, cake",
+      "spellings": [
+        { "letters": "a_e", "freq": "主力 · 魔法 e 三部曲之一", "examples": ["cake", "name", "game"] },
+        { "letters": "ai", "freq": "主力二号 · 词中专用", "examples": ["rain", "train", "wait"] },
+        { "letters": "ay", "freq": "✅铁律 · 词尾专用，看到必读", "examples": ["day", "play", "say"] },
+        { "letters": "a（开音节）", "freq": "常见", "examples": ["baby", "table", "paper"] },
+        { "letters": "ei / ey", "freq": "稀有", "examples": ["eight", "they", "grey"] },
+        { "letters": "ea", "freq": "稀有 · ea 的第三副面孔！就3个词", "examples": ["great", "break", "steak"] }
+      ],
+      "spellingNote": "重磅彩蛋：ea 居然有第三副面孔！/e/（bread）、/iː/（meat）之外，great/break/steak 这三个词读 /eɪ/——好消息是常用的就这 3 个，背下即收工。ai 管词中、ay 管词尾，分工明确。",
+      "levels": [
+        { "name": "a_e 魔法 e 队", "tip": "词尾不发音的 e 把 a 变回字母名——前两个单元闯关里见过无数次的老朋友", "words": [
+          { "w": "cake", "ipa": "keɪk", "zh": "蛋糕" },
+          { "w": "name", "ipa": "neɪm", "zh": "名字" },
+          { "w": "game", "ipa": "geɪm", "zh": "游戏" },
+          { "w": "make", "ipa": "meɪk", "zh": "制作" },
+          { "w": "late", "ipa": "leɪt", "zh": "迟的" },
+          { "w": "gate", "ipa": "geɪt", "zh": "大门" }
+        ]},
+        { "name": "ai 词中队", "tip": "ai 只在词中出现，安心读「诶衣」", "words": [
+          { "w": "rain", "ipa": "reɪn", "zh": "雨" },
+          { "w": "train", "ipa": "treɪn", "zh": "火车" },
+          { "w": "wait", "ipa": "weɪt", "zh": "等待" },
+          { "w": "paint", "ipa": "peɪnt", "zh": "画；油漆" },
+          { "w": "tail", "ipa": "teɪl", "zh": "尾巴" },
+          { "w": "afraid", "ipa": "əˈfreɪd", "zh": "害怕的" }
+        ]},
+        { "name": "ay 词尾铁律队", "tip": "词尾见 ay 必读 /eɪ/，零例外", "words": [
+          { "w": "day", "ipa": "deɪ", "zh": "白天" },
+          { "w": "play", "ipa": "pleɪ", "zh": "玩" },
+          { "w": "say", "ipa": "seɪ", "zh": "说" },
+          { "w": "way", "ipa": "weɪ", "zh": "路；方式" },
+          { "w": "today", "ipa": "təˈdeɪ", "zh": "今天" },
+          { "w": "birthday", "ipa": "ˈbɜːθdeɪ", "zh": "生日" }
+        ]},
+        { "name": "开音节 a 队", "tip": "音节末尾开着口的 a，也读字母名", "words": [
+          { "w": "baby", "ipa": "ˈbeɪbɪ", "zh": "宝宝" },
+          { "w": "table", "ipa": "ˈteɪbl", "zh": "桌子" },
+          { "w": "paper", "ipa": "ˈpeɪpə", "zh": "纸" },
+          { "w": "lady", "ipa": "ˈleɪdɪ", "zh": "女士" },
+          { "w": "radio", "ipa": "ˈreɪdɪəʊ", "zh": "收音机" },
+          { "w": "April", "ipa": "ˈeɪprəl", "zh": "四月" }
+        ]},
+        { "name": "ei/ey/ea 稀有伪装队", "tip": "eight 藏 ei、they 藏 ey，最后三个是 ea 的第三副面孔——常用的就这些", "words": [
+          { "w": "eight", "ipa": "eɪt", "zh": "八" },
+          { "w": "they", "ipa": "ðeɪ", "zh": "他们" },
+          { "w": "grey", "ipa": "greɪ", "zh": "灰色" },
+          { "w": "great", "ipa": "greɪt", "zh": "极好的" },
+          { "w": "break", "ipa": "breɪk", "zh": "打破；休息" },
+          { "w": "steak", "ipa": "steɪk", "zh": "牛排" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Hey! On a rainy day, the baby ate eight great cakes by the gate!",
+        "zh": "嘿！下雨天，那个宝宝在大门口吃掉了八个超棒的蛋糕！",
+        "pic": "👶🎂🌧️🚪",
+        "coverage": "ey(Hey) + ai(rainy) + ay(day) + 开音节a(baby) + a_e(ate/cakes/gate) + ei(eight) + ea(great) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Hey","heɪ"],["On","ɒn"],["a","ə"],["rainy","ˈreɪnɪ"],["day","deɪ"],["the","ðə"],["baby","ˈbeɪbɪ"],["ate","eɪt"],["eight","eɪt"],["great","greɪt"],["cakes","keɪks"],["by","baɪ"],["the","ðə"],["gate","geɪt"]]
+      },
+      "contrast": {
+        "vsSymbol": "e",
+        "note": "魔法 e 对决短 e：late「累特」拉着滑 vs let 短促收住——注意 paper/pepper 这对，差一个音意思差十万八千里",
+        "pairs": [["late","let"],["gate","get"],["tail","tell"],["wait","wet"],["paper","pepper"],["pain","pen"]]
+      },
+      "gamePairs": {
+        "designNote": "三组拼写呼应：a_e/ai vs 短e + a_e vs 短a（回看/æ/课）+ ay vs y/ea（pay/pie、great/greet 预告与回看）",
+        "pairs": [["late","let"],["gate","get"],["tail","tell"],["wait","wet"],["pain","pen"],["rain","ran"],["came","come"],["made","mad"],["pay","pie"],["tray","try"],["paper","pepper"],["great","greet"]],
+        "ipa": { "late":"leɪt","let":"let","gate":"geɪt","get":"get","tail":"teɪl","tell":"tel","wait":"weɪt","wet":"wet","pain":"peɪn","pen":"pen","rain":"reɪn","ran":"ræn","came":"keɪm","come":"kʌm","made":"meɪd","mad":"mæd","pay":"peɪ","pie":"paɪ","tray":"treɪ","try":"traɪ","paper":"ˈpeɪpə","pepper":"ˈpepə","great":"greɪt","greet":"griːt" }
+      }
+    },
+    {
+      "symbol": "aɪ",
+      "type": "双元音",
+      "nickname": "字母 I 的本名音",
+      "howTo": "从大「啊」滑到「衣」，嘴巴从大张滑到微笑，正好是字母 I 的名字。念 five 里的那个音。",
+      "ttsDemo": "eye, eye, five",
+      "spellings": [
+        { "letters": "i_e", "freq": "主力 · 魔法 e 三部曲之二", "examples": ["five", "nine", "time"] },
+        { "letters": "y（词尾重读）", "freq": "✅铁律 · 小短词词尾的 y 必读 /aɪ/ —— y 的第三副面孔！", "examples": ["my", "fly", "sky"] },
+        { "letters": "igh", "freq": "✅铁律 · 看到必读，gh 全程装死", "examples": ["high", "night", "light"] },
+        { "letters": "i + nd/ld/mb", "freq": "常见规律", "examples": ["find", "child", "climb"] },
+        { "letters": "ie / uy / eye", "freq": "稀有零散", "examples": ["pie", "buy", "eye"] }
+      ],
+      "spellingNote": "y 的三副面孔集齐：词中 /ɪ/（gym）、长词词尾轻读 /ɪ/（happy）、小短词词尾重读 /aɪ/（my/fly/sky）。判断口诀：词越短、y 越用力，越读 /aɪ/。",
+      "levels": [
+        { "name": "i_e 魔法 e 队", "tip": "魔法 e 把 i 变回字母名", "words": [
+          { "w": "five", "ipa": "faɪv", "zh": "五" },
+          { "w": "nine", "ipa": "naɪn", "zh": "九" },
+          { "w": "time", "ipa": "taɪm", "zh": "时间" },
+          { "w": "like", "ipa": "laɪk", "zh": "喜欢" },
+          { "w": "bike", "ipa": "baɪk", "zh": "自行车" },
+          { "w": "white", "ipa": "waɪt", "zh": "白色" }
+        ]},
+        { "name": "y 重读词尾队", "tip": "小短词的 y 用尽全力喊「啊衣」——y 的第三副面孔", "words": [
+          { "w": "my", "ipa": "maɪ", "zh": "我的" },
+          { "w": "fly", "ipa": "flaɪ", "zh": "飞" },
+          { "w": "sky", "ipa": "skaɪ", "zh": "天空" },
+          { "w": "why", "ipa": "waɪ", "zh": "为什么" },
+          { "w": "cry", "ipa": "kraɪ", "zh": "哭" },
+          { "w": "shy", "ipa": "ʃaɪ", "zh": "害羞的" }
+        ]},
+        { "name": "igh 铁律队", "tip": "igh 三个字母绑一起必读 /aɪ/，gh 全程装死不出声", "words": [
+          { "w": "high", "ipa": "haɪ", "zh": "高的" },
+          { "w": "night", "ipa": "naɪt", "zh": "夜晚" },
+          { "w": "light", "ipa": "laɪt", "zh": "灯；光" },
+          { "w": "right", "ipa": "raɪt", "zh": "对的；右边" },
+          { "w": "bright", "ipa": "braɪt", "zh": "明亮的" },
+          { "w": "fight", "ipa": "faɪt", "zh": "打架" }
+        ]},
+        { "name": "i + nd/ld/mb 规律队", "tip": "i 后面跟 nd/ld/mb 时常常升级成字母名（climb 的 b 装死）", "words": [
+          { "w": "find", "ipa": "faɪnd", "zh": "找到" },
+          { "w": "kind", "ipa": "kaɪnd", "zh": "善良的" },
+          { "w": "mind", "ipa": "maɪnd", "zh": "介意" },
+          { "w": "child", "ipa": "tʃaɪld", "zh": "孩子" },
+          { "w": "climb", "ipa": "klaɪm", "zh": "爬" },
+          { "w": "behind", "ipa": "bɪˈhaɪnd", "zh": "在……后面" }
+        ]},
+        { "name": "ie/uy/eye 零散队", "tip": "馅饼、领带、买、眼睛——零散但常用", "words": [
+          { "w": "pie", "ipa": "paɪ", "zh": "馅饼" },
+          { "w": "tie", "ipa": "taɪ", "zh": "领带" },
+          { "w": "buy", "ipa": "baɪ", "zh": "买" },
+          { "w": "eye", "ipa": "aɪ", "zh": "眼睛" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Close one eye! My shy child flies a white kite high in the night sky!",
+        "zh": "闭上一只眼！我那害羞的孩子在夜空里放白风筝，飞得老高！",
+        "pic": "🪁🌙👁️",
+        "coverage": "eye(eye) + y(My/shy/sky) + i(child) + ie(flies) + i_e(white/kite) + igh(high/night) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Close","kləʊz"],["one","wʌn"],["eye","aɪ"],["My","maɪ"],["shy","ʃaɪ"],["child","tʃaɪld"],["flies","flaɪz"],["a","ə"],["white","waɪt"],["kite","kaɪt"],["high","haɪ"],["in","ɪn"],["the","ðə"],["night","naɪt"],["sky","skaɪ"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɪ",
+        "note": "魔法 e 对决从长音这边再看一遍：bite 滑着读 vs bit 短促收住——/ɪ/ 课的老对手",
+        "pairs": [["bite","bit"],["kite","kit"],["wine","win"],["fine","fin"],["hide","hid"],["ripe","rip"]]
+      },
+      "gamePairs": {
+        "designNote": "i_e vs i（魔法e）+ /aɪ/ vs /eɪ/ 双元音互辨（my/may、buy/bay——两个字母名别打架）",
+        "pairs": [["bite","bit"],["kite","kit"],["wine","win"],["fine","fin"],["like","lake"],["time","tame"],["my","may"],["try","tray"],["white","wait"],["night","neat"],["buy","bay"],["pie","pay"]],
+        "ipa": { "bite":"baɪt","bit":"bɪt","kite":"kaɪt","kit":"kɪt","wine":"waɪn","win":"wɪn","fine":"faɪn","fin":"fɪn","like":"laɪk","lake":"leɪk","time":"taɪm","tame":"teɪm","my":"maɪ","may":"meɪ","try":"traɪ","tray":"treɪ","white":"waɪt","wait":"weɪt","night":"naɪt","neat":"niːt","buy":"baɪ","bay":"beɪ","pie":"paɪ","pay":"peɪ" }
+      }
+    },
+    {
+      "symbol": "əʊ",
+      "type": "双元音",
+      "nickname": "字母 O 的本名音",
+      "howTo": "从懒懒的「呃」滑到「乌」，嘴巴从放松滑到拢圆，像惊讶的「欧——」。念 nose 里的那个音。（美音读得更像「欧乌」。）",
+      "ttsDemo": "oh, oh, nose",
+      "spellings": [
+        { "letters": "o_e", "freq": "主力 · 魔法 e 三部曲之三", "examples": ["nose", "home", "note"] },
+        { "letters": "o（开音节）", "freq": "主力二号 · 小词大户", "examples": ["go", "no", "open"] },
+        { "letters": "oa", "freq": "✅铁律 · 看到基本必读", "examples": ["boat", "coat", "road"] },
+        { "letters": "ow（词尾）", "freq": "⚠️两副面孔 · 这里读「欧」，另一批读「嗷」（cow，下一批见）", "examples": ["show", "know", "snow"] },
+        { "letters": "oe", "freq": "稀有", "examples": ["toe"] }
+      ],
+      "spellingNote": "魔法 e 三部曲集齐：a_e→/eɪ/、i_e→/aɪ/、o_e→/əʊ/——三个字母全被魔法 e 变回本名。ow 的两副面孔（show「欧」 vs cow「嗷」）是下一批的分拣厂素材，先埋伏笔。",
+      "levels": [
+        { "name": "o_e 魔法 e 队", "tip": "魔法 e 三部曲的最后一部", "words": [
+          { "w": "nose", "ipa": "nəʊz", "zh": "鼻子" },
+          { "w": "home", "ipa": "həʊm", "zh": "家" },
+          { "w": "note", "ipa": "nəʊt", "zh": "笔记" },
+          { "w": "bone", "ipa": "bəʊn", "zh": "骨头" },
+          { "w": "rose", "ipa": "rəʊz", "zh": "玫瑰" },
+          { "w": "close", "ipa": "kləʊz", "zh": "关上" }
+        ]},
+        { "name": "开音节 o 队", "tip": "go/no/so——最短的词，最常用的「欧」", "words": [
+          { "w": "go", "ipa": "gəʊ", "zh": "去" },
+          { "w": "no", "ipa": "nəʊ", "zh": "不" },
+          { "w": "so", "ipa": "səʊ", "zh": "所以" },
+          { "w": "hello", "ipa": "həˈləʊ", "zh": "你好" },
+          { "w": "open", "ipa": "ˈəʊpən", "zh": "打开" },
+          { "w": "over", "ipa": "ˈəʊvə", "zh": "越过" }
+        ]},
+        { "name": "oa 铁律队", "tip": "oa 看到基本必读「欧」，很讲信用", "words": [
+          { "w": "boat", "ipa": "bəʊt", "zh": "小船" },
+          { "w": "coat", "ipa": "kəʊt", "zh": "外套" },
+          { "w": "road", "ipa": "rəʊd", "zh": "马路" },
+          { "w": "goat", "ipa": "gəʊt", "zh": "山羊" },
+          { "w": "soap", "ipa": "səʊp", "zh": "肥皂" },
+          { "w": "coach", "ipa": "kəʊtʃ", "zh": "教练" }
+        ]},
+        { "name": "ow 词尾「欧」队", "tip": "ow 的第一副面孔：词尾多读「欧」（第二副面孔「嗷」下一批见）", "words": [
+          { "w": "show", "ipa": "ʃəʊ", "zh": "展示" },
+          { "w": "know", "ipa": "nəʊ", "zh": "知道" },
+          { "w": "snow", "ipa": "snəʊ", "zh": "雪" },
+          { "w": "slow", "ipa": "sləʊ", "zh": "慢的" },
+          { "w": "yellow", "ipa": "ˈjeləʊ", "zh": "黄色" },
+          { "w": "window", "ipa": "ˈwɪndəʊ", "zh": "窗户" }
+        ]},
+        { "name": "oe + 词尾 o 零散队", "tip": "脚趾、零、钢琴——收个尾", "words": [
+          { "w": "toe", "ipa": "təʊ", "zh": "脚趾" },
+          { "w": "zero", "ipa": "ˈzɪərəʊ", "zh": "零" },
+          { "w": "piano", "ipa": "pɪˈænəʊ", "zh": "钢琴" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Oh no! The old goat rows a yellow boat home with his nose and toe!",
+        "zh": "哦不！那只老山羊用鼻子和脚趾划着黄色小船回家！",
+        "pic": "🐐🛶👃",
+        "coverage": "o(Oh/no/old) + oa(goat/boat) + ow(rows/yellow) + o_e(home/nose) + oe(toe) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Oh","əʊ"],["no","nəʊ"],["The","ðə"],["old","əʊld"],["goat","gəʊt"],["rows","rəʊz"],["a","ə"],["yellow","ˈjeləʊ"],["boat","bəʊt"],["home","həʊm"],["with","wɪð"],["his","hɪz"],["nose","nəʊz"],["and","ənd"],["toe","təʊ"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɒ",
+        "note": "魔法 e 对决从长音这边再看：hope 滑着读「欧」 vs hop 短促「奥」——/ɒ/ 课的老对手",
+        "pairs": [["hope","hop"],["note","not"],["robe","rob"],["goat","got"],["coast","cost"],["coat","cot"]]
+      },
+      "gamePairs": {
+        "designNote": "o_e/oa vs 短o（魔法e）+ 跨课回看（so/saw、show/shoe、boat/boot）+ ow 两副面孔预告（no/now）",
+        "pairs": [["hope","hop"],["note","not"],["robe","rob"],["goat","got"],["coat","cot"],["so","saw"],["show","shoe"],["boat","boot"],["coal","cool"],["no","now"],["low","law"],["grow","grew"]],
+        "ipa": { "hope":"həʊp","hop":"hɒp","note":"nəʊt","not":"nɒt","robe":"rəʊb","rob":"rɒb","goat":"gəʊt","got":"gɒt","coat":"kəʊt","cot":"kɒt","so":"səʊ","saw":"sɔː","show":"ʃəʊ","shoe":"ʃuː","boat":"bəʊt","boot":"buːt","coal":"kəʊl","cool":"kuːl","no":"nəʊ","now":"naʊ","low":"ləʊ","law":"lɔː","grow":"grəʊ","grew":"gruː" }
+      }
+    }
+  ]
+}

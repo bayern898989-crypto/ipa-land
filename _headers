@@ -1,0 +1,18 @@
+# Cloudflare Pages 缓存策略
+# 字体带内容指纹、永不变，长缓存；sw.js 和页面必须每次回源校验，
+# 否则改了内容孩子端要等旧 Service Worker 过期才更新。
+
+/sw.js
+  Cache-Control: no-cache
+
+/*.html
+  Cache-Control: no-cache
+
+/content-batch-*.json
+  Cache-Control: no-cache
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/icons/*
+  Cache-Control: public, max-age=604800

@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 4 批 · 单元 4 · 双元音收官（/aʊ/ /ɔɪ/ /ɪə/ /eə/ /ʊə/）—— 元音全部完成 🎉",
+    "version": "0.1-待审核",
+    "symbolSet": "48音标（国内教材 DJ 体系）",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律 / ⚠️两副面孔 / 主力 / 稀有",
+      "闯关对立对呼应拼写出口",
+      "稀有拼写多练：词库尽量穷尽常用词（稀有音标词本来就少，如实呈现不硬凑）",
+      "记忆句覆盖全部拼写出口",
+      "对比辨音每组至少6对（词源不足时如实缩减）"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "aʊ",
+      "type": "双元音",
+      "nickname": "被踩到脚的嗷音",
+      "howTo": "从大「啊」滑到「乌」，嘴巴从大张滑到拢圆，像被踩到脚时的「嗷！」。念 cow 里的那个音。",
+      "ttsDemo": "ow, ow, cow",
+      "spellings": [
+        { "letters": "ou", "freq": "主力 · 词中大户", "examples": ["house", "out", "loud"] },
+        { "letters": "ow", "freq": "⚠️两副面孔 · 第二副面孔：这里读「嗷」（cow），上一批读「欧」（show）", "examples": ["cow", "now", "down"] }
+      ],
+      "spellingNote": "ow 两副面孔集齐：show「欧」vs cow「嗷」——没有铁律可分，只能背「嗷」名单（cow/now/how/down/town/brown/flower...），这是分拣工厂的绝佳素材。",
+      "levels": [
+        { "name": "ou 主力队 · 上", "tip": "词中的 ou 大多读「嗷」", "words": [
+          { "w": "out", "ipa": "aʊt", "zh": "出去" },
+          { "w": "house", "ipa": "haʊs", "zh": "房子" },
+          { "w": "mouse", "ipa": "maʊs", "zh": "老鼠" },
+          { "w": "loud", "ipa": "laʊd", "zh": "大声的" },
+          { "w": "round", "ipa": "raʊnd", "zh": "圆的" },
+          { "w": "count", "ipa": "kaʊnt", "zh": "数数" }
+        ]},
+        { "name": "ou 主力队 · 下", "tip": "继续「嗷」：声音、地面、嘴巴、云朵", "words": [
+          { "w": "about", "ipa": "əˈbaʊt", "zh": "关于" },
+          { "w": "sound", "ipa": "saʊnd", "zh": "声音" },
+          { "w": "found", "ipa": "faʊnd", "zh": "找到（过去式）" },
+          { "w": "ground", "ipa": "graʊnd", "zh": "地面" },
+          { "w": "mouth", "ipa": "maʊθ", "zh": "嘴巴" },
+          { "w": "cloud", "ipa": "klaʊd", "zh": "云" }
+        ]},
+        { "name": "ow「嗷」名单 · 上", "tip": "ow 的第二副面孔——这批读「嗷」，背下名单就不会和 show 混", "words": [
+          { "w": "cow", "ipa": "kaʊ", "zh": "奶牛" },
+          { "w": "now", "ipa": "naʊ", "zh": "现在" },
+          { "w": "how", "ipa": "haʊ", "zh": "怎样" },
+          { "w": "down", "ipa": "daʊn", "zh": "向下" },
+          { "w": "town", "ipa": "taʊn", "zh": "城镇" },
+          { "w": "brown", "ipa": "braʊn", "zh": "棕色" }
+        ]},
+        { "name": "ow「嗷」名单 · 下", "tip": "花朵、淋浴、猫头鹰、人群——「嗷」名单收官", "words": [
+          { "w": "flower", "ipa": "ˈflaʊə", "zh": "花" },
+          { "w": "shower", "ipa": "ˈʃaʊə", "zh": "淋浴" },
+          { "w": "owl", "ipa": "aʊl", "zh": "猫头鹰" },
+          { "w": "crowd", "ipa": "kraʊd", "zh": "人群" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Wow! A brown cow and a loud mouse run around our house right now!",
+        "zh": "哇！一头棕牛和一只大嗓门老鼠正绕着我们家跑圈！",
+        "pic": "🐄🐭🏠",
+        "coverage": "ow(Wow/brown/cow/now) + ou(loud/mouse/around/our/house) —— 两个出口全覆盖 ✓",
+        "wordIpa": [["Wow","waʊ"],["A","ə"],["brown","braʊn"],["cow","kaʊ"],["and","ənd"],["a","ə"],["loud","laʊd"],["mouse","maʊs"],["run","rʌn"],["around","əˈraʊnd"],["our","aʊə"],["house","haʊs"],["right","raɪt"],["now","naʊ"]]
+      },
+      "contrast": {
+        "vsSymbol": "əʊ",
+        "note": "ow 两副面孔正面对决：now「嗷」（第二副）vs know「欧」（第一副）——同字母不同音的经典战场",
+        "pairs": [["now","know"],["town","tone"],["loud","load"],["house","hose"],["out","oat"],["found","phoned"]]
+      },
+      "gamePairs": {
+        "designNote": "主打 ow/ou 的「嗷 vs 欧」分辨 + 跨课回看（down/dawn、shout/shot、owl/oil 预告）",
+        "pairs": [["now","know"],["town","tone"],["loud","load"],["house","hose"],["out","oat"],["found","phoned"],["down","dawn"],["shout","shot"],["owl","oil"],["mouth","moth"]],
+        "ipa": { "now":"naʊ","know":"nəʊ","town":"taʊn","tone":"təʊn","loud":"laʊd","load":"ləʊd","house":"haʊs","hose":"həʊz","out":"aʊt","oat":"əʊt","found":"faʊnd","phoned":"fəʊnd","down":"daʊn","dawn":"dɔːn","shout":"ʃaʊt","shot":"ʃɒt","owl":"aʊl","oil":"ɔɪl","mouth":"maʊθ","moth":"mɒθ" }
+      }
+    },
+    {
+      "symbol": "ɔɪ",
+      "type": "双元音",
+      "nickname": "淘气的哦咦音",
+      "howTo": "从圆嘴「哦」滑到「衣」，像发现好玩东西时的「哦咦！」。念 boy 里的那个音。",
+      "ttsDemo": "oy, oy, boy",
+      "spellings": [
+        { "letters": "oy", "freq": "✅铁律 · 词尾专用，看到必读", "examples": ["boy", "toy", "joy"] },
+        { "letters": "oi", "freq": "✅铁律 · 词中专用，看到必读", "examples": ["oil", "coin", "voice"] }
+      ],
+      "spellingNote": "最省心的双元音：oi 管词中、oy 管词尾，分工明确、两条都是铁律——和 ai/ay 的分工一模一样，规律迁移！",
+      "levels": [
+        { "name": "oy 词尾队", "tip": "词尾见 oy 必读，零例外", "words": [
+          { "w": "boy", "ipa": "bɔɪ", "zh": "男孩" },
+          { "w": "toy", "ipa": "tɔɪ", "zh": "玩具" },
+          { "w": "joy", "ipa": "dʒɔɪ", "zh": "快乐" },
+          { "w": "enjoy", "ipa": "ɪnˈdʒɔɪ", "zh": "享受" },
+          { "w": "cowboy", "ipa": "ˈkaʊbɔɪ", "zh": "牛仔" }
+        ]},
+        { "name": "oi 词中队 · 上", "tip": "词中见 oi 必读，零例外", "words": [
+          { "w": "oil", "ipa": "ɔɪl", "zh": "油" },
+          { "w": "coin", "ipa": "kɔɪn", "zh": "硬币" },
+          { "w": "voice", "ipa": "vɔɪs", "zh": "声音" },
+          { "w": "noise", "ipa": "nɔɪz", "zh": "噪音" },
+          { "w": "point", "ipa": "pɔɪnt", "zh": "指；分数" },
+          { "w": "join", "ipa": "dʒɔɪn", "zh": "加入" }
+        ]},
+        { "name": "oi 词中队 · 下", "tip": "煮、土壤、马桶、选择——常用词就这些了", "words": [
+          { "w": "boil", "ipa": "bɔɪl", "zh": "煮" },
+          { "w": "soil", "ipa": "sɔɪl", "zh": "土壤" },
+          { "w": "toilet", "ipa": "ˈtɔɪlɪt", "zh": "马桶；厕所" },
+          { "w": "choice", "ipa": "tʃɔɪs", "zh": "选择" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The boy enjoys the noise of his toy coin in the toilet!",
+        "zh": "那个男孩超享受他的玩具硬币掉进马桶的声音！",
+        "pic": "👦🪙🚽",
+        "coverage": "oy(boy/enjoys/toy) + oi(noise/coin/toilet) —— 两个出口全覆盖 ✓",
+        "wordIpa": [["The","ðə"],["boy","bɔɪ"],["enjoys","ɪnˈdʒɔɪz"],["the","ðə"],["noise","nɔɪz"],["of","əv"],["his","hɪz"],["toy","tɔɪ"],["coin","kɔɪn"],["in","ɪn"],["the","ðə"],["toilet","ˈtɔɪlɪt"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɔː",
+        "note": "都从圆嘴「哦」出发：/ɔɪ/ 滑向「衣」（coin），/ɔː/ 原地拉长（corn）——滑不滑是关键",
+        "pairs": [["coin","corn"],["oil","all"],["boil","ball"],["joy","jaw"],["point","port"],["soil","sail"]]
+      },
+      "gamePairs": {
+        "designNote": "「哦咦」vs「哦——」+ 三大双元音互辨（boy/buy、toy/tie——别把男孩说成买）",
+        "pairs": [["coin","corn"],["oil","all"],["boil","ball"],["joy","jaw"],["point","port"],["boy","buy"],["toy","tie"],["voice","vice"],["oil","owl"],["soil","sail"]],
+        "ipa": { "coin":"kɔɪn","corn":"kɔːn","oil":"ɔɪl","all":"ɔːl","boil":"bɔɪl","ball":"bɔːl","joy":"dʒɔɪ","jaw":"dʒɔː","point":"pɔɪnt","port":"pɔːt","boy":"bɔɪ","buy":"baɪ","toy":"tɔɪ","tie":"taɪ","voice":"vɔɪs","vice":"vaɪs","owl":"aʊl","soil":"sɔɪl","sail":"seɪl" }
+      }
+    },
+    {
+      "symbol": "ɪə",
+      "type": "双元音",
+      "nickname": "竖起耳朵音",
+      "howTo": "从「衣」滑到懒懒的「呃」——正好就是 ear（耳朵）这个词的读音。竖起耳朵听！",
+      "ttsDemo": "ear, ear, near",
+      "spellings": [
+        { "letters": "ear", "freq": "⚠️两副面孔再现 · 这里读「衣呃」（near），另一批跟辅音读 /ɜː/（learn）", "examples": ["ear", "near", "year"] },
+        { "letters": "eer", "freq": "✅铁律 · 看到必读", "examples": ["deer", "cheer", "engineer"] },
+        { "letters": "ere", "freq": "常见小词", "examples": ["here"] },
+        { "letters": "e / ea（个别）", "freq": "稀有", "examples": ["hero", "idea", "real"] }
+      ],
+      "spellingNote": "ear 的判断口诀：ear 后面没有辅音（或就在词尾）多读「衣呃」（ear/near/year）；ear 后面跟着辅音多读 /ɜː/（learn/earth/heard）。少数例外 heart /ɑː/ 单独记。",
+      "levels": [
+        { "name": "ear「衣呃」队", "tip": "词尾的 ear 读「衣呃」——耳朵、年份、眼泪都在这队", "words": [
+          { "w": "ear", "ipa": "ɪə", "zh": "耳朵" },
+          { "w": "near", "ipa": "nɪə", "zh": "近的" },
+          { "w": "hear", "ipa": "hɪə", "zh": "听见" },
+          { "w": "year", "ipa": "jɪə", "zh": "年" },
+          { "w": "dear", "ipa": "dɪə", "zh": "亲爱的" },
+          { "w": "tear", "ipa": "tɪə", "zh": "眼泪" }
+        ]},
+        { "name": "eer / ere 队", "tip": "eer 看到必读；here 天天用", "words": [
+          { "w": "deer", "ipa": "dɪə", "zh": "鹿" },
+          { "w": "cheer", "ipa": "tʃɪə", "zh": "欢呼" },
+          { "w": "engineer", "ipa": "ˌendʒɪˈnɪə", "zh": "工程师" },
+          { "w": "pioneer", "ipa": "ˌpaɪəˈnɪə", "zh": "先锋" },
+          { "w": "here", "ipa": "hɪə", "zh": "这里" }
+        ]},
+        { "name": "e / ea 零散队", "tip": "英雄、主意、真实、零——藏在大词里的「衣呃」", "words": [
+          { "w": "hero", "ipa": "ˈhɪərəʊ", "zh": "英雄" },
+          { "w": "zero", "ipa": "ˈzɪərəʊ", "zh": "零" },
+          { "w": "idea", "ipa": "aɪˈdɪə", "zh": "主意" },
+          { "w": "real", "ipa": "rɪəl", "zh": "真实的" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Come here! A real deer with big ears cheers for our hero every year!",
+        "zh": "快来！一只大耳朵真鹿每年都为我们的英雄欢呼！",
+        "pic": "🦌👂🎉",
+        "coverage": "ere(here) + ea(real) + eer(deer/cheers) + ear(ears/year) + e(hero) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Come","kʌm"],["here","hɪə"],["A","ə"],["real","rɪəl"],["deer","dɪə"],["with","wɪð"],["big","bɪg"],["ears","ɪəz"],["cheers","tʃɪəz"],["for","fə"],["our","aʊə"],["hero","ˈhɪərəʊ"],["every","ˈevrɪ"],["year","jɪə"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɜː",
+        "note": "ear 两副面孔正面对决：beard（衣呃）vs bird（呃——）；here vs her——差一个滑动，词就变了",
+        "pairs": [["beard","bird"],["here","her"],["near","knee"],["fear","fee"],["tear","tea"],["ear","earn"]]
+      },
+      "gamePairs": {
+        "designNote": "ear 两副面孔 + /ɪə/ vs /iː/（near/knee：滑不滑）+ /ɪə/ vs /eə/ 预告（hear/hair、deer/dare）",
+        "pairs": [["beard","bird"],["here","her"],["near","knee"],["fear","fee"],["tear","tea"],["ear","earn"],["hear","hair"],["deer","dare"]],
+        "ipa": { "beard":"bɪəd","bird":"bɜːd","here":"hɪə","her":"hɜː","near":"nɪə","knee":"niː","fear":"fɪə","fee":"fiː","tear":"tɪə","tea":"tiː","ear":"ɪə","earn":"ɜːn","hear":"hɪə","hair":"heə","deer":"dɪə","dare":"deə" }
+      }
+    },
+    {
+      "symbol": "eə",
+      "type": "双元音",
+      "nickname": "空气飘飘音",
+      "howTo": "从「哎」滑到懒懒的「呃」——正好就是 air（空气）这个词的读音。像什么东西轻飘飘落下来。",
+      "ttsDemo": "air, air, hair",
+      "spellings": [
+        { "letters": "air", "freq": "✅铁律 · 看到必读", "examples": ["air", "hair", "chair"] },
+        { "letters": "are", "freq": "主力 · 词尾 are 多读「哎呃」", "examples": ["care", "share", "square"] },
+        { "letters": "ear", "freq": "稀有 · ear 的第三副面孔！就一小撮", "examples": ["bear", "pear", "wear"] },
+        { "letters": "ere / eir", "freq": "稀有小词 · 天天用", "examples": ["there", "where", "their"] }
+      ],
+      "spellingNote": "重磅：ear 的第三副面孔登场！near「衣呃」、learn「呃——」之外，bear/pear/wear 这一小撮读「哎呃」。ear 三副面孔集齐，可开三桶分拣工厂特别关。",
+      "levels": [
+        { "name": "air 铁律队", "tip": "air 看到必读「哎呃」，零例外", "words": [
+          { "w": "air", "ipa": "eə", "zh": "空气" },
+          { "w": "hair", "ipa": "heə", "zh": "头发" },
+          { "w": "chair", "ipa": "tʃeə", "zh": "椅子" },
+          { "w": "fair", "ipa": "feə", "zh": "公平的" },
+          { "w": "stairs", "ipa": "steəz", "zh": "楼梯" },
+          { "w": "airport", "ipa": "ˈeəpɔːt", "zh": "机场" }
+        ]},
+        { "name": "are 队", "tip": "词尾 are 多读「哎呃」（注意 are 本身弱读是 /ə/）", "words": [
+          { "w": "care", "ipa": "keə", "zh": "关心" },
+          { "w": "share", "ipa": "ʃeə", "zh": "分享" },
+          { "w": "square", "ipa": "skweə", "zh": "正方形；广场" },
+          { "w": "scare", "ipa": "skeə", "zh": "吓唬" },
+          { "w": "parents", "ipa": "ˈpeərənts", "zh": "父母" }
+        ]},
+        { "name": "ear 第三副面孔队", "tip": "熊、梨、穿——ear 读「哎呃」的就这一小撮，背下即收工", "words": [
+          { "w": "bear", "ipa": "beə", "zh": "熊" },
+          { "w": "pear", "ipa": "peə", "zh": "梨" },
+          { "w": "wear", "ipa": "weə", "zh": "穿" }
+        ]},
+        { "name": "ere / eir 小词队", "tip": "那里、哪里、他们的——天天用的小词", "words": [
+          { "w": "there", "ipa": "ðeə", "zh": "那里" },
+          { "w": "where", "ipa": "weə", "zh": "哪里" },
+          { "w": "their", "ipa": "ðeə", "zh": "他们的" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Where is the bear? There! It wears my hair and shares their chair!",
+        "zh": "熊在哪儿？在那儿！它戴着我的假发，还和他们挤一把椅子！",
+        "pic": "🐻💇🪑",
+        "coverage": "ere(Where/There) + ear(bear/wears) + air(hair/chair) + are(shares) + eir(their) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Where","weə"],["is","ɪz"],["the","ðə"],["bear","beə"],["There","ðeə"],["It","ɪt"],["wears","weəz"],["my","maɪ"],["hair","heə"],["and","ənd"],["shares","ʃeəz"],["their","ðeə"],["chair","tʃeə"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɪə",
+        "note": "两个滑向「呃」的兄弟：起点是「哎」还是「衣」？hair（哎呃）vs here（衣呃）——听起点定胜负",
+        "pairs": [["hair","here"],["pear","peer"],["fair","fear"],["chair","cheer"],["dare","deer"],["stare","steer"]]
+      },
+      "gamePairs": {
+        "designNote": "/eə/ vs /ɪə/ 起点辨析（全组同字母族）+ air vs ear 回看",
+        "pairs": [["hair","here"],["pear","peer"],["fair","fear"],["chair","cheer"],["dare","deer"],["stare","steer"],["air","ear"],["share","sheer"],["there","tear"]],
+        "ipa": { "hair":"heə","here":"hɪə","pear":"peə","peer":"pɪə","fair":"feə","fear":"fɪə","chair":"tʃeə","cheer":"tʃɪə","dare":"deə","deer":"dɪə","stare":"steə","steer":"stɪə","air":"eə","ear":"ɪə","share":"ʃeə","sheer":"ʃɪə","there":"ðeə","tear":"tɪə" }
+      }
+    },
+    {
+      "symbol": "ʊə",
+      "type": "双元音",
+      "nickname": "最稀有的乌呃音",
+      "howTo": "从短「乌」滑到懒懒的「呃」。诚实说明：这是 48 个音标里最稀有的一个，常用词一只手数得过来；现代英音里很多人干脆把它读成 /ɔː/（poor 读成 pour）。认识它、会读它的几个词就够了。",
+      "ttsDemo": "sure, sure, tour",
+      "spellings": [
+        { "letters": "oor / our", "freq": "主力（就这几个词）", "examples": ["poor", "tour", "tourist"] },
+        { "letters": "ure", "freq": "主力（就这几个词）", "examples": ["sure", "pure", "cure"] }
+      ],
+      "levels": [
+        { "name": "全家福一网打尽", "tip": "这个音的常用词全在这了——最省心的一课", "words": [
+          { "w": "poor", "ipa": "pʊə", "zh": "可怜的；穷的" },
+          { "w": "tour", "ipa": "tʊə", "zh": "旅行" },
+          { "w": "tourist", "ipa": "ˈtʊərɪst", "zh": "游客" },
+          { "w": "sure", "ipa": "ʃʊə", "zh": "确定的" },
+          { "w": "pure", "ipa": "pjʊə", "zh": "纯净的" },
+          { "w": "cure", "ipa": "kjʊə", "zh": "治愈" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Sure! The poor tourist takes a pure mountain tour to find the cure!",
+        "zh": "当然！那位可怜的游客去纯净的大山旅行寻找解药！",
+        "pic": "🏔️🧳💊",
+        "coverage": "ure(Sure/pure/cure) + oor(poor) + our(tourist/tour) —— 全部出口覆盖 ✓",
+        "wordIpa": [["Sure","ʃʊə"],["The","ðə"],["poor","pʊə"],["tourist","ˈtʊərɪst"],["takes","teɪks"],["a","ə"],["pure","pjʊə"],["mountain","ˈmaʊntɪn"],["tour","tʊə"],["to","tə"],["find","faɪnd"],["the","ðə"],["cure","kjʊə"]]
+      },
+      "contrast": {
+        "vsSymbol": "ɔː",
+        "note": "现代英音的大合并现场：教材里 poor 是「乌呃」，很多英国人已经读成「哦——」（和 pour 同音）——两种都对，考试按教材",
+        "pairs": [["sure","shore"],["tour","tore"],["poor","pour"],["moor","more"],["cure","core"]]
+      },
+      "gamePairs": {
+        "designNote": "/ʊə/ vs /ɔː/ 合并辨析——词少，5 对足矣，如实呈现",
+        "pairs": [["sure","shore"],["tour","tore"],["poor","pour"],["moor","more"],["cure","core"]],
+        "ipa": { "sure":"ʃʊə","shore":"ʃɔː","tour":"tʊə","tore":"tɔː","poor":"pʊə","pour":"pɔː","moor":"mʊə","more":"mɔː","cure":"kjʊə","core":"kɔː" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "project": "音标乐园 IPA Land",
+    "batch": "第 5 批 · 单元 5 · 爆破音六个（清浊三对：p/b · t/d · k/g）",
+    "version": "0.1-待审核",
+    "symbolSet": "48音标（国内教材 DJ 体系）",
+    "consonantNote": "辅音篇总纲：清浊双胞胎嘴型一模一样，唯一区别是声带震不震——把手放喉咙上，浊音嗡嗡震、清音不震。中国同学通用提醒：词尾的辅音要轻轻收住，别加小尾巴（cup 不是「卡普」）。",
+    "designRules": [
+      "拼写出口标可靠度：✅铁律 / ⚠️两副面孔 / 主力 / 稀有",
+      "闯关对立对以清浊最小对为主 + 词尾清浊（中国同学难点）",
+      "记忆句用头韵（同声母开头）制造节奏感",
+      "对比辨音=它的清浊双胞胎"
+    ]
+  },
+  "sounds": [
+    {
+      "symbol": "p",
+      "type": "清辅音 · 爆破音",
+      "nickname": "吹蜡烛的泼音",
+      "howTo": "双唇紧闭憋住气，猛地弹开送气「泼」——手掌放嘴前能感到一股风。声带不震动（清音）。",
+      "ttsDemo": "p, p, pen",
+      "spellings": [
+        { "letters": "p", "freq": "✅铁律 · 看到必读", "examples": ["pen", "pig", "cup"] },
+        { "letters": "pp", "freq": "常见 · 双写照样读一个", "examples": ["apple", "happy"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "开头的 p 送足气，手掌能感到风", "words": [
+          { "w": "pen", "ipa": "pen", "zh": "钢笔" },
+          { "w": "pig", "ipa": "pɪg", "zh": "猪" },
+          { "w": "park", "ipa": "pɑːk", "zh": "公园" },
+          { "w": "pink", "ipa": "pɪŋk", "zh": "粉色" },
+          { "w": "panda", "ipa": "ˈpændə", "zh": "熊猫" },
+          { "w": "party", "ipa": "ˈpɑːtɪ", "zh": "聚会" }
+        ]},
+        { "name": "词尾队 · 别加小尾巴", "tip": "词尾的 p 双唇一闭就收住——cup 不是「卡普」！中国同学最易犯", "words": [
+          { "w": "cup", "ipa": "kʌp", "zh": "杯子" },
+          { "w": "up", "ipa": "ʌp", "zh": "向上" },
+          { "w": "top", "ipa": "tɒp", "zh": "顶部" },
+          { "w": "map", "ipa": "mæp", "zh": "地图" },
+          { "w": "jump", "ipa": "dʒʌmp", "zh": "跳" },
+          { "w": "sleep", "ipa": "sliːp", "zh": "睡觉" }
+        ]},
+        { "name": "pp 与大词队", "tip": "双写 pp 照样只读一个 p", "words": [
+          { "w": "apple", "ipa": "ˈæpl", "zh": "苹果" },
+          { "w": "happy", "ipa": "ˈhæpɪ", "zh": "开心的" },
+          { "w": "pepper", "ipa": "ˈpepə", "zh": "辣椒" },
+          { "w": "paper", "ipa": "ˈpeɪpə", "zh": "纸" },
+          { "w": "hippo", "ipa": "ˈhɪpəʊ", "zh": "河马" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A pink panda puts a pepper pizza in his pocket!",
+        "zh": "一只粉色熊猫把辣椒披萨塞进了口袋！",
+        "pic": "🐼🍕👖",
+        "coverage": "词首p(pink/panda/puts/pepper/pizza/pocket) —— 头韵拉满 ✓",
+        "wordIpa": [["A","ə"],["pink","pɪŋk"],["panda","ˈpændə"],["puts","pʊts"],["a","ə"],["pepper","ˈpepə"],["pizza","ˈpiːtsə"],["in","ɪn"],["his","hɪz"],["pocket","ˈpɒkɪt"]]
+      },
+      "contrast": {
+        "vsSymbol": "b",
+        "note": "清浊双胞胎第一对：嘴型一模一样，/p/ 送气不出声（吹蜡烛），/b/ 声带嗡嗡震——手摸喉咙立见分晓",
+        "pairs": [["pig","big"],["pen","Ben"],["pat","bat"],["park","bark"],["pear","bear"],["cap","cab"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊最小对 + 词尾清浊（cap/cab、rope/robe——词尾的清浊中国同学最难听）",
+        "pairs": [["pig","big"],["pen","Ben"],["pat","bat"],["park","bark"],["pear","bear"],["cap","cab"],["pull","bull"],["pie","buy"],["pack","back"],["rope","robe"]],
+        "ipa": { "pig":"pɪg","big":"bɪg","pen":"pen","Ben":"ben","pat":"pæt","bat":"bæt","park":"pɑːk","bark":"bɑːk","pear":"peə","bear":"beə","cap":"kæp","cab":"kæb","pull":"pʊl","bull":"bʊl","pie":"paɪ","buy":"baɪ","pack":"pæk","back":"bæk","rope":"rəʊp","robe":"rəʊb" }
+      }
+    },
+    {
+      "symbol": "b",
+      "type": "浊辅音 · 爆破音",
+      "nickname": "声带嗡嗡的波音",
+      "howTo": "嘴型和 /p/ 一模一样，但不送气、声带震动——手摸喉咙能感到嗡嗡。中文「波」其实不太震，要刻意让喉咙响起来。",
+      "ttsDemo": "b, b, big",
+      "spellings": [
+        { "letters": "b", "freq": "✅铁律 · 看到基本必读", "examples": ["bag", "big", "job"] },
+        { "letters": "bb", "freq": "常见", "examples": ["rabbit", "bubble"] },
+        { "letters": "mb（词尾）", "freq": "⚠️陷阱 · m 后面的词尾 b 装死不发音！", "examples": ["climb", "comb", "lamb"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "开头就让声带嗡起来", "words": [
+          { "w": "bag", "ipa": "bæg", "zh": "书包" },
+          { "w": "big", "ipa": "bɪg", "zh": "大的" },
+          { "w": "bed", "ipa": "bed", "zh": "床" },
+          { "w": "bus", "ipa": "bʌs", "zh": "公交车" },
+          { "w": "book", "ipa": "bʊk", "zh": "书" },
+          { "w": "ball", "ipa": "bɔːl", "zh": "球" }
+        ]},
+        { "name": "词尾队 · 轻收但要浊", "tip": "词尾 b 轻轻收住，但收之前喉咙要震一下——这是它和 p 的区别", "words": [
+          { "w": "job", "ipa": "dʒɒb", "zh": "工作" },
+          { "w": "club", "ipa": "klʌb", "zh": "俱乐部" },
+          { "w": "crab", "ipa": "kræb", "zh": "螃蟹" },
+          { "w": "web", "ipa": "web", "zh": "网" },
+          { "w": "grab", "ipa": "græb", "zh": "抓" }
+        ]},
+        { "name": "bb 与 mb 装死队", "tip": "前三个 bb 照读；后三个词尾 b 集体装死——climb 读「克莱姆」不是「克莱姆布」", "words": [
+          { "w": "rabbit", "ipa": "ˈræbɪt", "zh": "兔子" },
+          { "w": "hobby", "ipa": "ˈhɒbɪ", "zh": "爱好" },
+          { "w": "bubble", "ipa": "ˈbʌbl", "zh": "泡泡" },
+          { "w": "climb", "ipa": "klaɪm", "zh": "爬" },
+          { "w": "comb", "ipa": "kəʊm", "zh": "梳子" },
+          { "w": "lamb", "ipa": "læm", "zh": "小羊" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A big bear buys a blue banana for his baby brother!",
+        "zh": "一只大熊给它的熊宝宝弟弟买了根蓝香蕉！",
+        "pic": "🐻🍌👶",
+        "coverage": "词首b(big/bear/buys/blue/banana/baby/brother) —— 头韵拉满 ✓",
+        "wordIpa": [["A","ə"],["big","bɪg"],["bear","beə"],["buys","baɪz"],["a","ə"],["blue","bluː"],["banana","bəˈnɑːnə"],["for","fə"],["his","hɪz"],["baby","ˈbeɪbɪ"],["brother","ˈbrʌðə"]]
+      },
+      "contrast": {
+        "vsSymbol": "p",
+        "note": "双胞胎再对决：这次从浊音这边听——bat 喉咙先嗡一下，pat 干脆一股风",
+        "pairs": [["bat","pat"],["big","pig"],["Ben","pen"],["bear","pear"],["back","pack"],["robe","rope"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对反向再练 + 词尾清浊（cab/cap）",
+        "pairs": [["bat","pat"],["big","pig"],["Ben","pen"],["bear","pear"],["back","pack"],["robe","rope"],["cab","cap"],["bull","pull"],["buy","pie"],["bark","park"]],
+        "ipa": { "bat":"bæt","pat":"pæt","big":"bɪg","pig":"pɪg","Ben":"ben","pen":"pen","bear":"beə","pear":"peə","back":"bæk","pack":"pæk","robe":"rəʊb","rope":"rəʊp","cab":"kæb","cap":"kæp","bull":"bʊl","pull":"pʊl","buy":"baɪ","pie":"paɪ","bark":"bɑːk","park":"pɑːk" }
+      }
+    },
+    {
+      "symbol": "t",
+      "type": "清辅音 · 爆破音",
+      "nickname": "敲小鼓的特音",
+      "howTo": "舌尖抵住上牙龈（不是牙齿），弹开送气「特」，像敲一下小鼓。声带不震。词尾的 t 轻轻收住别读「特呃」。",
+      "ttsDemo": "t, t, ten",
+      "spellings": [
+        { "letters": "t", "freq": "✅铁律 · 看到基本必读", "examples": ["ten", "top", "cat"] },
+        { "letters": "tt", "freq": "常见", "examples": ["little", "better"] },
+        { "letters": "ed（清音后）", "freq": "⚠️大彩蛋 · 过去式 ed 跟在清辅音后读 /t/", "examples": ["looked", "washed", "jumped"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "舌尖敲上牙龈，干脆利落", "words": [
+          { "w": "ten", "ipa": "ten", "zh": "十" },
+          { "w": "top", "ipa": "tɒp", "zh": "顶部" },
+          { "w": "tea", "ipa": "tiː", "zh": "茶" },
+          { "w": "tiger", "ipa": "ˈtaɪgə", "zh": "老虎" },
+          { "w": "table", "ipa": "ˈteɪbl", "zh": "桌子" },
+          { "w": "taxi", "ipa": "ˈtæksɪ", "zh": "出租车" }
+        ]},
+        { "name": "词尾队 · 别加小尾巴", "tip": "cat 是「凯特」收住，不是「凯特呃」", "words": [
+          { "w": "cat", "ipa": "kæt", "zh": "猫" },
+          { "w": "hat", "ipa": "hæt", "zh": "帽子" },
+          { "w": "eat", "ipa": "iːt", "zh": "吃" },
+          { "w": "sit", "ipa": "sɪt", "zh": "坐" },
+          { "w": "night", "ipa": "naɪt", "zh": "夜晚" },
+          { "w": "want", "ipa": "wɒnt", "zh": "想要" }
+        ]},
+        { "name": "tt 与 ed 彩蛋队", "tip": "重磅规律：过去式 ed 跟在清辅音（k/ʃ/p…）后面读 /t/——looked 是「路克特」不是「路克德」", "words": [
+          { "w": "little", "ipa": "ˈlɪtl", "zh": "小的" },
+          { "w": "better", "ipa": "ˈbetə", "zh": "更好的" },
+          { "w": "butter", "ipa": "ˈbʌtə", "zh": "黄油" },
+          { "w": "looked", "ipa": "lʊkt", "zh": "看（过去式）" },
+          { "w": "washed", "ipa": "wɒʃt", "zh": "洗（过去式）" },
+          { "w": "jumped", "ipa": "dʒʌmpt", "zh": "跳（过去式）" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Two tigers take ten tomatoes to the tall table!",
+        "zh": "两只老虎搬了十个西红柿到高桌上！",
+        "pic": "🐯🍅🪑",
+        "coverage": "词首t(Two/tigers/take/ten/tomatoes/tall/table) —— 头韵拉满 ✓",
+        "wordIpa": [["Two","tuː"],["tigers","ˈtaɪgəz"],["take","teɪk"],["ten","ten"],["tomatoes","təˈmɑːtəʊz"],["to","tə"],["the","ðə"],["tall","tɔːl"],["table","ˈteɪbl"]]
+      },
+      "contrast": {
+        "vsSymbol": "d",
+        "note": "清浊双胞胎第二对：tie 一股风 vs die 喉咙嗡——差一下，「领带」变「死」，千万分清",
+        "pairs": [["tie","die"],["ten","den"],["two","do"],["town","down"],["time","dime"],["coat","code"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊最小对 + 词尾清浊（bet/bed、write/ride、sent/send——词尾清浊最考耳朵）",
+        "pairs": [["tie","die"],["ten","den"],["two","do"],["town","down"],["time","dime"],["coat","code"],["tip","dip"],["write","ride"],["bet","bed"],["sent","send"]],
+        "ipa": { "tie":"taɪ","die":"daɪ","ten":"ten","den":"den","two":"tuː","do":"duː","town":"taʊn","down":"daʊn","time":"taɪm","dime":"daɪm","coat":"kəʊt","code":"kəʊd","tip":"tɪp","dip":"dɪp","write":"raɪt","ride":"raɪd","bet":"bet","bed":"bed","sent":"sent","send":"send" }
+      }
+    },
+    {
+      "symbol": "d",
+      "type": "浊辅音 · 爆破音",
+      "nickname": "声带嗡嗡的得音",
+      "howTo": "舌位和 /t/ 一模一样（舌尖抵上牙龈），不送气、声带震动。中文「得」不够震，要让喉咙先嗡起来。",
+      "ttsDemo": "d, d, dog",
+      "spellings": [
+        { "letters": "d", "freq": "✅铁律 · 看到基本必读", "examples": ["dog", "dad", "bed"] },
+        { "letters": "dd", "freq": "常见", "examples": ["daddy", "middle"] },
+        { "letters": "ed（浊音后）", "freq": "⚠️彩蛋另一半 · 过去式 ed 跟在浊音后读 /d/", "examples": ["played", "cleaned", "opened"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "喉咙先嗡再弹舌", "words": [
+          { "w": "dog", "ipa": "dɒg", "zh": "狗" },
+          { "w": "dad", "ipa": "dæd", "zh": "爸爸" },
+          { "w": "day", "ipa": "deɪ", "zh": "白天" },
+          { "w": "door", "ipa": "dɔː", "zh": "门" },
+          { "w": "duck", "ipa": "dʌk", "zh": "鸭子" },
+          { "w": "desk", "ipa": "desk", "zh": "书桌" }
+        ]},
+        { "name": "词尾队", "tip": "词尾轻收但带一点嗡——bed 和 bet 就差这一点", "words": [
+          { "w": "bed", "ipa": "bed", "zh": "床" },
+          { "w": "red", "ipa": "red", "zh": "红色" },
+          { "w": "head", "ipa": "hed", "zh": "头" },
+          { "w": "hand", "ipa": "hænd", "zh": "手" },
+          { "w": "read", "ipa": "riːd", "zh": "读" },
+          { "w": "good", "ipa": "gʊd", "zh": "好的" }
+        ]},
+        { "name": "dd 与 ed 彩蛋队", "tip": "ed 彩蛋另一半：跟在浊音（元音/l/n…）后面读 /d/——played 是「普雷德」", "words": [
+          { "w": "daddy", "ipa": "ˈdædɪ", "zh": "爸爸（昵称）" },
+          { "w": "middle", "ipa": "ˈmɪdl", "zh": "中间" },
+          { "w": "played", "ipa": "pleɪd", "zh": "玩（过去式）" },
+          { "w": "cleaned", "ipa": "kliːnd", "zh": "打扫（过去式）" },
+          { "w": "opened", "ipa": "ˈəʊpənd", "zh": "打开（过去式）" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "Daddy's dog digs a deep door in the dark garden!",
+        "zh": "爸爸的狗在漆黑的花园里挖了一扇深深的门！",
+        "pic": "🐕🚪🌑",
+        "coverage": "词首d(Daddy/dog/digs/deep/door/dark) —— 头韵拉满 ✓",
+        "wordIpa": [["Daddy's","ˈdædɪz"],["dog","dɒg"],["digs","dɪgz"],["a","ə"],["deep","diːp"],["door","dɔː"],["in","ɪn"],["the","ðə"],["dark","dɑːk"],["garden","ˈgɑːdn"]]
+      },
+      "contrast": {
+        "vsSymbol": "t",
+        "note": "双胞胎反向再听：die 先嗡 vs tie 干脆——从浊音这边找感觉",
+        "pairs": [["die","tie"],["den","ten"],["do","two"],["down","town"],["dime","time"],["code","coat"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对反向 + 词尾清浊",
+        "pairs": [["die","tie"],["den","ten"],["do","two"],["down","town"],["dime","time"],["code","coat"],["bed","bet"],["ride","write"],["send","sent"],["dip","tip"]],
+        "ipa": { "die":"daɪ","tie":"taɪ","den":"den","ten":"ten","do":"duː","two":"tuː","down":"daʊn","town":"taʊn","dime":"daɪm","time":"taɪm","code":"kəʊd","coat":"kəʊt","bed":"bed","bet":"bet","ride":"raɪd","write":"raɪt","send":"send","sent":"sent","dip":"dɪp","tip":"tɪp" }
+      }
+    },
+    {
+      "symbol": "k",
+      "type": "清辅音 · 爆破音",
+      "nickname": "轻咳一声的克音",
+      "howTo": "舌根顶住软腭（喉咙口），弹开送气「克」，像很轻地咳一声。声带不震。",
+      "ttsDemo": "k, k, cat",
+      "spellings": [
+        { "letters": "c（a/o/u 前）", "freq": "✅铁律 · c 的第一副面孔：a/o/u 前读 /k/", "examples": ["cat", "cup", "cold"] },
+        { "letters": "k", "freq": "主力", "examples": ["kite", "key", "king"] },
+        { "letters": "ck（词尾）", "freq": "✅铁律 · 短元音后的词尾用 ck", "examples": ["back", "black", "duck"] },
+        { "letters": "ch / q", "freq": "稀有伪装 · 希腊来的词 ch 读 /k/；q 总带着 u 读 /kw/", "examples": ["school", "quick"] }
+      ],
+      "spellingNote": "c 的两副面孔预告：a/o/u 前读 /k/（cat），e/i/y 前读 /s/（city）——铁律级规律，下一批 /s/ 课正式对决。",
+      "levels": [
+        { "name": "c 队", "tip": "a/o/u 前的 c 全读「克」", "words": [
+          { "w": "cat", "ipa": "kæt", "zh": "猫" },
+          { "w": "cup", "ipa": "kʌp", "zh": "杯子" },
+          { "w": "cold", "ipa": "kəʊld", "zh": "冷的" },
+          { "w": "car", "ipa": "kɑː", "zh": "汽车" },
+          { "w": "cake", "ipa": "keɪk", "zh": "蛋糕" },
+          { "w": "coffee", "ipa": "ˈkɒfɪ", "zh": "咖啡" }
+        ]},
+        { "name": "k / ck 队", "tip": "k 打头阵，短元音后的词尾归 ck", "words": [
+          { "w": "kite", "ipa": "kaɪt", "zh": "风筝" },
+          { "w": "key", "ipa": "kiː", "zh": "钥匙" },
+          { "w": "king", "ipa": "kɪŋ", "zh": "国王" },
+          { "w": "back", "ipa": "bæk", "zh": "背；后面" },
+          { "w": "black", "ipa": "blæk", "zh": "黑色" },
+          { "w": "duck", "ipa": "dʌk", "zh": "鸭子" }
+        ]},
+        { "name": "ch / qu 伪装队", "tip": "school 的 ch 是希腊装读 /k/；q 永远拖着 u 一起读 /kw/", "words": [
+          { "w": "school", "ipa": "skuːl", "zh": "学校" },
+          { "w": "Christmas", "ipa": "ˈkrɪsməs", "zh": "圣诞节" },
+          { "w": "quick", "ipa": "kwɪk", "zh": "快的" },
+          { "w": "question", "ipa": "ˈkwestʃən", "zh": "问题" },
+          { "w": "stomach", "ipa": "ˈstʌmək", "zh": "胃" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "The cool king keeps a black cat and a quick duck in his school!",
+        "zh": "酷国王在他的学校里养了一只黑猫和一只敏捷的鸭子！",
+        "pic": "👑🐈‍⬛🦆",
+        "coverage": "c(cool/cat) + k(king/keeps) + ck(black/duck/quick尾) + qu(quick) + ch(school) —— 全部出口覆盖 ✓",
+        "wordIpa": [["The","ðə"],["cool","kuːl"],["king","kɪŋ"],["keeps","kiːps"],["a","ə"],["black","blæk"],["cat","kæt"],["and","ənd"],["a","ə"],["quick","kwɪk"],["duck","dʌk"],["in","ɪn"],["his","hɪz"],["school","skuːl"]]
+      },
+      "contrast": {
+        "vsSymbol": "g",
+        "note": "清浊双胞胎第三对：coat 一声轻咳 vs goat 喉咙嗡——「外套」和「山羊」全靠声带分",
+        "pairs": [["coat","goat"],["class","glass"],["cold","gold"],["curl","girl"],["came","game"],["back","bag"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊最小对 + 词尾清浊（back/bag、pick/pig）",
+        "pairs": [["coat","goat"],["class","glass"],["cold","gold"],["curl","girl"],["came","game"],["back","bag"],["cap","gap"],["could","good"],["clue","glue"],["pick","pig"]],
+        "ipa": { "coat":"kəʊt","goat":"gəʊt","class":"klɑːs","glass":"glɑːs","cold":"kəʊld","gold":"gəʊld","curl":"kɜːl","girl":"gɜːl","came":"keɪm","game":"geɪm","back":"bæk","bag":"bæg","cap":"kæp","gap":"gæp","could":"kʊd","good":"gʊd","clue":"kluː","glue":"gluː","pick":"pɪk","pig":"pɪg" }
+      }
+    },
+    {
+      "symbol": "g",
+      "type": "浊辅音 · 爆破音",
+      "nickname": "声带嗡嗡的鸽音",
+      "howTo": "舌位和 /k/ 一模一样（舌根顶软腭），声带震动。像鸽子咕咕叫前的那一下。",
+      "ttsDemo": "g, g, go",
+      "spellings": [
+        { "letters": "g（a/o/u 前）", "freq": "✅可靠 · a/o/u 前读 /g/", "examples": ["go", "game", "gold"] },
+        { "letters": "gg", "freq": "常见", "examples": ["bigger", "egg"] },
+        { "letters": "gu", "freq": "稀有 · u 是保镖不发音", "examples": ["guess", "guitar"] },
+        { "letters": "g（e/i/y 前）", "freq": "⚠️预警 · e/i/y 前的 g 常变 /dʒ/（giraffe、orange）——第 7 批见", "examples": ["giraffe"] }
+      ],
+      "levels": [
+        { "name": "词首队", "tip": "a/o/u 前的 g 放心读「鸽」", "words": [
+          { "w": "go", "ipa": "gəʊ", "zh": "去" },
+          { "w": "game", "ipa": "geɪm", "zh": "游戏" },
+          { "w": "gold", "ipa": "gəʊld", "zh": "金色" },
+          { "w": "girl", "ipa": "gɜːl", "zh": "女孩" },
+          { "w": "good", "ipa": "gʊd", "zh": "好的" },
+          { "w": "garden", "ipa": "ˈgɑːdn", "zh": "花园" }
+        ]},
+        { "name": "词尾队", "tip": "词尾 g 轻收带嗡——bag 和 back 就差这一嗡", "words": [
+          { "w": "bag", "ipa": "bæg", "zh": "书包" },
+          { "w": "big", "ipa": "bɪg", "zh": "大的" },
+          { "w": "dog", "ipa": "dɒg", "zh": "狗" },
+          { "w": "egg", "ipa": "eg", "zh": "鸡蛋" },
+          { "w": "leg", "ipa": "leg", "zh": "腿" },
+          { "w": "frog", "ipa": "frɒg", "zh": "青蛙" }
+        ]},
+        { "name": "gu 保镖队与大词", "tip": "guess/guitar 里的 u 是 g 的保镖，专门挡住 e/i、保住 /g/ 音，自己不发声", "words": [
+          { "w": "guess", "ipa": "ges", "zh": "猜" },
+          { "w": "guitar", "ipa": "gɪˈtɑː", "zh": "吉他" },
+          { "w": "bigger", "ipa": "ˈbɪgə", "zh": "更大的" },
+          { "w": "tiger", "ipa": "ˈtaɪgə", "zh": "老虎" },
+          { "w": "hungry", "ipa": "ˈhʌŋgrɪ", "zh": "饿的" }
+        ]}
+      ],
+      "mnemonic": {
+        "sentence": "A good girl gives her green guitar to a big hungry goat!",
+        "zh": "一个好女孩把她的绿吉他送给了一只饿坏的大山羊！",
+        "pic": "👧🎸🐐",
+        "coverage": "词首g(good/girl/gives/green/goat) + gu(guitar) + 词中g(hungry) + 词尾g(big) —— 全覆盖 ✓",
+        "wordIpa": [["A","ə"],["good","gʊd"],["girl","gɜːl"],["gives","gɪvz"],["her","hɜː"],["green","griːn"],["guitar","gɪˈtɑː"],["to","tə"],["a","ə"],["big","bɪg"],["hungry","ˈhʌŋgrɪ"],["goat","gəʊt"]]
+      },
+      "contrast": {
+        "vsSymbol": "k",
+        "note": "双胞胎反向：goat 先嗡 vs coat 轻咳——从浊音这边再练一遍",
+        "pairs": [["goat","coat"],["glass","class"],["gold","cold"],["girl","curl"],["game","came"],["bag","back"]]
+      },
+      "gamePairs": {
+        "designNote": "清浊对反向 + 词尾清浊",
+        "pairs": [["goat","coat"],["glass","class"],["gold","cold"],["girl","curl"],["game","came"],["bag","back"],["gap","cap"],["good","could"],["glue","clue"],["pig","pick"]],
+        "ipa": { "goat":"gəʊt","coat":"kəʊt","glass":"glɑːs","class":"klɑːs","gold":"gəʊld","cold":"kəʊld","girl":"gɜːl","curl":"kɜːl","game":"geɪm","came":"keɪm","bag":"bæg","back":"bæk","gap":"gæp","cap":"kæp","good":"gʊd","could":"kʊd","glue":"gluː","clue":"kluː","pig":"pɪg","pick":"pɪk" }
+      }
+    }
+  ]
+}

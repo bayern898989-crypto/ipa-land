@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">音标乐园 · 课程</title>
+<link rel="manifest" href="manifest.json?v=2">
+<meta name="theme-color" content="#ff5a4e">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192-v2.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-v2.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lesson-nav">
+    <a href="index.html">← 课程地图</a>
+    <span id="lessonCounter"></span>
+  </div>
+
+  <header id="lessonHeader">
+    <div class="badge">IPA Land</div>
+    <h1>音标乐园</h1>
+    <p>加载中…</p>
+  </header>
+
+  <div class="card hero" id="heroCard"></div>
+  <div class="card" id="spellCard"></div>
+  <div class="card" id="levelsCard"></div>
+  <div class="card" id="mnemoCard" style="padding:0;border:none;box-shadow:none;background:transparent"></div>
+  <div class="card" id="contrastCard"></div>
+  <div class="card" id="gameCard"></div>
+  <div class="card" id="maskedCard"></div>
+
+  <div id="specialLink"></div>
+
+  <div class="lesson-nav" id="prevNextNav" style="justify-content:center;gap:24px"></div>
+
+  <footer>音标乐园 · 内测版 · 为一个五年级小朋友特别定制 🐾</footer>
+</div>
+
+<script src="js/speak.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/lesson-data.js"></script>
+<script src="js/lesson-render.js"></script>
+<script src="js/pwa.js"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(location.search);
+  const b = params.get('b');
+  const i = params.get('i');
+  const headerBox = document.getElementById('lessonHeader');
+
+  function showError(msg) {
+    headerBox.innerHTML = `<div class="badge">IPA Land</div><h1>音标乐园</h1><p>${msg}</p>`;
+  }
+
+  /* 这一课通往哪个特别关。键是音标符号，与首页 SPECIALS 的 needs 对应。 */
+  const SPECIAL_BY_SYMBOL = {
+    'e': { href: 'game-ea-sorting.html', emoji: '🏭', title: '两面派分拣工厂 · ea',
+           desc: '刚学的 /e/ 就藏在 bread 里。去传送带上把 ea 的两副面孔分开。' },
+    'iː': { href: 'game-ea-sorting.html', emoji: '🏭', title: '两面派分拣工厂 · ea',
+            desc: '刚学的 /iː/ 就藏在 meat 里。去传送带上把 ea 的两副面孔分开。' },
+  };
+
+  function renderSpecialLink(sound) {
+    const sp = SPECIAL_BY_SYMBOL[sound.symbol];
+    if (!sp) return;
+    const box = document.getElementById('specialLink');
+    const a = document.createElement('a');
+    a.href = sp.href;
+    a.style.cssText =
+      'display:block;background:linear-gradient(160deg,#fff3d6,#ffe9e6);border:3px solid var(--ink);' +
+      'border-radius:22px;box-shadow:0 6px 0 var(--shadow);padding:16px 18px;margin-bottom:18px';
+    a.innerHTML =
+      '<div style="font-family:var(--ui);font-size:11.5px;letter-spacing:.1em;color:#8a6a2c">解锁特别关</div>' +
+      '<div style="font-weight:900;font-size:16px;margin-top:4px">' + sp.emoji + ' ' + sp.title + '</div>' +
+      '<div style="font-size:12.5px;color:#6b5b49;line-height:1.65;margin-top:6px">' + sp.desc + '</div>';
+    box.appendChild(a);
+  }
+
+  if (b === null || i === null) {
+    showError('缺少课程参数，请从课程地图进入。');
+  } else {
+    Promise.all([IpaData.loadAll(), IpaData.getSound(b, i)])
+      .then(([units, sound]) => {
+        if (!sound) {
+          showError('没有找到这一课，请回课程地图重新选择。');
+          return;
+        }
+
+        document.getElementById('pageTitle').textContent = `音标乐园 · 第 ${sound.lessonNum} 课 /${sound.symbol}/`;
+        const totalWords = (sound.levels || []).reduce((n, lv) => n + lv.words.length, 0);
+        headerBox.innerHTML = `
+          <div class="badge">IPA Land · Lesson ${sound.lessonNum}</div>
+          <h1>音标乐园</h1>
+          <p>第 ${sound.lessonNum} 课 · ${sound.nickname} /${sound.symbol}/ · 学完这一课能读 ${totalWords} 个词</p>
+        `;
+        document.getElementById('lessonCounter').textContent = `第 ${sound.lessonNum} / 48 课`;
+
+        IpaLesson.renderLesson(
+          {
+            hero: document.getElementById('heroCard'),
+            spellings: document.getElementById('spellCard'),
+            levels: document.getElementById('levelsCard'),
+            mnemonic: document.getElementById('mnemoCard'),
+            contrast: document.getElementById('contrastCard'),
+            game: document.getElementById('gameCard'),
+            masked: document.getElementById('maskedCard'),
+          },
+          sound,
+          units
+        );
+
+        renderSpecialLink(sound);
+
+        const flat = units.flatMap((u) => u.sounds);
+        const idx = flat.findIndex((s) => s.lessonNum === sound.lessonNum);
+        const prev = flat[idx - 1];
+        const next = flat[idx + 1];
+        const nav = document.getElementById('prevNextNav');
+        nav.innerHTML =
+          (prev ? `<a href="lesson.html?b=${prev.batchNum}&i=${prev.indexInBatch}">← 第 ${prev.lessonNum} 课 /${prev.symbol}/</a>` : '<span></span>') +
+          (next ? `<a href="lesson.html?b=${next.batchNum}&i=${next.indexInBatch}">第 ${next.lessonNum} 课 /${next.symbol}/ →</a>` : '<span></span>');
+      })
+      .catch((err) => {
+        showError('内容加载失败：请启动本地服务器（如 <code>npx serve .</code>）后用 http://localhost 地址访问，而不要直接双击打开文件。');
+        console.error(err);
+      });
+  }
+})();
+</script>
+</body>
+</html>

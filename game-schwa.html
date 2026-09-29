@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>懒音侦探 · /ə/ 特别关</title>
+<link rel="manifest" href="manifest.json?v=2">
+<meta name="theme-color" content="#ff5a4e">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192-v2.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-v2.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/theme.css">
+<style>
+  .lesson-nav{display:flex;justify-content:space-between;align-items:center;
+    font-family:var(--ui);font-size:13px;color:#82715e;margin-bottom:12px}
+  header h1{font-family:var(--zh);font-weight:900;font-size:25px;text-shadow:none}
+
+  /* ---- 案情卡 ---- */
+  .brief{background:linear-gradient(160deg,#e8f4ff,#fff3d6);text-align:center}
+  .brief .glass{font-size:40px}
+  .brief h2{font-weight:900;font-size:19px;margin:4px 0 10px}
+  .brief .sym{font-family:var(--en);font-weight:800;font-size:56px;color:var(--coral-deep);line-height:1.2}
+  .brief .nick{font-family:var(--ui);font-size:13px;color:#8a6a2c;margin-top:2px}
+  .brief .howto{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:11px 13px;
+    font-size:13.5px;line-height:1.75;margin-top:12px;text-align:left}
+  .rule{background:#e6fbf8;border:2.5px dashed var(--teal);border-radius:12px;padding:10px 12px;
+    font-size:13.5px;margin-top:12px;text-align:left;line-height:1.75}
+  .rule b{color:var(--teal-deep)}
+
+  /* ---- 办案区 ---- */
+  .game-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .game-top .pbar{flex:1;height:14px}
+  .round-label{font-family:var(--ui);font-size:12.5px;color:#82715e;flex:none}
+
+  .caseword{text-align:center;margin:8px 0 4px}
+  .syls{display:flex;justify-content:center;flex-wrap:wrap;gap:9px}
+  .syl{font-family:var(--en);font-weight:800;font-size:34px;background:#fff;border:3px solid var(--ink);
+    border-radius:16px;padding:10px 18px;cursor:pointer;box-shadow:0 5px 0 var(--shadow);
+    transition:transform .06s, box-shadow .06s;color:inherit;line-height:1.1;position:relative}
+  .syl:active{transform:translateY(4px);box-shadow:0 1px 0 var(--shadow)}
+  .syl:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .syl.on{background:#fff3d6;border-color:var(--sun-deep);box-shadow:0 5px 0 var(--sun-deep)}
+  .syl .mark{display:block;font-family:var(--en);font-size:14px;font-weight:700;min-height:17px;
+    color:var(--coral-deep);margin-top:1px}
+  .syl.lazy{background:#fff3d6;border-color:var(--sun-deep)}
+  .syl.missed{background:#fff3d6;border-color:var(--coral-deep);box-shadow:0 0 0 3px #ffd0cb inset}
+  .syl.badpick{background:#ffe0dd;border-color:var(--coral-deep)}
+  .zhline{font-size:13px;color:#82715e;margin-top:8px}
+  .ipaline{font-family:var(--en);font-weight:700;font-size:17px;margin-top:4px;min-height:23px}
+  .ipaline b{color:var(--coral-deep)}
+
+  .ask{text-align:center;font-size:14px;font-weight:700;margin:14px 0 10px;line-height:1.6}
+  .ask em{font-style:normal;color:var(--coral-deep)}
+  .actions{text-align:center}
+  .btn[disabled]{opacity:.45;cursor:default;box-shadow:0 5px 0 var(--shadow)}
+  .btn[disabled]:active{transform:none}
+  .feedback{min-height:44px;text-align:center;font-size:14.5px;font-weight:900;margin-top:12px;line-height:1.6}
+  .feedback.ok{color:var(--teal-deep)}
+  .feedback.no{color:var(--coral-deep)}
+
+  /* ---- 结算 ---- */
+  .result{text-align:center;padding:4px 0}
+  .result .big{font-size:42px;letter-spacing:6px}
+  .result h3{font-size:19px;font-weight:900;margin:6px 0 4px}
+  .result p{font-size:13.5px;color:#82715e}
+  .listbox{background:#fff3d6;border:3px solid var(--ink);border-radius:14px;padding:12px;margin-top:12px;text-align:left}
+  .listbox h4{font-size:14px;font-weight:900;margin-bottom:6px}
+  .listbox .list{font-family:var(--en);font-weight:700;font-size:15px;line-height:1.9}
+  .listbox .list button{font:inherit;background:none;border:none;padding:0;cursor:pointer;color:#1a5fb4}
+  .listbox .list button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  .listbox p{font-size:12.5px;color:#82715e;margin-top:6px;line-height:1.6}
+  .listbox.book{background:#ffe9e6}
+
+  @media (max-width:360px){
+    .syl{font-size:28px;padding:8px 13px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lesson-nav">
+    <a href="index.html">← 课程地图</a>
+    <span>特别关 · /ə/</span>
+  </div>
+
+  <header>
+    <div class="badge">SPECIAL STAGE · 特别关</div>
+    <h1>🕵️ 懒音侦探</h1>
+    <p>英语里最常见的音，藏在最不起眼的音节里——把偷懒的那个揪出来</p>
+  </header>
+
+  <div id="app">
+    <div class="card" style="text-align:center;color:#82715e">案情加载中…</div>
+  </div>
+
+  <footer>音标乐园 · 懒音侦探 · 学完 /ə/ 后解锁 🕵️</footer>
+</div>
+
+<script src="js/speak.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/lesson-data.js"></script>
+<script src="js/special-progress.js"></script>
+<script src="js/pwa.js"></script>
+<script>
+(function () {
+  const app = document.getElementById('app');
+  const say = IpaSpeak.say;
+  const ID = 'schwa';
+  const TARGET = 10;   /* 一轮 10 个案子 */
+
+  function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  /* 音标里的 ə 标红加粗（跟课程页里"目标音红色加粗"一致） */
+  function markIpa(ipa) {
+    return esc(ipa).split('ə').join('<b>ə</b>');
+  }
+
+  function run(sound) {
+    const data = sound.gameSchwa;
+    const ALL = data.words;
+
+    app.innerHTML =
+      '<div class="card brief">' +
+        '<div class="glass">🔍</div>' +
+        '<h2>案情简报：谁在偷懒？</h2>' +
+        '<div class="sym">/' + esc(sound.symbol) + '/</div>' +
+        '<div class="nick">' + esc(sound.nickname) + '</div>' +
+        '<div class="howto">' + esc(sound.howTo) + '</div>' +
+        '<div class="rule">🧠 <b>办案要领：</b>英语单词里<b>只有重读音节才认真发音</b>，' +
+          '其他音节一律偷懒，元音全都糊成一个 <b>/ə/</b>——不管它原来写的是 a、e、o 还是 u。' +
+          '所以别看字母，<b>听哪个音节最轻最含糊，那个就是懒音</b>。' +
+        '</div>' +
+      '</div>' +
+      '<div class="card">' +
+        '<div class="game-top">' +
+          '<span class="round-label" id="roundLabel"></span>' +
+          '<div class="pbar"><i id="pfill"></i></div>' +
+        '</div>' +
+        '<div id="quiz">' +
+          '<div class="caseword">' +
+            '<div class="syls" id="syls"></div>' +
+            '<div class="zhline" id="zhline"></div>' +
+            '<div class="ipaline" id="ipaline"></div>' +
+          '</div>' +
+          '<p class="ask" id="ask"></p>' +
+          '<div class="actions"><button class="btn" id="solveBtn" disabled>🔍 破案！</button></div>' +
+          '<div class="feedback" id="fb"></div>' +
+        '</div>' +
+        '<div class="result" id="result" style="display:none">' +
+          '<div class="big" id="stars"></div>' +
+          '<h3 id="rTitle"></h3><p id="rText"></p>' +
+          '<div class="listbox" id="recapBox" style="display:none">' +
+            '<h4>📖 本局没破的案子（点词可听）</h4><div class="list" id="recapList"></div>' +
+            '<p>错过的词都当场重审过了——明天再来特训一遍，才算真记住。</p>' +
+          '</div>' +
+          '<div class="listbox book" id="bookBox" style="display:none">' +
+            '<h4>🗂️ 悬案卷宗（累计 · 点词可听）</h4><div class="list" id="bookList"></div>' +
+            '<p>特训里破一次销一笔账，销干净自动结案。</p>' +
+          '</div>' +
+          '<div class="listbox">' +
+            '<h4>🎁 结案奖励 · 懒音藏身处（点词可听）</h4>' +
+            '<div class="list" id="rewardList"></div>' +
+            '<p>看出规律了吗？懒音最爱藏在<b>词尾的 er / or / ar / our</b>（teacher、doctor、sugar、colour）' +
+            '和<b>词首的轻读 a</b>（about、again）里。' +
+            '</p>' +
+          '</div>' +
+          '<div>' +
+            '<button class="btn" id="againBtn">🔁 再查一轮</button> ' +
+            '<button class="btn sun" id="drillBtn">🔥 悬案特训</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    const elSyls = document.getElementById('syls');
+    const elZh = document.getElementById('zhline');
+    const elIpa = document.getElementById('ipaline');
+    const elAsk = document.getElementById('ask');
+    const elFb = document.getElementById('fb');
+    const elSolve = document.getElementById('solveBtn');
+    const elRound = document.getElementById('roundLabel');
+    const elFill = document.getElementById('pfill');
+    const elQuiz = document.getElementById('quiz');
+    const elResult = document.getElementById('result');
+
+    let queue = [], cur = null, picked = [], locked = false, drill = false, roundTotal = 0;
+    let done, firstTryRight, sessionWrong;
+    let timer = null;
+
+    function count(o) { return Object.keys(o).length; }
+
+    function start() {
+      drill = false;
+      queue = shuffle(ALL.slice()).slice(0, Math.min(TARGET, ALL.length));
+      roundTotal = queue.length;
+      begin();
+    }
+
+    function startDrill() {
+      const book = IpaSpecial.loadBook(ID);
+      let list = ALL.filter(function (w) { return book[w.w]; });
+      if (list.length === 0) return;
+      if (list.length < 4) {   /* 不足 4 个补几个当陪练 */
+        const pad = shuffle(ALL.filter(function (w) { return !book[w.w]; }).slice()).slice(0, 4 - list.length);
+        list = list.concat(pad);
+      }
+      drill = true;
+      queue = shuffle(list.slice());
+      roundTotal = queue.length;
+      begin();
+    }
+
+    function begin() {
+      done = {}; firstTryRight = {}; sessionWrong = {};
+      elResult.style.display = 'none';
+      elQuiz.style.display = 'block';
+      next();
+    }
+
+    function next() {
+      if (queue.length === 0) return end();
+      locked = false;
+      picked = [];
+      cur = queue.shift();
+
+      elRound.textContent = (drill ? '🔥特训 · ' : '') +
+        '已破 ' + count(done) + ' / ' + roundTotal + ' 案 · 还剩 ' + (queue.length + 1);
+      elFill.style.width = (count(done) / roundTotal * 100) + '%';
+      elFb.textContent = ''; elFb.className = 'feedback';
+      elZh.textContent = '';
+      elIpa.innerHTML = '';
+
+      const n = cur.lazy.length;
+      elAsk.innerHTML = '这个词有 <em>' + cur.syl.length + '</em> 个音节，其中 <em>' + n +
+        '</em> 个在偷懒（读 /ə/）——点出来，再按破案。<br>' +
+        '<span style="font-weight:400;font-size:12.5px;color:#82715e">先自己想，破案后才播发音。</span>';
+
+      elSyls.innerHTML = '';
+      cur.syl.forEach(function (s, i) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'syl';
+        b.dataset.i = i;
+        b.innerHTML = esc(s) + '<span class="mark"></span>';
+        b.addEventListener('click', function () { toggle(i, b); });
+        elSyls.appendChild(b);
+      });
+
+      elSolve.disabled = true;
+      elSolve.textContent = '🔍 破案！';
+    }
+
+    function toggle(i, btn) {
+      if (locked) return;
+      const at = picked.indexOf(i);
+      if (at >= 0) { picked.splice(at, 1); btn.classList.remove('on'); }
+      else { picked.push(i); btn.classList.add('on'); }
+      const need = cur.lazy.length;
+      elSolve.disabled = picked.length !== need;
+      elSolve.textContent = picked.length === need
+        ? '🔍 破案！'
+        : '🔍 破案！（还要点 ' + (need - picked.length) + ' 个）';
+    }
+
+    function solve() {
+      if (locked || picked.length !== cur.lazy.length) return;
+      locked = true;
+      elSolve.disabled = true;
+
+      const lazy = cur.lazy;
+      const ok = lazy.every(function (i) { return picked.indexOf(i) >= 0; });
+
+      /* 揭晓：懒音节标黄并显示 /ə/，漏掉的加红框，点错的标红 */
+      Array.prototype.forEach.call(elSyls.children, function (b, i) {
+        b.classList.remove('on');
+        if (lazy.indexOf(i) >= 0) {
+          b.classList.add(picked.indexOf(i) >= 0 ? 'lazy' : 'missed');
+          b.querySelector('.mark').textContent = '/ə/';
+        } else if (picked.indexOf(i) >= 0) {
+          b.classList.add('badpick');
+        }
+      });
+      elZh.textContent = '点音节可以重听整个词';
+      elIpa.innerHTML = '/' + markIpa(cur.ipa) + '/';
+      say(cur.w);
+
+      const book = IpaSpecial.loadBook(ID);
+      if (ok) {
+        done[cur.w] = 1;
+        if (!sessionWrong[cur.w]) firstTryRight[cur.w] = 1;
+        if (drill && book[cur.w]) {
+          book[cur.w]--;
+          const left = book[cur.w];
+          if (left <= 0) delete book[cur.w];
+          IpaSpecial.saveBook(ID, book);
+          elFb.textContent = '✅ 破案！' + cur.w + ' —— 销一笔账' +
+            (left > 0 ? '（还剩 ' + left + ' 笔）' : '（已结案 🎉）');
+        } else {
+          elFb.textContent = '✅ 抓对了！' + cur.w + ' 里偷懒的就是它。';
+        }
+        elFb.className = 'feedback ok';
+      } else {
+        sessionWrong[cur.w] = 1;
+        book[cur.w] = (book[cur.w] || 0) + 1;
+        IpaSpecial.saveBook(ID, book);
+        queue.splice(Math.min(2, queue.length), 0, cur);   /* 当场重审：隔 2 题再来 */
+        elFb.textContent = '❌ 偷懒的是黄色那个（红框是你漏掉的）—— 记入卷宗，待会儿重审！';
+        elFb.className = 'feedback no';
+      }
+      clearTimeout(timer);
+      timer = setTimeout(next, ok ? 1800 : 3200);
+    }
+
+    /* 揭晓后点音节 = 重听整个词（单个音节交给 TTS 会念成怪音，PRD 技术记录 #2） */
+    elSyls.addEventListener('click', function () { if (locked && cur) say(cur.w); });
+    elSolve.addEventListener('click', solve);
+
+    function fillList(el, items) {
+      el.innerHTML = '';
+      items.forEach(function (x, i) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = x.label;
+        b.addEventListener('click', function () { say(x.w); });
+        el.appendChild(b);
+        if (i < items.length - 1) el.appendChild(document.createTextNode('  ·  '));
+      });
+    }
+
+    function end() {
+      elFill.style.width = '100%';
+      elQuiz.style.display = 'none';
+      elResult.style.display = 'block';
+
+      const score = count(firstTryRight);
+      const stars = score >= roundTotal ? 3
+        : score >= roundTotal - 2 ? 2
+        : score >= Math.ceil(roundTotal * 0.6) ? 1 : 0;
+      if (!drill) IpaSpecial.setStars(ID, stars);
+
+      document.getElementById('stars').textContent = '⭐'.repeat(stars) + '☆'.repeat(3 - stars);
+      const titles = ['懒音藏得太深了，不过每个案子都重审过了！', '开始有线索了！', '快成名侦探了！', '金牌懒音侦探！一个都没跑掉 🏆'];
+      document.getElementById('rTitle').textContent = titles[stars];
+      document.getElementById('rText').textContent =
+        '一次破案 ' + score + ' / ' + roundTotal + ' 个（没破的都已当场重审）';
+
+      const recapBox = document.getElementById('recapBox');
+      const recap = ALL.filter(function (w) { return sessionWrong[w.w]; });
+      if (recap.length) {
+        recapBox.style.display = 'block';
+        fillList(document.getElementById('recapList'), recap.map(function (w) {
+          return { w: w.w, label: w.w + ' /' + w.ipa + '/' };
+        }));
+      } else { recapBox.style.display = 'none'; }
+
+      const book = IpaSpecial.loadBook(ID);
+      const bookWords = ALL.filter(function (w) { return book[w.w]; });
+      const bookBox = document.getElementById('bookBox');
+      const drillBtn = document.getElementById('drillBtn');
+      if (bookWords.length) {
+        bookBox.style.display = 'block';
+        fillList(document.getElementById('bookList'), bookWords.map(function (w) {
+          return { w: w.w, label: w.w + ' ×' + book[w.w] };
+        }));
+        drillBtn.style.display = '';
+      } else {
+        bookBox.style.display = 'none';
+        drillBtn.style.display = 'none';
+      }
+
+      fillList(document.getElementById('rewardList'), ALL.map(function (w) {
+        return { w: w.w, label: w.w + ' /' + w.ipa + '/' };
+      }));
+
+      if (stars === 3) say('Perfect! You are the lazy sound detective!');
+    }
+
+    document.getElementById('againBtn').addEventListener('click', start);
+    document.getElementById('drillBtn').addEventListener('click', startDrill);
+    start();
+  }
+
+  IpaData.loadAll().then(function (units) {
+    const sound = units.flatMap(function (u) { return u.sounds; })
+      .find(function (s) { return s.gameSchwa && s.gameSchwa.words && s.gameSchwa.words.length; });
+    if (!sound) {
+      app.innerHTML = '<div class="card" style="text-align:center;color:#82715e">' +
+        '内容库里还没有懒音侦探的数据（sound.gameSchwa）。' +
+        '<br><a href="index.html" style="color:#1a5fb4">← 回课程地图</a></div>';
+      return;
+    }
+    run(sound);
+  }).catch(function (err) {
+    app.innerHTML =
+      '<div class="card" style="text-align:center">' +
+      '<p style="font-weight:700;margin-bottom:8px">😿 内容加载失败</p>' +
+      '<p style="font-size:13px;color:#82715e;line-height:1.7">' +
+      '直接双击打开网页时，浏览器会拦截本地 JSON 文件的读取。<br>' +
+      '请在本目录下启动本地服务器再访问：<code>npx serve .</code> 或 <code>python -m http.server</code>' +
+      '</p><p style="font-size:11px;color:#a3907a;margin-top:10px">' + esc(err.message) + '</p></div>';
+  });
+})();
+</script>
+</body>
+</html>
