@@ -1,0 +1,61 @@
+/* 音标乐园 IPA Land · 共享视觉规范
+   提取自 ipa-lesson-ae.html（贴纸绘本风格），供首页与课程页共用 */
+:root{
+  --paper:#fff8ec; --ink:#33261a;
+  --coral:#ff5a4e; --coral-deep:#e03e33;
+  --teal:#14b8a8; --teal-deep:#0d8f83;
+  --sun:#ffc53d; --sun-deep:#e8a416;
+  --sky:#6bc5ff; --sky-deep:#3d9fe0;
+  --card:#ffffff;
+  --shadow:rgba(51,38,26,.16);
+  --en:"Baloo 2","PingFang SC","HarmonyOS Sans SC","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  --zh:"PingFang SC","HarmonyOS Sans SC","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  --ui:"Fredoka","PingFang SC","HarmonyOS Sans SC","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{
+  font-family:var(--zh);color:var(--ink);
+  background:
+    radial-gradient(circle at 10% 12%, #ffe7a8 0, transparent 34%),
+    radial-gradient(circle at 92% 8%, #c2f2ec 0, transparent 36%),
+    radial-gradient(circle at 85% 95%, #ffd6d2 0, transparent 40%),
+    var(--paper);
+  min-height:100vh;padding:20px 14px 70px;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:660px;margin:0 auto}
+
+header{text-align:center;margin-bottom:18px}
+header .badge{display:inline-block;font-family:var(--ui);font-size:12px;letter-spacing:.14em;
+  background:var(--ink);color:var(--paper);padding:5px 14px;border-radius:999px;text-transform:uppercase;margin-bottom:10px}
+header h1{font-family:var(--en);font-weight:800;font-size:34px;line-height:1.05;color:var(--coral-deep);text-shadow:3px 3px 0 #ffdf8f}
+header p{font-size:13px;color:#82715e;margin-top:6px}
+
+.card{background:var(--card);border:3px solid var(--ink);border-radius:22px;
+  box-shadow:0 6px 0 var(--shadow);padding:20px 18px;margin-bottom:18px}
+.card h2{font-family:var(--zh);font-weight:900;font-size:17px;display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.dot{width:14px;height:14px;border-radius:50%;border:2.5px solid var(--ink);flex:none}
+
+.btn{font-family:var(--ui);font-weight:600;font-size:15px;color:#fff;border:3px solid var(--ink);
+  border-radius:999px;padding:10px 22px;cursor:pointer;background:var(--coral);
+  box-shadow:0 5px 0 var(--coral-deep);transition:transform .06s, box-shadow .06s;margin-top:14px}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--coral-deep)}
+.btn.teal{background:var(--teal);box-shadow:0 5px 0 var(--teal-deep)}
+.btn.teal:active{box-shadow:0 1px 0 var(--teal-deep)}
+.btn.sun{background:var(--sun);color:var(--ink);box-shadow:0 5px 0 var(--sun-deep)}
+.btn.sun:active{box-shadow:0 1px 0 var(--sun-deep)}
+.btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+
+.chip{font-family:var(--en);font-weight:700;font-size:19px;background:#fff;border:3px solid var(--ink);
+  border-radius:14px;padding:8px 15px;cursor:pointer;box-shadow:0 4px 0 var(--shadow);
+  transition:transform .06s, box-shadow .06s;user-select:none}
+.chip:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
+.chip b{color:var(--coral-deep)}
+.chip:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+
+.pbar{height:16px;border:3px solid var(--ink);border-radius:999px;background:#fff;overflow:hidden}
+.pbar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--sun),var(--sun) 8px,#ffd76e 8px,#ffd76e 16px);transition:width .3s}
+
+footer{text-align:center;font-size:12px;color:#a3907a;margin-top:8px}

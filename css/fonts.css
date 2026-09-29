@@ -1,0 +1,43 @@
+/* 音标乐园 · 自托管字体
+   原来从 fonts.googleapis.com 加载，实测国内首字节 7 秒以上、且是 render-blocking，
+   孩子点开链接会白屏干等。改成同源加载，顺带让 PWA 离线时也有字体。
+
+   两点取舍：
+   1. 中文不自托管 Noto Sans SC —— CJK 全量子集好几 MB，改用各系统自带中文字体（见 theme.css 的 --zh）。
+   2. Baloo 2 / Fredoka 本来就不含 IPA 扩展区（ɪ ɒ ʌ ə ʊ ʃ ʒ θ 等），
+      音标符号一直靠后面的中文/系统字体兜底渲染，这里维持原状。
+
+   用的是可变字体（一个文件覆盖整个字重区间），换字重不会多下一个文件。 */
+
+@font-face{
+  font-family:'Baloo 2';
+  font-style:normal;
+  font-weight:500 800;
+  font-display:swap;
+  src:url(../fonts/Baloo2-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family:'Baloo 2';
+  font-style:normal;
+  font-weight:500 800;
+  font-display:swap;
+  src:url(../fonts/Baloo2-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+  font-family:'Fredoka';
+  font-style:normal;
+  font-weight:500 600;
+  font-display:swap;
+  src:url(../fonts/Fredoka-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face{
+  font-family:'Fredoka';
+  font-style:normal;
+  font-weight:500 600;
+  font-display:swap;
+  src:url(../fonts/Fredoka-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
